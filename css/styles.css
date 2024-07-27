@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 50px 0;
+    background: #f4f4f4;
+}
+
+header img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    background: #333;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background: #444;
+}
+
+section {
+    padding: 50px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section#sobre-mi ul {
+    list-style: none;
+    padding: 0;
+}
+
+section#sobre-mi ul li {
+    background: #eee;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+section#proyectos article {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    background: #fafafa;
+}
+
+section#proyectos article a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+section#proyectos article a:hover {
+    text-decoration: underline;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #f4f4f4;
+}

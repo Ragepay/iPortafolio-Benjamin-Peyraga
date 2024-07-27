@@ -1,11 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iPortafolio de Benjamin Peyraga</title>
+    <title>Benjamín Peyraga - Portafolio</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Benjamín Peyraga</h1>
+        <h2>Desarrollador Full Stack</h2>
+        <img src="tu-foto.jpg" alt="Foto de Benjamín Peyraga">
+        <p>Hola, soy Benjamín Peyraga, un desarrollador Full Stack con experiencia en frontend y backend. Apasionado por crear soluciones tecnológicas innovadoras.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#sobre-mi">Sobre Mí</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section id="sobre-mi">
+        <h2>Sobre Mí</h2>
+        <p>Descripción detallada sobre tu educación, experiencia y habilidades técnicas.</p>
+        <ul>
+            <li>JavaScript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>React</li>
+            <!-- Más habilidades -->
+        </ul>
+    </section>
+
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <article>
+            <h3>Finantips 2.0</h3>
+            <p>Descripción del proyecto, funcionalidades y tecnologías usadas.</p>
+            <a href="enlace-a-repositorio-github">Ver en GitHub</a>
+            <a href="enlace-a-demo-vivo">Ver Demo</a>
+        </article>
+        <!-- Más proyectos -->
+    </section>
+
+    <section id="experiencia">
+        <h2>Experiencia</h2>
+        <h3>Kelsus, Inc. (Aspirante a Web Developer)</h3>
+        <p>Descripción del puesto, responsabilidades y logros.</p>
+        <!-- Más experiencia laboral -->
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <p>Sígueme en:</p>
+        <ul>
+            <li><a href="enlace-a-linkedin">LinkedIn</a></li>
+            <li><a href="enlace-a-twitter">Twitter</a></li>
+            <li><a href="enlace-a-github">GitHub</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Benjamín Peyraga</p>
+    </footer>
 </body>
 </html>
