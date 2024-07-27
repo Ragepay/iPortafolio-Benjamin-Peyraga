@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benjamín Peyraga - Portafolio</title>
+    <title>iPortafolio de Benjamin Peyraga</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
     <header>
         <h1>Benjamín Peyraga</h1>
         <h2>Desarrollador Full Stack</h2>
-        <img src="tu-foto.jpg" alt="Foto de Benjamín Peyraga">
-        <p>Hola, soy Benjamín Peyraga, un desarrollador Full Stack con experiencia en frontend y backend. Apasionado por crear soluciones tecnológicas innovadoras.</p>
+        <img src="./img/fotoCarnet.jpeg" alt="Foto de Benjamín Peyraga">
+        <p>Hola, soy Benjamín Peyraga, un desarrollador Full Stack con experiencia en frontend y backend. Apasionado por
+            crear soluciones tecnológicas innovadoras, busco continuamente aprender y ganar experiencia en programación
+            dentro del sector IT.</p>
     </header>
 
     <nav>
         <ul>
+            <li><a href="#formacion">Formación</a></li>
             <li><a href="#sobre-mi">Sobre Mí</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
             <li><a href="#experiencia">Experiencia</a></li>
@@ -23,20 +28,88 @@
         </ul>
     </nav>
 
-    <section id="sobre-mi">
-        <h2>Sobre Mí</h2>
-        <p>Descripción detallada sobre tu educación, experiencia y habilidades técnicas.</p>
-        <ul>
-            <li>JavaScript</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Node.js</li>
-            <li>Express.js</li>
-            <li>React</li>
-            <!-- Más habilidades -->
-        </ul>
+    <section id="formacion">
+        <h2>Formación</h2>
+        <div class="formacion-item1">
+            <img src="./img/utn.jpg" alt="Logo UTN" class="logo">
+            <p>Soy Técnico Universitario en Programación en la <a href="https://www.frd.utn.edu.ar/programacion/"
+                    target="_blank">Universidad Tecnológica Nacional (UTN)</a>.</p>
+        </div>
+        <div class="formacion-item2">
+            <img src="./img/coderhouse.png" alt="Logo UTN" class="logo">
+            <p>Estoy realizando la carrera de Full Stack en <a
+                    href="https://www.coderhouse.com/ar/online/carrera-desarrollo-fullstack"
+                    target="_blank">Coderhouse</a>. Aquí están mis certificaciones:</p>
+            <ul>
+                <li><span>Desarrollo Web </span><a
+                        href="https://www.coderhouse.com/ar/certificados/664d335341eefc411974862a?lang=en"
+                        target="_blank">Ver Certificación</a></li>
+                <li><span>Java Script </span><a
+                        href="https://www.coderhouse.com/ar/certificados/667bd66c526bea14c5dbf1b9?lang=en"
+                        target="_blank">Ver Certificación</a></li>
+                <li><span>React JS </span><a href="#" target="_blank">Ver Certificación (Próximamente)</a></li>
+                <li><span>Programación Backend I: Desarrollo Avanzado de Backend </span><a href="#" target="_blank">Ver
+                        Certificación (Próximamente)</a></li>
+                <li><span>Programación Backend II: Diseño y Arquitectura Backend </span><a href="#" target="_blank">Ver
+                        Certificación (Próximamente)</a></li>
+                <li><span>Programación Backend III: Testing y Escalabilidad Backend </span><a href="#"
+                        target="_blank">Ver Certificación (Próximamente)</a></li>
+            </ul>
+        </div>
     </section>
 
+    <section id="sobre-mi">
+        <h2>Sobre Mí</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tecnología</th>
+                    <th>Nivel</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>JavaScript</td>
+                    <td><div class="level-bar intermediate"></div></td>
+                </tr>
+                <tr>
+                    <td>HTML 5</td>
+                    <td><div class="level-bar professional">dfhfghf</div></td>
+                </tr>
+                <tr>
+                    <td>CSS 3</td>
+                    <td><div class="level-bar advanced"></div></td>
+                </tr>
+                <tr>
+                    <td>SASS</td>
+                    <td><div class="level-bar advanced"></div></td>
+                </tr>
+                <tr>
+                    <td>Node.js</td>
+                    <td><div class="level-bar advanced"></div></td>
+                </tr>
+                <tr>
+                    <td>Express.js</td>
+                    <td><div class="level-bar professional"></div></td>
+                </tr>
+                <tr>
+                    <td>React JS</td>
+                    <td><div class="level-bar advanced"></div></td>
+                </tr>
+                <tr>
+                    <td>NoSQL</td>
+                    <td><div class="level-bar advanced"></div></td>
+                </tr>
+                <tr>
+                    <td>SQL</td>
+                    <td><div class="level-bar advanced"></div></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+    
+    
     <section id="proyectos">
         <h2>Proyectos</h2>
         <article>
@@ -45,37 +118,55 @@
             <a href="enlace-a-repositorio-github">Ver en GitHub</a>
             <a href="enlace-a-demo-vivo">Ver Demo</a>
         </article>
-        <!-- Más proyectos -->
     </section>
 
     <section id="experiencia">
         <h2>Experiencia</h2>
-        <h3>Kelsus, Inc. (Aspirante a Web Developer)</h3>
-        <p>Descripción del puesto, responsabilidades y logros.</p>
-        <!-- Más experiencia laboral -->
+        <div class="TASA">
+            <div class="job">
+                <h3>Toyota Argentina S.A.</h3>
+                <p>
+                    Trabajé como operario de producción en Toyota durante tres años. Fui responsable de tareas críticas para asegurar la eficiencia y calidad en la línea de producción.
+                </p>
+                <h4>Responsabilidades y Logros:</h4>
+                <ul>
+                    <li>
+                        <strong>Eficiencia en la Producción:</strong> Colaboré en la línea de montaje, cumpliendo con los estándares de producción y optimizando procesos.
+                    </li>
+                    <li>
+                        <strong>Control de Calidad:</strong> Implementé procedimientos de control de calidad para garantizar que cada vehículo cumpliera con las especificaciones técnicas.
+                    </li>
+                    <li>
+                        <strong>Adopción de Kaizen:</strong> Participé en la mejora continua, proponiendo soluciones que aumentaron la productividad y redujeron desperdicios.
+                    </li>
+                </ul>
+            </div>
+        </div>
     </section>
+    
+
 
     <section id="contacto">
         <h2>Contacto</h2>
-        <form>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-        <p>Sígueme en:</p>
         <ul>
-            <li><a href="enlace-a-linkedin">LinkedIn</a></li>
-            <li><a href="enlace-a-twitter">Twitter</a></li>
-            <li><a href="enlace-a-github">GitHub</a></li>
+            <li><a href="https://wa.me/5493487512474?text=Hola%2C%20me%20estoy%20comunicando%20desde%20tu%20portafolio.
+" target="_blank"><img src="./img/whatsapp.png" alt="WhatsApp Icon"> WhatsApp</a></li>
+            <li><a href="https://www.linkedin.com/in/benjamin-peyraga-53812a163/" target="_blank"><img
+                        src="./img/linkedin.png" alt="LinkedIn Icon"> LinkedIn</a></li>
+            <li><a href="https://github.com/Ragepay" target="_blank"><img src="./img/github.png" alt="GitHub Icon">
+                    GitHub</a></li>
+            <li><a href="https://www.instagram.com/benjipeyraga/" target="_blank"><img src="./img/instagram.png"
+                        alt="Instagram Icon"> Instagram</a></li>
+            <li><a href="mailto:benjapey99@gmail.com" target="_blank"><img src="./img/email.png" alt="Email Icon">
+                    Email</a></li>
         </ul>
     </section>
 
     <footer>
         <p>&copy; 2024 Benjamín Peyraga</p>
+        <p>_____________________________</p>
+        <p>Ultima Actualizacion: 27/7/24</p>
     </footer>
 </body>
+
 </html>
