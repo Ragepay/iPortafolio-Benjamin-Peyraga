@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iPortafolio de Benjamin Peyraga</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/main.js"></script>
 </head>
 
 <body>
@@ -19,7 +20,12 @@
     </header>
 
     <nav>
-        <ul>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-list">
             <li><a href="#formacion">Formación</a></li>
             <li><a href="#sobre-mi">Sobre Mí</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
@@ -67,58 +73,135 @@
                     <th>Nivel</th>
                 </tr>
             </thead>
+            <h3>Frontend</h3>
             <tbody>
                 <tr>
                     <td>JavaScript</td>
-                    <td><div class="level-bar intermediate"></div></td>
+                    <td>
+                        <div class="level-bar advanced"></div>
+                    </td>
                 </tr>
                 <tr>
                     <td>HTML 5</td>
-                    <td><div class="level-bar professional">dfhfghf</div></td>
+                    <td>
+                        <div class="level-bar professional"></div>
+                    </td>
                 </tr>
                 <tr>
                     <td>CSS 3</td>
-                    <td><div class="level-bar advanced"></div></td>
+                    <td>
+                        <div class="level-bar advanced"></div>
+                    </td>
                 </tr>
                 <tr>
                     <td>SASS</td>
-                    <td><div class="level-bar advanced"></div></td>
+                    <td>
+                        <div class="level-bar advanced"></div>
+                    </td>
                 </tr>
                 <tr>
                     <td>Node.js</td>
-                    <td><div class="level-bar advanced"></div></td>
+                    <td>
+                        <div class="level-bar advanced"></div>
+                    </td>
                 </tr>
                 <tr>
                     <td>Express.js</td>
-                    <td><div class="level-bar professional"></div></td>
+                    <td>
+                        <div class="level-bar advanced"></div>
+                    </td>
                 </tr>
                 <tr>
                     <td>React JS</td>
-                    <td><div class="level-bar advanced"></div></td>
+                    <td>
+                        <div class="level-bar beginner"></div>
+                    </td>
                 </tr>
                 <tr>
                     <td>NoSQL</td>
-                    <td><div class="level-bar advanced"></div></td>
+                    <td>
+                        <div class="level-bar intermediate"></div>
+                    </td>
                 </tr>
                 <tr>
                     <td>SQL</td>
-                    <td><div class="level-bar advanced"></div></td>
+                    <td>
+                        <div class="level-bar intermediate"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Bootstrap</td>
+                    <td>
+                        <div class="level-bar intermediate"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>WordPress</td>
+                    <td>
+                        <div class="level-bar beginner"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>WebSockets</td>
+                    <td>
+                        <div class="level-bar intermediate"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Handlebars</td>
+                    <td>
+                        <div class="level-bar intermediate"></div>
+                    </td>
                 </tr>
             </tbody>
         </table>
     </section>
-    
-    
-    
+
+
+
     <section id="proyectos">
         <h2>Proyectos</h2>
-        <article>
+        <div class="project-card">
             <h3>Finantips 2.0</h3>
-            <p>Descripción del proyecto, funcionalidades y tecnologías usadas.</p>
-            <a href="enlace-a-repositorio-github">Ver en GitHub</a>
-            <a href="enlace-a-demo-vivo">Ver Demo</a>
-        </article>
+            <p>Finantips 2.0 es una aplicación web diseñada para facilitar el cálculo de diferentes aspectos
+                financieros. Está orientada especialmente a trabajadores de Toyota y otras personas que buscan realizar
+                cálculos precisos sobre sus ingresos y opciones de inversión.</p>
+            <h4>Tecnologías Usadas</h4>
+            <ul>
+                <li><strong>HTML</strong>: Estructura y contenido de la aplicación.</li>
+                <li><strong>CSS</strong>: Estilo y diseño visual.</li>
+                <li><strong>SCSS</strong>: Preprocesador de CSS para facilitar el mantenimiento y la escalabilidad del código de estilos.</li>
+                <li><strong>JavaScript</strong>: Lógica y funcionalidad de la aplicación.</li>
+                <li><strong>SweetAlert</strong>: Para mostrar alertas y mensajes atractivos al usuario.</li>
+                <li><strong>Google AdSense</strong>: Para la monetización mediante anuncios.</li>
+                <li><strong>Google Analytics</strong>: Para el análisis del tráfico y el comportamiento de los usuarios.</li>
+            </ul>
+            <div class="project-links">
+                <a href="https://github.com/Ragepay/Finantips-2.0" class="btn">Ver Repositorio</a>
+                <a href="https://finantips.netlify.app/" class="btn">Ver URL</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <h3>Chat Grupal</h3>
+            <p>Este proyecto es un chat grupal que utiliza WebSockets para permitir la comunicación en tiempo real entre múltiples usuarios. La interfaz está diseñada para parecerse a la de WhatsApp.</p>
+            <h4>Tecnologías Usadas</h4>
+            <ul>
+                <li><strong>HTML</strong>: Estructura y contenido de la aplicación.</li>
+                <li><strong>CSS</strong>: Estilo y diseño visual.</li>
+                <li><strong>JavaScript</strong>: Lógica y funcionalidad de la aplicación.</li>
+                <li><strong>Node.js</strong>: Entorno de ejecución para JavaScript en el servidor.</li>
+                <li><strong>Express</strong>: Framework para construir aplicaciones web y APIs en Node.js.</li>
+                <li><strong>SweetAlert</strong>: Para mostrar alertas y mensajes atractivos al usuario.</li>
+                <li><strong>Handlebars</strong>: Motor de plantillas para generar vistas dinámicas.</li>
+                <li><strong>WebSockets</strong>: Protocolo para comunicación bidireccional en tiempo real entre cliente y servidor.</li>
+            </ul>
+            <div class="project-links">
+                <a href="https://github.com/Ragepay/chat-grupal" class="btn">Ver Repositorio</a>
+                <a href="https://succulent-omniscient-trowel.glitch.me/chat" class="btn">Ver URL</a>
+            </div>
+        </div>
     </section>
+    
 
     <section id="experiencia">
         <h2>Experiencia</h2>
@@ -126,24 +209,36 @@
             <div class="job">
                 <h3>Toyota Argentina S.A.</h3>
                 <p>
-                    Trabajé como operario de producción en Toyota durante tres años. Fui responsable de tareas críticas para asegurar la eficiencia y calidad en la línea de producción.
+                    Trabajé como operario de producción en Toyota durante <strong>3 años</strong>.  Fui responsable de tareas críticas
+                    para asegurar la eficiencia y calidad en la línea de producción.
                 </p>
                 <h4>Responsabilidades y Logros:</h4>
                 <ul>
                     <li>
-                        <strong>Eficiencia en la Producción:</strong> Colaboré en la línea de montaje, cumpliendo con los estándares de producción y optimizando procesos.
+                        <strong>Eficiencia en la Producción:</strong> Colaboré en la línea de montaje, cumpliendo con
+                        los estándares de producción y optimizando procesos.
                     </li>
                     <li>
-                        <strong>Control de Calidad:</strong> Implementé procedimientos de control de calidad para garantizar que cada vehículo cumpliera con las especificaciones técnicas.
+                        <strong>Control de Calidad:</strong> Implementé procedimientos de control de calidad para
+                        garantizar que cada vehículo cumpliera con las especificaciones técnicas.
                     </li>
                     <li>
-                        <strong>Adopción de Kaizen:</strong> Participé en la mejora continua, proponiendo soluciones que aumentaron la productividad y redujeron desperdicios.
+                        <strong>Circulo de Calidad:</strong> Participe en mejoras continuas de procesos industriales para bajar costos, aumentar eficiencia, etc.
+                    </li>
+                    <li>
+                        <strong>Adopción de Kaizen:</strong> Participé en la mejora continua, proponiendo soluciones que
+                        aumentaron la productividad y redujeron desperdicios.
                     </li>
                 </ul>
             </div>
         </div>
+        <div class="TASA">
+            <div class="job">
+                <h3>Sin Experiencia en el Sector IT.</h3>
+            </div>
+        </div>
     </section>
-    
+
 
 
     <section id="contacto">

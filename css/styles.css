@@ -5,6 +5,16 @@ body {
     color: #333;
 }
 
+section {
+    padding: 30px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Header */
 header {
     text-align: center;
     padding: 50px 0;
@@ -34,13 +44,33 @@ header img {
     border: 5px solid #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+/* Header */
+
+/* NAV y Hamburguesa */
+nav {
+    background: #333;
+    padding: 0 20px;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    margin: 4px 0;
+}
 
 nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
     padding: 0;
-    background: #333;
+    margin: 0;
 }
 
 nav ul li {
@@ -58,14 +88,32 @@ nav ul li a:hover {
     background: #444;
 }
 
-section {
-    padding: 30px;
-}
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
 
-h2 {
-    text-align: center;
-    margin-bottom: 20px;
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
 }
+/* NAV y Hamburguesa */
+
 
 /* Seccion Formacion */
 section#formacion {
@@ -249,26 +297,89 @@ table td {
 }
 /* Seccion Sobre mi */
 
-/* Seccion Proyectos */
-section#proyectos article {
-    margin-bottom: 20px;
-    padding: 20px;
-    border: 1px solid #eee;
-    border-radius: 5px;
-    background: #fafafa;
+/* Estilos Generales */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background: #f4f4f9;
+    margin: 0;
+    padding: 0;
 }
 
-section#proyectos article a {
+/* Sección Proyectos */
+#proyectos {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#proyectos h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #007BFF;
+}
+
+/* Tarjeta de Proyecto */
+.project-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    padding: 20px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+    margin-top: 0;
+    color: #007BFF;
+}
+
+.project-card p {
+    line-height: 1.6;
+}
+
+.project-card h4 {
+    margin-top: 20px;
+    color: #555;
+}
+
+.project-card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.project-card ul li {
+    background: #f4f4f9;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.project-links {
+    margin-top: 20px;
+}
+
+.project-links .btn {
     display: inline-block;
     margin-right: 10px;
-    color: #007BFF;
+    padding: 10px 20px;
+    color: #fff;
+    background: #007BFF;
     text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.2s ease-in-out;
 }
 
-section#proyectos article a:hover {
-    text-decoration: underline;
+.project-links .btn:hover {
+    background: #0056b3;
 }
-/* Seccion Proyectos */
+
 
 /* Estilo para la sección de experiencia */
 .TASA {
