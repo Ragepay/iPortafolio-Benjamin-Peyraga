@@ -48,7 +48,7 @@ header img {
 
 /* NAV y Hamburguesa */
 nav {
-    background: #333;
+    background: #007BFF;
     padding: 0 20px;
 }
 
@@ -85,7 +85,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background: #444;
+    background: #0358b3;
 }
 
 @media (max-width: 768px) {
@@ -125,9 +125,9 @@ section#formacion {
 }
 
 section#formacion h2 {
-    font-size: 28px;
+    font-size: 2.5em;
     margin-bottom: 15px;
-    color: #333;
+    color: #007BFF;
 }
 
 section .formacion-item1 {
@@ -212,7 +212,7 @@ section .formacion-item2 ul li a:hover {
 #sobre-mi h2 {
     text-align: center;
     font-size: 2.5em;
-    color: #0056b3;
+    color: #007BFF;
     margin-bottom: 30px;
 }
 
@@ -226,7 +226,7 @@ table {
 }
 
 table thead {
-    background-color: #0056b3;
+    background-color: #007BFF;
     color: #ffffff;
 }
 
@@ -270,7 +270,7 @@ table td {
     display: block;
     height: 100%;
     border-radius: 10px;
-    background-color: #0056b3;
+    background-color: #007BFF;
     position: absolute;
     left: 0;
     top: 0;
@@ -402,10 +402,10 @@ body {
 }
 
 #experiencia h2 {
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 20px;
     text-align: center;
-    color: #0056b3;
+    color: #007BFF;
 }
 
 #experiencia .job {
@@ -415,7 +415,7 @@ body {
 #experiencia .job h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
-    color: #333;
+    color: #007BFF;
 }
 
 #experiencia .job p {
@@ -427,7 +427,7 @@ body {
 #experiencia .job h4 {
     font-size: 1.2em;
     margin-bottom: 10px;
-    color: #0056b3;
+    color: #007BFF;
 }
 
 #experiencia .job ul {
