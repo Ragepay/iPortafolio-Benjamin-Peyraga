@@ -1,0 +1,96 @@
+/* Seccion Formacion */
+section#formacion {
+    padding: 20px;
+    background-color: $blanco;
+    border-radius: 8px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+
+    h2 {
+        font-size: 2.5em;
+        margin-bottom: 15px;
+        color: $azul;
+    }
+}
+
+
+
+section .formacion-item1 {
+    margin-bottom: 20px;
+
+    img.logo {
+        width: 15%;
+        vertical-align: middle;
+        margin-right: 10px;
+        border: 5px solid $negro;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    p {
+        font-size: 1.2em;
+        color: $negro;
+        display: inline;
+    }
+
+    a {
+        color: $azulClarito;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+section .formacion-item2 {
+    margin-bottom: 20px;
+
+    img.logo {
+        width: 15%;
+        vertical-align: middle;
+        margin-right: 10px;
+        border: 5px solid $negro;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    p {
+        font-size: 18px;
+        color: $negro;
+        display: inline;
+
+        a {
+            color: $azulClarito;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+            font-size: 18px;
+            color: $negro;
+            margin-bottom: 5px;
+
+            a {
+                color: $azulClarito;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+
+
+                }
+            }
+        }
+
+    }
+
+}
+
+/* Seccion Formacion */

@@ -1,0 +1,33 @@
+/* Header */
+header {
+    text-align: center;
+    padding: 50px 0;
+    background: url(../img/js.png) no-repeat center center;
+    background-size: cover;
+    color: $blanco;
+
+    h1 {
+        font-size: 2.8em;
+    }
+
+    p {
+        font-size: 1.2em;
+        margin: 1em;
+        padding: 2em;
+        background-color: $blanco;
+        border-radius: 5px;
+        color: $negro;
+        text-align: center;
+    }
+
+    img {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px;
+        border: 5px solid $blanco;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+}
+
+/* Header */

@@ -1,0 +1,96 @@
+/* Seccion Sobre mi */
+#sobre-mi {
+    margin: 40px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#sobre-mi h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #007BFF;
+    margin-bottom: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table thead {
+    background-color: #007BFF;
+    color: #ffffff;
+}
+
+table thead th {
+    padding: 15px;
+    text-align: left;
+    font-size: 1em;
+    text-transform: uppercase;
+    border-bottom: 2px solid #e6e6e6;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #e6e6e6;
+    transition: background-color 0.3s ease;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+table td {
+    padding: 15px;
+    font-size: 1em;
+    color: #333;
+}
+
+.level-bar {
+    height: 20px;
+    border-radius: 10px;
+    background-color: #cccccc;
+    position: relative;
+    overflow: hidden;
+}
+
+.level-bar::after {
+    content: '';
+    display: block;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #007BFF;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.level-bar.beginner::after {
+    width: 20%;
+}
+
+.level-bar.intermediate::after {
+    width: 40%;
+}
+
+.level-bar.advanced::after {
+    width: 60%;
+}
+
+.level-bar.professional::after {
+    width: 80%;
+}
+
+.level-bar.expert::after {
+    width: 100%;
+}
+/* Seccion Sobre mi */

@@ -1,0 +1,24 @@
+@media (max-width: 780px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
