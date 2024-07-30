@@ -3,7 +3,7 @@
 header {
   text-align: center;
   padding: 50px 0;
-  background: url(../img/js.png) no-repeat center center;
+  background: url(../img/fondo.webp) no-repeat center center;
   background-size: cover;
   color: #fafafa;
 }
@@ -142,65 +142,50 @@ section#contacto ul li a:hover {
 
 /* Seccion Contacto */
 /* Estilo para la sección de experiencia */
-.TASA {
+#experiencia {
+  margin: 10px;
+}
+#experiencia .TASA {
   background: #fff;
   margin: 20px auto;
   padding: 20px;
-  max-width: 800px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border: 1px solid #ddd;
 }
-
-.section {
-  background: #fff;
-  margin: 20px auto;
-  padding: 20px;
-  max-width: 800px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
 #experiencia h2 {
   font-size: 2.5em;
   margin-bottom: 20px;
   text-align: center;
-  color: #007BFF;
+  color: #007acc;
 }
-
 #experiencia .job {
   margin-bottom: 20px;
 }
-
 #experiencia .job h3 {
   font-size: 1.5em;
   margin-bottom: 10px;
-  color: #007BFF;
+  color: #007acc;
 }
-
 #experiencia .job p {
   font-size: 1em;
   margin-bottom: 15px;
-  color: #666;
+  color: #1A192A;
 }
-
 #experiencia .job h4 {
   font-size: 1.2em;
   margin-bottom: 10px;
-  color: #007BFF;
+  color: #007acc;
 }
-
 #experiencia .job ul {
   list-style-type: disc;
   padding-left: 20px;
 }
-
 #experiencia .job ul li {
   margin-bottom: 10px;
 }
-
 #experiencia .job ul li strong {
-  color: #333;
+  color: #1A192A;
 }
 
 /* Estilo para la sección de experiencia */
@@ -284,62 +269,58 @@ section .formacion-item2 ul li a:hover {
 /* Sección Proyectos */
 #proyectos {
   padding: 40px 20px;
-  max-width: 1200px;
   margin: 0 auto;
 }
-
 #proyectos h2 {
   text-align: center;
   margin-bottom: 40px;
   font-size: 2.5em;
-  color: #007BFF;
+  color: #007acc;
+  padding-bottom: 15px;
+  border-bottom: 4px solid #007acc;
 }
 
 /* Tarjeta de Proyecto */
 .project-card {
-  background: #fff;
+  background: #fafafa;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 40px;
   padding: 20px;
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
-
 .project-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-
 .project-card h3 {
   margin-top: 0;
-  color: #007BFF;
+  color: #007acc;
+  font-size: 1.5em;
 }
-
 .project-card p {
   line-height: 1.6;
 }
-
 .project-card h4 {
   margin-top: 20px;
-  color: #555;
+  color: #1A192A;
+  font-size: 1.2em;
 }
-
 .project-card ul {
   list-style-type: none;
   padding: 0;
 }
-
 .project-card ul li {
   background: #f4f4f9;
   margin: 5px 0;
   padding: 10px;
   border-radius: 5px;
+  max-width: 100%;
 }
 
 .project-links {
   margin-top: 20px;
 }
-
 .project-links .btn {
   display: inline-block;
   margin-right: 10px;
@@ -350,7 +331,6 @@ section .formacion-item2 ul li a:hover {
   border-radius: 5px;
   transition: background 0.2s ease-in-out;
 }
-
 .project-links .btn:hover {
   background: #0056b3;
 }
@@ -408,8 +388,8 @@ section .formacion-item2 ul li a:hover {
   transform: translateY(-3px);
 }
 #sobre-mi .tecnologias .tecnologia-group .tecnologia-item img {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   margin-right: 15px;
   border-radius: 4px;
   background-color: #eee;
@@ -492,7 +472,30 @@ section .formacion-item2 ul li a:hover {
   nav ul li {
     margin: 10px 0;
   }
+  section .formacion-item1 img.logo, section .formacion-item2 img.logo {
+    width: 25%;
+  }
 }
+@media (min-width: 1000px) {
+  section .formacion-item1 img.logo, section .formacion-item2 img.logo {
+    width: 20%;
+  }
+  .level-bar {
+    width: 200px;
+  }
+}
+@media (min-width: 1200px) {
+  section .formacion-item1 img.logo, section .formacion-item2 img.logo {
+    width: 15%;
+  }
+  .level-bar {
+    width: 300px;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;

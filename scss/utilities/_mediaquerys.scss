@@ -21,4 +21,30 @@
     nav ul li {
         margin: 10px 0;
     }
+
+    section .formacion-item1 img.logo,section .formacion-item2 img.logo {
+        width: 25%;
+    }
+
+}
+
+@media (min-width: 1000px) {
+
+    section .formacion-item1 img.logo,section .formacion-item2 img.logo {
+        width: 20%;
+    }
+
+    .level-bar {
+        width: 200px;
+    }
+}
+
+@media (min-width: 1200px) {
+    section .formacion-item1 img.logo,section .formacion-item2 img.logo {
+        width: 15%;
+    }
+
+    .level-bar {
+        width: 300px;
+    }
 }

@@ -1,62 +1,61 @@
 /* Estilo para la sección de experiencia */
-.TASA {
-    background: #fff;
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 800px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: 1px solid #ddd;
+#experiencia {
+    margin: 10px;
+
+    .TASA {
+        background: #fff;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border: 1px solid #ddd;
+    }
+
+    h2 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        text-align: center;
+        color: $azul;
+    }
+
+    .job {
+        margin-bottom: 20px;
+
+        h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: $azul;
+        }
+
+        p {
+            font-size: 1em;
+            margin-bottom: 15px;
+            color: $negro;
+        }
+
+        h4 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: $azul;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+
+            li {
+                margin-bottom: 10px;
+
+                strong {
+                    color: $negro;
+                }
+            }
+        }
+    }
 }
 
-.section {
-    background: #fff;
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 800px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
 
-#experiencia h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #007BFF;
-}
 
-#experiencia .job {
-    margin-bottom: 20px;
-}
 
-#experiencia .job h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #007BFF;
-}
 
-#experiencia .job p {
-    font-size: 1em;
-    margin-bottom: 15px;
-    color: #666;
-}
-
-#experiencia .job h4 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-    color: #007BFF;
-}
-
-#experiencia .job ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-#experiencia .job ul li {
-    margin-bottom: 10px;
-}
-
-#experiencia .job ul li strong {
-    color: #333;
-}
 /* Estilo para la sección de experiencia */
