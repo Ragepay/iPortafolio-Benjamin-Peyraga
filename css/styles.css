@@ -32,7 +32,7 @@ header img {
 /* NAV y Hamburguesa */
 nav {
   background: #007acc;
-  padding: 0 20px;
+  padding: 5px 20px;
 }
 nav ul {
   display: flex;
@@ -45,19 +45,24 @@ nav ul li {
   margin: 0 15px;
 }
 nav ul li a {
-  font-size: 1.2em;
+  font-size: 1.25em;
   color: #fff;
   text-decoration: none;
   padding: 15px;
   display: block;
+  transition: all 0.25s ease;
 }
 nav ul li a:hover {
-  background: #007BFF;
-  border-radius: 1em;
+  background: #fafafa;
+  color: #007acc;
+  border-radius: 12px;
+  transform: scale(1.1);
 }
 nav ul li a:active {
   background: #fafafa;
   color: #007acc;
+  border-radius: 12px;
+  transform: scale(1.1);
 }
 
 .menu-toggle {
@@ -354,98 +359,117 @@ section .formacion-item2 ul li a:hover {
 /* Sección Proyectos */
 /* Seccion Sobre mi */
 #sobre-mi {
-  margin: 40px auto;
-  background: #fff;
+  margin: 20px;
   padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#sobre-mi h2 {
-  text-align: center;
-  font-size: 2.5em;
-  color: #007BFF;
-  margin-bottom: 30px;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px 0;
-  background: #ffffff;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-table thead {
-  background-color: #007BFF;
-  color: #ffffff;
-}
-
-table thead th {
-  padding: 15px;
-  text-align: left;
-  font-size: 1em;
-  text-transform: uppercase;
-  border-bottom: 2px solid #e6e6e6;
-}
-
-table tbody tr {
-  border-bottom: 1px solid #e6e6e6;
-  transition: background-color 0.3s ease;
-}
-
-table tbody tr:nth-child(even) {
   background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-
-table tbody tr:hover {
-  background-color: #f1f1f1;
+#sobre-mi h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #007acc;
+  text-align: center;
 }
-
-table td {
-  padding: 15px;
+#sobre-mi h3 {
+  background-color: #007acc;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 1.5em;
+  color: #fafafa;
+}
+#sobre-mi .tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #fafafa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+}
+#sobre-mi .tecnologias .tecnologia-group {
+  flex: 1;
+  margin: 20px;
+}
+#sobre-mi .tecnologias .tecnologia-group h4 {
+  font-size: 1.2em;
+  color: #007BFF;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+#sobre-mi .tecnologias .tecnologia-group .tecnologia-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  transition: transform 0.2s;
+}
+#sobre-mi .tecnologias .tecnologia-group .tecnologia-item:hover {
+  transform: translateY(-3px);
+}
+#sobre-mi .tecnologias .tecnologia-group .tecnologia-item img {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  border-radius: 4px;
+  background-color: #eee;
+  padding: 5px;
+}
+#sobre-mi .tecnologias .tecnologia-group .tecnologia-item p {
   font-size: 1em;
-  color: #333;
+  color: #1A192A;
+  margin: 0;
+  flex: 1;
 }
 
 .level-bar {
-  height: 20px;
-  border-radius: 10px;
-  background-color: #cccccc;
+  width: 100px;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  margin-left: 15px;
   position: relative;
-  overflow: hidden;
 }
 
 .level-bar::after {
   content: "";
-  display: block;
-  height: 100%;
-  border-radius: 10px;
-  background-color: #007BFF;
   position: absolute;
-  left: 0;
-  top: 0;
+  height: 100%;
+  border-radius: 5px;
 }
 
 .level-bar.beginner::after {
   width: 20%;
+  background-color: #007BFF;
 }
 
 .level-bar.intermediate::after {
   width: 40%;
+  background-color: #007BFF;
 }
 
 .level-bar.advanced::after {
   width: 60%;
+  background-color: #007BFF;
 }
 
 .level-bar.professional::after {
   width: 80%;
+  background-color: #007BFF;
 }
 
 .level-bar.expert::after {
   width: 100%;
+  background-color: #007BFF;
+}
+
+.tecnologia-item img {
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.tecnologia-item img:hover {
+  transform: scale(1.1);
+  background-color: #f0f0f0;
 }
 
 /* Seccion Sobre mi */

@@ -1,96 +1,132 @@
 /* Seccion Sobre mi */
 #sobre-mi {
-    margin: 40px auto;
-    background: #fff;
+    margin: 20px;
     padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#sobre-mi h2 {
-    text-align: center;
-    font-size: 2.5em;
-    color: #007BFF;
-    margin-bottom: 30px;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    background: #ffffff;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-table thead {
-    background-color: #007BFF;
-    color: #ffffff;
-}
-
-table thead th {
-    padding: 15px;
-    text-align: left;
-    font-size: 1em;
-    text-transform: uppercase;
-    border-bottom: 2px solid #e6e6e6;
-}
-
-table tbody tr {
-    border-bottom: 1px solid #e6e6e6;
-    transition: background-color 0.3s ease;
-}
-
-table tbody tr:nth-child(even) {
     background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0.2, 0.2, 0.2, 0.2);
+    
+
+    h2 {
+        font-size: $subtitulos;
+        margin-bottom: 30px;
+        color: $azul;
+        text-align: center;
+    }
+
+    h3 {
+        background-color: $azul;
+        border-radius: 20px;
+        padding: 10px 20px;
+        font-size: 1.5em;
+        color: $blanco;
+    }
+
+    .tecnologias {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: $blanco;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        
+        margin: 20px auto;
+
+        .tecnologia-group {
+            flex: 1;
+            margin: 20px;
+
+            h4 {
+                font-size: 1.2em;
+                color: $azulClarito;
+                margin-bottom: 10px;
+                border-bottom: 2px solid #ddd;
+                padding-bottom: 5px;
+            }
+
+            .tecnologia-item {
+                display: flex;
+                align-items: center;
+                margin-bottom: 15px;
+                transition: transform 0.2s;
+
+                &:hover {
+                    transform: translateY(-3px);
+                }
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                    margin-right: 15px;
+                    border-radius: 4px;
+                    background-color: #eee;
+                    padding: 5px;
+                }
+
+                p {
+                    font-size: 1em;
+                    color: $negro;
+                    margin: 0;
+                    flex: 1;
+                }
+            }
+        }
+    }
 }
 
-table tbody tr:hover {
-    background-color: #f1f1f1;
-}
 
-table td {
-    padding: 15px;
-    font-size: 1em;
-    color: #333;
-}
+
+
+
 
 .level-bar {
-    height: 20px;
-    border-radius: 10px;
-    background-color: #cccccc;
+    width: 100px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-left: 15px;
     position: relative;
-    overflow: hidden;
 }
 
 .level-bar::after {
     content: '';
-    display: block;
-    height: 100%;
-    border-radius: 10px;
-    background-color: #007BFF;
     position: absolute;
-    left: 0;
-    top: 0;
+    height: 100%;
+    border-radius: 5px;
 }
 
 .level-bar.beginner::after {
     width: 20%;
+    background-color: $azulClarito;
 }
 
 .level-bar.intermediate::after {
     width: 40%;
+    background-color: $azulClarito;
 }
 
 .level-bar.advanced::after {
     width: 60%;
+    background-color:$azulClarito;
 }
 
 .level-bar.professional::after {
     width: 80%;
+    background-color: $azulClarito;
 }
 
 .level-bar.expert::after {
     width: 100%;
+    background-color: $azulClarito;
 }
+
+.tecnologia-item img {
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.tecnologia-item img:hover {
+    transform: scale(1.1);
+    background-color: #f0f0f0;
+}
+
 /* Seccion Sobre mi */

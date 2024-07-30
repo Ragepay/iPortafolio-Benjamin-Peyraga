@@ -1,7 +1,7 @@
 /* NAV y Hamburguesa */
 nav {
     background: $azul;
-    padding: 0 20px;
+    padding: 5px 20px;
 
     ul {
         display: flex;
@@ -14,22 +14,28 @@ nav {
             margin: 0 15px;
 
             a {
-                font-size: 1.2em;
+                font-size: 1.25em;
                 color: #fff;
                 text-decoration: none;
                 padding: 15px;
                 display: block;
+                transition: all 0.25s ease;
 
                 &:hover {
-                    background: $azulClarito;
-                    border-radius: 1em;
+                  background: $blanco;
+                  color: $azul;
+                  border-radius: 12px;
+                  transform: scale(1.1); 
                 }
-
+              
                 &:active {
-                    background: $blanco;
-                    color: $azul ;
+                  background: $blanco;
+                  color: $azul;
+                  border-radius: 12px;
+                  transform: scale(1.1); 
                 }
-            }
+              }
+              
 
         }
 
