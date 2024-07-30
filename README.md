@@ -33,23 +33,23 @@ Actualmente estoy cursando la carrera de Full Stack en [Coderhouse](https://www.
 
 #### Frontend
 
-- **JavaScript**: ![JavaScript](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg) - Nivel Profesional
-- **HTML 5**: ![HTML5](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg) - Nivel Profesional
-- **CSS 3**: ![CSS3](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg) - Nivel Profesional
-- **SASS**: ![SASS](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg) - Nivel Avanzado
-- **React JS**: ![React](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg) - Nivel Intermedio
-- **Bootstrap**: ![Bootstrap](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg) - Nivel Avanzado
-- **WordPress**: ![WordPress](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-original.svg) - Nivel Principiante
+- **JavaScript**: ![JavaScript](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg)
+- **HTML 5**: ![HTML5](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg)
+- **CSS 3**: ![CSS3](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg)
+- **SASS**: ![SASS](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg)
+- **React JS**: ![React](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg)
+- **Bootstrap**: ![Bootstrap](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg)
+- **WordPress**: ![WordPress](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-original.svg)
 
 #### Backend
 
-- **Node.js**: ![Node.js](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg) - Nivel Avanzado
-- **Express.js**: ![Express](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg) - Nivel Avanzado
-- **NoSQL**: ![NoSQL](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg) - Nivel Avanzado
-- **SQL**: ![SQL](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mariadb/mariadb-original-wordmark.svg) - Nivel Principiante
-- **WebSockets**: ![WebSockets](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/socketio/socketio-original-wordmark.svg) - Nivel Avanzado
-- **Handlebars**: ![Handlebars](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/handlebars/handlebars-original-wordmark.svg) - Nivel Avanzado
-- **npm**: ![npm](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg) - Nivel Profesional
+- **Node.js**: ![Node.js](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg)
+- **Express.js**: ![Express](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg)
+- **NoSQL**: ![NoSQL](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg)
+- **SQL**: ![SQL](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mariadb/mariadb-original-wordmark.svg)
+- **WebSockets**: ![WebSockets](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/socketio/socketio-original-wordmark.svg)
+- **Handlebars**: ![Handlebars](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/handlebars/handlebars-original-wordmark.svg)
+- **npm**: ![npm](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg)
 
 ## Proyectos
 
@@ -143,11 +143,11 @@ Trabajé como operario de producción en Toyota durante **3 años**. Fui respons
 
 ## Contacto
 
-- [WhatsApp](https://wa.me/5493487512474?text=Hola%2C%20me%20estoy%20comunicando%20desde%20tu%20portafolio) ![WhatsApp](./img/whatsapp.png)
-- [LinkedIn](https://www.linkedin.com/in/benjamin-peyraga-53812a163/) ![LinkedIn](./img/linkedin.png)
-- [GitHub](https://github.com/Ragepay) ![GitHub](./img/github.png)
-- [Instagram](https://www.instagram.com/benjipeyraga/) ![Instagram](./img/instagram.png)
-- [Email](mailto:benjapey99@gmail.com) ![Email](./img/email.png)
+- [WhatsApp](https://wa.me/5493487512474?text=Hola%2C%20me%20estoy%20comunicando%20desde%20tu%20portafolio)
+- [LinkedIn](https://www.linkedin.com/in/benjamin-peyraga-53812a163/)
+- [GitHub](https://github.com/Ragepay)
+- [Instagram](https://www.instagram.com/benjipeyraga/)
+- [Email](mailto:benjapey99@gmail.com)
 
 ---
 
