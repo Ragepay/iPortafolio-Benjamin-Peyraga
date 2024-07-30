@@ -2,4 +2,12 @@ footer {
     text-align: center;
     padding: 20px;
     background: $blanco;
+
+    a {
+        img {
+            width: 24px;
+            height: 24px;
+        }
+
+    }
 }

@@ -84,6 +84,10 @@ footer {
   padding: 20px;
   background: #fafafa;
 }
+footer a img {
+  width: 24px;
+  height: 24px;
+}
 
 /* Seccion Contacto */
 section#contacto {
