@@ -33,23 +33,23 @@ Actualmente estoy cursando la carrera de Full Stack en [Coderhouse](https://www.
 
 #### Frontend
 
-- **JavaScript**: ![JavaScript](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg)
-- **HTML 5**: ![HTML5](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg)
-- **CSS 3**: ![CSS3](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg)
-- **SASS**: ![SASS](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg)
-- **React JS**: ![React](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg)
-- **Bootstrap**: ![Bootstrap](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg)
-- **WordPress**: ![WordPress](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-original.svg)
+- **JavaScript**
+- **HTML 5**
+- **CSS 3**
+- **SASS**
+- **React JS**
+- **Bootstrap**
+- **WordPress**
 
 #### Backend
 
-- **Node.js**: ![Node.js](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg)
-- **Express.js**: ![Express](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg)
-- **NoSQL**: ![NoSQL](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg)
-- **SQL**: ![SQL](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mariadb/mariadb-original-wordmark.svg)
-- **WebSockets**: ![WebSockets](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/socketio/socketio-original-wordmark.svg)
-- **Handlebars**: ![Handlebars](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/handlebars/handlebars-original-wordmark.svg)
-- **npm**: ![npm](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg)
+- **Node.js**
+- **Express.js**
+- **NoSQL**
+- **SQL**
+- **WebSockets**
+- **Handlebars**
+- **npm**
 
 ## Proyectos
 
