@@ -22,15 +22,14 @@ header {
 
     img {
         border-radius: 50%;
-        width: 180px; /* Mantén el tamaño que has elegido */
+        width: 180px;
         height: 180px;
-        margin-top: 20px; /* Ajusta este valor para bajar la imagen */
+        margin-top: 20px; 
         margin-bottom: 20px;
         border: 5px solid $blanco;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         object-fit: cover;
         object-position: 0 -90px ;
-    
     }
     
     
