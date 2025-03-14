@@ -22,10 +22,10 @@ Actualmente estoy cursando la carrera de Full Stack en [Coderhouse](https://www.
 
 - [Desarrollo Web](https://www.coderhouse.com/ar/certificados/664d335341eefc411974862a?lang=en)
 - [JavaScript](https://www.coderhouse.com/ar/certificados/667bd66c526bea14c5dbf1b9?lang=en)
-- [React JS](#) (Próximamente)
-- [Programación Backend I: Desarrollo Avanzado de Backend](#) (Próximamente)
-- [Programación Backend II: Diseño y Arquitectura Backend](#) (Próximamente)
-- [Programación Backend III: Testing y Escalabilidad Backend](#) (Próximamente)
+- [React JS](https://www.coderhouse.com/ar/certificados/673d0dec9f7020f017195442?lang=en)
+- [Programación Backend I: Desarrollo Avanzado de Backend](https://www.coderhouse.com/ar/certificados/66c5f9489afd386a8863f4d6?lang=en)
+- [Programación Backend II: Diseño y Arquitectura Backend](https://pub.coderhouse.com/legacy-certificates/67877e429f7020f017195d37?lang=en)
+- [Programación Backend III: Testing y Escalabilidad Backend](#) (Proxiammente)
 
 ## Sobre Mí
 
@@ -33,23 +33,24 @@ Actualmente estoy cursando la carrera de Full Stack en [Coderhouse](https://www.
 
 #### Frontend
 
+- **React JS**
 - **JavaScript**
 - **HTML 5**
 - **CSS 3**
-- **SASS**
-- **React JS**
-- **Bootstrap**
-- **WordPress**
+
 
 #### Backend
 
 - **Node.js**
 - **Express.js**
-- **NoSQL**
-- **SQL**
-- **WebSockets**
-- **Handlebars**
-- **npm**
+- **NestJS**
+
+
+#### Bases de Datos
+- **NoSQL** (MongoDB)
+- **SQL**   (MySQL/MariaDB)
+- **Firebase** 
+
 
 ## Proyectos
 
@@ -139,8 +140,6 @@ Trabajé como operario de producción en Toyota durante **3 años**. Fui respons
 - **Círculo de Calidad:** Participé en mejoras continuas de procesos industriales para bajar costos y aumentar eficiencia.
 - **Adopción de Kaizen:** Participé en la mejora continua, proponiendo soluciones que aumentaron la productividad y redujeron desperdicios.
 
-### Sin Experiencia en el Sector IT
-
 ## Contacto
 
 - [WhatsApp](https://wa.me/5493487512474?text=Hola%2C%20me%20estoy%20comunicando%20desde%20tu%20portafolio)
@@ -151,5 +150,5 @@ Trabajé como operario de producción en Toyota durante **3 años**. Fui respons
 
 ---
 
-© 2024 Benjamín Peyraga  
-Última Actualización: 27/7/24
+© 2025 Benjamín Peyraga  
+Última Actualización: 14/3/2025
