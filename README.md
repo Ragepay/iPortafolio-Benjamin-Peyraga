@@ -25,7 +25,7 @@ Actualmente estoy cursando la carrera de Full Stack en [Coderhouse](https://www.
 - [React JS](https://www.coderhouse.com/ar/certificados/673d0dec9f7020f017195442?lang=en)
 - [Programación Backend I: Desarrollo Avanzado de Backend](https://www.coderhouse.com/ar/certificados/66c5f9489afd386a8863f4d6?lang=en)
 - [Programación Backend II: Diseño y Arquitectura Backend](https://pub.coderhouse.com/legacy-certificates/67877e429f7020f017195d37?lang=en)
-- [Programación Backend III: Testing y Escalabilidad Backend](#) (Proxiammente)
+- [Programación Backend III: Testing y Escalabilidad Backend](#) (Proximamente)
 
 ## Sobre Mí
 
