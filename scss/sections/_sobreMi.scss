@@ -10,12 +10,12 @@
 #sobre-mi h2 {
     font-size: 2em;
     margin-bottom: 30px;
-    color: #005d6e; /* Color Azul */
+    color: $azul; /* Azul */
     text-align: center;
 }
 
 #sobre-mi h3 {
-    background-color: #005d6e; /* Color Azul */
+    background-color: $azul; /* Azul */
     border-radius: 20px;
     padding: 10px 20px;
     font-size: 1.5em;
@@ -40,42 +40,56 @@
 
 .tecnologia-group h4 {
     font-size: 1.2em;
-    color: #78b7c5; /* Color Azul Clarito */
+    color: $azul; /* Azul clarito */
     margin-bottom: 10px;
     border-bottom: 2px solid #ddd;
     padding-bottom: 5px;
 }
 
+.tecnologia-div {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: left;
+    background-color: #f7f7f7;
+}
+
 .tecnologia-item {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
-    transition: transform 0.2s;
+    margin: 15px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer; /* Interacción */
 }
 
 .tecnologia-item:hover {
-    transform: translateY(-3px);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .tecnologia-item img {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     margin-right: 15px;
-    border-radius: 4px;
-    background-color: #eee;
-    padding: 5px;
-    transition: transform 0.2s, background-color 0.2s;
+    padding: 8px;
+    border-radius: 6px;
+    transition: transform 0.3s, background-color 0.3s;
 }
 
 .tecnologia-item img:hover {
-    transform: scale(1.1);
+    transform: scale(1.15);
     background-color: #f0f0f0;
 }
 
 .tecnologia-item p {
-    font-size: 1em;
-    color: #333;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #444; /* Color más suave */
     margin: 0;
     flex: 1;
+    text-align: left;
 }
-    

@@ -1,3 +1,40 @@
+@media (max-width: 400px) {
+    .tecnologia-div {
+        padding: 10px;
+        background-color: #ffffff;
+        font-size: 0.8em;
+    }
+
+    .tecnologia-item {
+        display: flex;
+        align-items: center;
+        margin: 5px;
+        padding: 10px;
+        border-radius: 8px;
+        background-color: #f7f7f7;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* Sombra suave */
+        transition: transform 0.3s, box-shadow 0.3s;
+        cursor: pointer;
+        /* Interacción */
+    }
+
+    .tecnologia-group {
+        flex: 1;
+        margin: 20px;
+        width: 200px;
+    }
+
+    .tecnologia-item img {
+        width: 40px;
+        height: 40px;
+        margin-right: 5px;
+        padding: 5px;
+        border-radius: 6px;
+        transition: transform 0.3s, background-color 0.3s;
+    }
+}
+
 @media (max-width: 780px) {
     .menu-toggle {
         display: flex;
@@ -22,7 +59,8 @@
         margin: 10px 0;
     }
 
-    section .formacion-item1 img.logo,section .formacion-item2 img.logo {
+    section .formacion-item1 img.logo,
+    section .formacion-item2 img.logo {
         width: 25%;
     }
 
@@ -30,7 +68,8 @@
 
 @media (min-width: 1000px) {
 
-    section .formacion-item1 img.logo,section .formacion-item2 img.logo {
+    section .formacion-item1 img.logo,
+    section .formacion-item2 img.logo {
         width: 20%;
     }
 
@@ -40,7 +79,9 @@
 }
 
 @media (min-width: 1200px) {
-    section .formacion-item1 img.logo,section .formacion-item2 img.logo {
+
+    section .formacion-item1 img.logo,
+    section .formacion-item2 img.logo {
         width: 15%;
     }
 

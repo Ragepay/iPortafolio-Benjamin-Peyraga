@@ -21,6 +21,11 @@
     margin-bottom: 40px;
     padding: 20px;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: #fff;
 
     &:hover {
         transform: translateY(-10px);
@@ -39,31 +44,88 @@
 
     h4 {
         margin-top: 20px;
-        color: $negro;
+        color: $azul;
         font-size: 1.2em;
     }
 
-    ul {
-        list-style-type: none;
-        padding: 0;
+    .proejct-tec {
+        display: inline-flex;
+        background: #f4f4f9;
+        flex-wrap: wrap;
+        margin: 5px;
+        padding: 10px;
+        border-radius: 5px;
+        max-width: 100%;
 
-        li {
-            background: #f4f4f9;
-            margin: 5px 0;
-            padding: 10px;
-            border-radius: 5px;
-            max-width: 100%;
+        img {
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            border-radius: 4px;
+            background-color: #eee;
+            padding: 5px;
+            transition: transform 0.2s, background-color 0.2s;
         }
     }
+
+    .project-img {
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+    }
+    
+    .image-slider {
+        display: flex;
+        overflow: hidden;
+    }
+    
+    .slide {
+        width: 100%;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .navigation {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+    }
+    
+    .prev, .next {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    
+    .prev:hover, .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Estilos para la fecha */
+    .project-date {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 14px;
+        color: #777;
+        font-weight: bold;
+    }
 }
+
 
 .project-links {
     margin-top: 20px;
 
     .btn {
         display: inline-block;
-        margin-right: 10px;
-        padding: 10px 20px;
+        margin: 10px;
+        padding: 10px;
         color: #fff;
         background: #007BFF;
         text-decoration: none;
