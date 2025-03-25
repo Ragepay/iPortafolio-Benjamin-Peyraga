@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iPortafolio de Benjamin Peyraga</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="./js/main.js"></script>
 </head>
 
@@ -147,7 +149,6 @@
         <h2>Proyectos</h2>
 
         <div class="project-card" id="CHECKPOINT-ZONE">
-            <div class="project-date">24/03/2025</div>
             <h3>Checkpoint Zone 🎮</h3>
             <p>Checkpoint Zone es tu destino gamer: consolas, juegos digitales y accesorios esenciales para elevar tu
                 experiencia. Descubre catálogos con géneros variados y prepárate para superar cada nivel. ¡Con
@@ -180,27 +181,48 @@
                 <li><strong>Paypal</strong>: Servicio de pago real.</li>
                 <li><strong>Google auth</strong>: Inicio de sesion y registro con cuenta de Google.</li>
             </ul>
-            <div class="project-img" style="display:none;">
-                <div class=" image-slider">
-                    <img class="slide" src="./img/instagram.png" alt="Imagen 1" />
-                    <img class="slide" src="./img/whatsapp.png" alt="Imagen 2" />
-                    <img class="slide" src="./img/email.png" alt="Imagen 3" />
-                </div>
-                <div class="navigation">
-                    <button class="prev" onclick="changeImage(-1)">&#10094;</button>
-                    <button class="next" onclick="changeImage(1)">&#10095;</button>
+            <div class="project-img">
+                <div id="carouselExampleIndicators1" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/img/cp1.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/cp2.PNG" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/cp3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
-        </div>
-        <div class="project-links">
-            <a href="https://github.com/No-Country-simulation/s19-05-m-webapp.git" class="btn" target="_blank">Ver
-                Repositorio</a>
-            <a href="https://checkpoint-zone.vercel.app/" class="btn" target="_blank">Ver URL</a>
-        </div>
+            <div class="project-links">
+                <a href="https://github.com/No-Country-simulation/s19-05-m-webapp.git" class="btn" target="_blank">Ver
+                    Repositorio</a>
+                <a href="https://checkpoint-zone.vercel.app/" class="btn" target="_blank">Ver URL</a>
+                <div class="btn">13/12/2024</div>
+            </div>
         </div>
 
         <div class="project-card" id="BREAK-FOCUS">
-            <div class="project-date">24/03/2025</div>
             <h3>Break & Focus 🧘‍♂️</h3>
             <p>Es una plataforma web diseñada para mejorar tu productividad y bienestar mediante la gestión eficiente de
                 tus sesiones de trabajo y descansos. Basada en técnicas de productividad comprobadas, esta herramienta
@@ -224,11 +246,55 @@
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg"
                     alt="MongoDB Icon" />
             </div>
-            <div class="proejct-img"></div>
+            <div class="project-img">
+                <div id="carouselExampleIndicators2" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/img/bf1.PNG" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/bf2.PNG" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/bf3.PNG" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/bf4.PNG" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/bf5.PNG" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            
             <div class="project-links">
                 <a href="https://github.com/No-Country-simulation/s18-09-m-node-react.git" class="btn"
                     target="_blank">Ver Repositorio</a>
                 <a href="https://breakandfocus.onrender.com/" class="btn" target="_blank">Ver URL</a>
+                <div class="btn">27/11/2024</div>
             </div>
         </div>
 
@@ -259,6 +325,7 @@
                 <a href="https://github.com/No-Country-simulation/c20-21-m-node-react.git" class="btn"
                     target="_blank">Ver Repositorio</a>
                 <a href="#" class="btn" target="_blank" style="display:none;">Ver URL</a>
+                <div class="btn">2/9/2024</div>
             </div>
         </div>
 
@@ -290,6 +357,7 @@
             <div class="project-links">
                 <a href="https://github.com/Ragepay/Finantips-2.0" class="btn" target="_blank">Ver Repositorio</a>
                 <a href="https://finantips.netlify.app/" class="btn" target="_blank">Ver URL</a>
+                <div class="btn">25/03/2025 v1.5.2</div>
             </div>
         </div>
 
@@ -320,6 +388,7 @@
             <div class="project-links">
                 <a href="https://github.com/Ragepay/chat-grupal" class="btn" target="_blank">Ver Repositorio</a>
                 <a href="https://succulent-omniscient-trowel.glitch.me/chat" class="btn" target="_blank">Ver URL</a>
+                <div class="btn">27/07/2024</div>
             </div>
         </div>
 
@@ -349,6 +418,7 @@
             <div class="project-links">
                 <a href="https://github.com/Ragepay/Proyecto-Peyraga-Backend1-coderhouse" class="btn"
                     target="_blank">Ver Repositorio</a>
+                <div class="btn">21/08/2024</div>
             </div>
         </div>
 
@@ -369,6 +439,7 @@
             <div class="project-links">
                 <a href="https://github.com/Ragepay/Calculadora" class="btn" target="_blank">Ver Repositorio</a>
                 <a href="https://ragepay.github.io/Calculadora/" class="btn" target="_blank">Ver URL</a>
+                <div class="btn">30/07/2024</div>
             </div>
         </div>
         <div class="project-card" id="CLIMA-APP">
@@ -387,13 +458,14 @@
             </div>
             <ul>
                 <li><strong>API</strong>: Fetch de data object a una API de clima y manipulacion de datos.</li>
-                <li><strong>URL de API</strong>: https://api.openweathermap.org/data/2.5/forecast</li>
-
+                <li><strong>URL de API</strong>: https://api.openweathermap.
+                    org/data/2.5/forecast</li>
             </ul>
             <div class="proejct-img"></div>
             <div class="project-links">
                 <a href="https://github.com/Ragepay/App_de_Clima" class="btn" target="_blank">Ver Repositorio</a>
                 <a href="https://ragepay.github.io/App_de_Clima/" class="btn" target="_blank">Ver URL</a>
+                <div class="btn">21/08/2024</div>
             </div>
         </div>
 
@@ -479,6 +551,9 @@
         <a href="https://github.com/Ragepay/iPortafolio-Benjamin-Peyraga" target="_blank"><img src="./img/github.png"
                 alt="GitHub Icon"></a>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

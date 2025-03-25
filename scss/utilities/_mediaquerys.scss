@@ -33,6 +33,8 @@
         border-radius: 6px;
         transition: transform 0.3s, background-color 0.3s;
     }
+
+
 }
 
 @media (max-width: 780px) {
@@ -64,6 +66,10 @@
         width: 25%;
     }
 
+    .project-links .btn:last-child {
+        margin: 10px;
+    }
+
 }
 
 @media (min-width: 1000px) {
@@ -76,6 +82,8 @@
     .level-bar {
         width: 200px;
     }
+
+
 }
 
 @media (min-width: 1200px) {
@@ -88,4 +96,6 @@
     .level-bar {
         width: 300px;
     }
+
+
 }
