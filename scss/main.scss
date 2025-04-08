@@ -8,11 +8,11 @@
 @import 'components/footer';
 
 //  Sections.
-@import 'sections/contacto';
-@import 'sections/experiencia';
 @import 'sections/formacion';
-@import 'sections/proyectos';
 @import 'sections/sobreMi';
+@import 'sections/proyectos';
+@import 'sections/experiencia';
+@import 'sections/contacto';
 
 //  Media querys.
 @import 'utilities/mediaquerys';

@@ -92,148 +92,6 @@ footer a img {
   height: 24px;
 }
 
-/* Seccion Contacto */
-section#contacto {
-  padding: 20px;
-  background-color: #f3f4f6;
-  border-radius: 8px;
-  font-family: "Arial", sans-serif;
-  text-align: center;
-}
-
-section#contacto h2 {
-  font-size: 28px;
-  margin-bottom: 15px;
-  color: #333;
-}
-
-section#contacto p {
-  font-size: 18px;
-  color: #555;
-  margin-bottom: 15px;
-}
-
-section#contacto ul {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-
-section#contacto ul li {
-  font-size: 18px;
-}
-
-section#contacto ul li a {
-  color: #007acc;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px 20px;
-  border-radius: 5px;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-section#contacto ul li a img {
-  width: 24px;
-  height: 24px;
-}
-
-section#contacto ul li a:hover {
-  background-color: #007acc;
-  color: #fff;
-}
-
-/* Seccion Contacto */
-/* Estilo para la sección de experiencia */
-#experiencia {
-  margin: 10px;
-}
-#experiencia .TASA {
-  background: #fff;
-  margin: 20px auto;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border: 1px solid #ddd;
-}
-#experiencia h2 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-  text-align: center;
-  color: #007acc;
-}
-#experiencia .job {
-  margin-bottom: 20px;
-  position: relative;
-  padding-top: 40px;
-}
-#experiencia .job h3 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-  color: #007acc;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-#experiencia .job h3 img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-}
-#experiencia .job p {
-  font-size: 1em;
-  margin-bottom: 15px;
-  color: #1A192A;
-}
-#experiencia .job h4 {
-  font-size: 1.2em;
-  margin-bottom: 10px;
-  color: #007acc;
-}
-#experiencia .job ul {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-#experiencia .job ul li {
-  margin-bottom: 10px;
-}
-#experiencia .job ul li strong {
-  color: #1A192A;
-}
-#experiencia .job .btn-exp {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: #eee;
-  color: #007acc;
-  padding: 4px 10px;
-  border-radius: 5px;
-  font-size: 0.85rem;
-  white-space: nowrap;
-}
-#experiencia .job .btn-exp2 a {
-  display: inline-block;
-  color: #fafafa;
-  background-color: #007acc;
-  margin: 10px;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 1rem;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-  max-width: auto;
-  cursor: pointer;
-  text-align: center;
-}
-#experiencia .job .btn-exp2 a:hover {
-  background-color: #005c99;
-}
-
-/* Estilo para la sección de experiencia */
 /* Seccion Formacion */
 section#formacion {
   padding: 20px;
@@ -311,6 +169,102 @@ section .formacion-item2 ul li a:hover {
 }
 
 /* Seccion Formacion */
+/* Seccion Sobre mi */
+#sobre-mi {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#sobre-mi h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #007acc; /* Azul */
+  text-align: center;
+}
+
+#sobre-mi h3 {
+  background-color: #007acc; /* Azul */
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 1.5em;
+  color: white;
+}
+
+.tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.tecnologia-group {
+  flex: 1;
+  margin: 20px;
+}
+
+.tecnologia-group h4 {
+  font-size: 1.2em;
+  color: #007acc; /* Azul clarito */
+  margin-bottom: 10px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.tecnologia-div {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: left;
+  background-color: #f7f7f7;
+}
+
+.tecnologia-item {
+  display: flex;
+  align-items: center;
+  margin: 15px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer; /* Interacción */
+}
+
+.tecnologia-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tecnologia-item img {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+  padding: 8px;
+  border-radius: 6px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.tecnologia-item img:hover {
+  transform: scale(1.15);
+  background-color: #f0f0f0;
+}
+
+.tecnologia-item p {
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #444; /* Color más suave */
+  margin: 0;
+  flex: 1;
+  text-align: left;
+}
+
 /* Sección Proyectos */
 #proyectos {
   padding: 40px 20px;
@@ -451,102 +405,148 @@ section .formacion-item2 ul li a:hover {
 
 /* Tarjeta de Proyecto */
 /* Sección Proyectos */
-/* Seccion Sobre mi */
-#sobre-mi {
-  margin: 20px;
+/* Estilo para la sección de experiencia */
+#experiencia {
+  margin: 10px;
+}
+#experiencia .TASA {
+  background: #fff;
+  margin: 20px auto;
   padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+}
+#experiencia h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #007acc;
+}
+#experiencia .job {
+  margin-bottom: 20px;
+  position: relative;
+  padding-top: 40px;
+}
+#experiencia .job h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #007acc;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#experiencia .job h3 img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+#experiencia .job p {
+  font-size: 1em;
+  margin-bottom: 15px;
+  color: #1A192A;
+}
+#experiencia .job h4 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #007acc;
+}
+#experiencia .job ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+#experiencia .job ul li {
+  margin-bottom: 10px;
+}
+#experiencia .job ul li strong {
+  color: #1A192A;
+}
+#experiencia .job .btn-exp {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #eee;
+  color: #007acc;
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+#experiencia .job .btn-exp2 a {
+  display: inline-block;
+  color: #fafafa;
+  background-color: #007acc;
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  max-width: auto;
+  cursor: pointer;
+  text-align: center;
+}
+#experiencia .job .btn-exp2 a:hover {
+  background-color: #005c99;
 }
 
-#sobre-mi h2 {
-  font-size: 2em;
-  margin-bottom: 30px;
-  color: #007acc; /* Azul */
+/* Estilo para la sección de experiencia */
+/* Seccion Contacto */
+section#contacto {
+  padding: 20px;
+  background-color: #f3f4f6;
+  border-radius: 8px;
+  font-family: "Arial", sans-serif;
   text-align: center;
 }
 
-#sobre-mi h3 {
-  background-color: #007acc; /* Azul */
-  border-radius: 20px;
-  padding: 10px 20px;
-  font-size: 1.5em;
-  color: white;
+section#contacto h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #333;
 }
 
-.tecnologias {
+section#contacto p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+section#contacto ul {
+  list-style-type: none;
+  padding: 0;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  justify-content: space-between;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin: 20px auto;
-  padding: 20px;
+  gap: 15px;
 }
 
-.tecnologia-group {
-  flex: 1;
-  margin: 20px;
+section#contacto ul li {
+  font-size: 18px;
 }
 
-.tecnologia-group h4 {
-  font-size: 1.2em;
-  color: #007acc; /* Azul clarito */
-  margin-bottom: 10px;
-  border-bottom: 2px solid #ddd;
-  padding-bottom: 5px;
-}
-
-.tecnologia-div {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 10px;
-  justify-content: left;
-  background-color: #f7f7f7;
-}
-
-.tecnologia-item {
+section#contacto ul li a {
+  color: #007acc;
+  text-decoration: none;
   display: flex;
   align-items: center;
-  margin: 15px;
-  padding: 12px 20px;
-  border-radius: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  transition: transform 0.3s, box-shadow 0.3s;
-  cursor: pointer; /* Interacción */
+  gap: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.tecnologia-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+section#contacto ul li a img {
+  width: 24px;
+  height: 24px;
 }
 
-.tecnologia-item img {
-  width: 60px;
-  height: 60px;
-  margin-right: 15px;
-  padding: 8px;
-  border-radius: 6px;
-  transition: transform 0.3s, background-color 0.3s;
+section#contacto ul li a:hover {
+  background-color: #007acc;
+  color: #fff;
 }
 
-.tecnologia-item img:hover {
-  transform: scale(1.15);
-  background-color: #f0f0f0;
-}
-
-.tecnologia-item p {
-  font-size: 1.1em;
-  font-weight: 500;
-  color: #444; /* Color más suave */
-  margin: 0;
-  flex: 1;
-  text-align: left;
-}
-
+/* Seccion Contacto */
 @media (max-width: 400px) {
   .tecnologia-div {
     padding: 10px;
