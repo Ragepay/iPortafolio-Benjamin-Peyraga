@@ -34,6 +34,13 @@
         transition: transform 0.3s, background-color 0.3s;
     }
 
+    .btn-exp {
+        position: static;
+        margin: 0 0 10px 0;
+        display: inline-block;
+        text-align: left;
+        width: 100%;
+    }
 
 }
 
@@ -68,6 +75,13 @@
 
     .project-links .btn:last-child {
         margin: 10px;
+    }
+
+    .btn-exp {
+        font-size: 0.75rem;
+        top: 8px;
+        right: 8px;
+        padding: 3px 8px;
     }
 
 }

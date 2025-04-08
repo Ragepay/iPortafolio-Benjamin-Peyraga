@@ -168,11 +168,21 @@ section#contacto ul li a:hover {
 }
 #experiencia .job {
   margin-bottom: 20px;
+  position: relative;
+  padding-top: 40px;
 }
 #experiencia .job h3 {
   font-size: 1.5em;
   margin-bottom: 10px;
   color: #007acc;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#experiencia .job h3 img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 #experiencia .job p {
   font-size: 1em;
@@ -193,6 +203,34 @@ section#contacto ul li a:hover {
 }
 #experiencia .job ul li strong {
   color: #1A192A;
+}
+#experiencia .job .btn-exp {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #eee;
+  color: #007acc;
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+#experiencia .job .btn-exp2 a {
+  display: inline-block;
+  color: #fafafa;
+  background-color: #007acc;
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  max-width: auto;
+  cursor: pointer;
+  text-align: center;
+}
+#experiencia .job .btn-exp2 a:hover {
+  background-color: #005c99;
 }
 
 /* Estilo para la sección de experiencia */
@@ -541,6 +579,13 @@ section .formacion-item2 ul li a:hover {
     border-radius: 6px;
     transition: transform 0.3s, background-color 0.3s;
   }
+  .btn-exp {
+    position: static;
+    margin: 0 0 10px 0;
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+  }
 }
 @media (max-width: 780px) {
   .menu-toggle {
@@ -567,6 +612,12 @@ section .formacion-item2 ul li a:hover {
   }
   .project-links .btn:last-child {
     margin: 10px;
+  }
+  .btn-exp {
+    font-size: 0.75rem;
+    top: 8px;
+    right: 8px;
+    padding: 3px 8px;
   }
 }
 @media (min-width: 1000px) {
