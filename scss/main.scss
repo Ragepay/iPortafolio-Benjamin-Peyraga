@@ -1,38 +1,82 @@
-// Imoportacion de modulos con @import.
-//Variables.
+// Variables
 @import 'utilities/variables';
 
-// layout.
+// Layout components
 @import 'components/header';
 @import 'components/nav';
 @import 'components/footer';
 
-//  Sections.
+// Sections
 @import 'sections/formacion';
 @import 'sections/sobreMi';
 @import 'sections/proyectos';
+@import 'sections/projects-enhanced';
 @import 'sections/experiencia';
 @import 'sections/contacto';
 
-//  Media querys.
+// Utilities
 @import 'utilities/mediaquerys';
+@import 'utilities/animations';
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: $fuente-principal;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: $negro;
+    background-color: $gris-claro;
 }
 
-section {
-    padding: 30px;
+h1, h2, h3, h4, h5, h6 {
+    font-family: $fuente-headings;
+    font-weight: 600;
 }
 
-h2 {
-    text-align: center;
-    margin-bottom: 20px;
+h1 { font-size: 3.5rem; line-height: 1.1; }
+h2 { font-size: 2.5rem; line-height: 1.2; }
+h3 { font-size: 2rem;   line-height: 1.3; }
+
+// Global container
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+// Global section layout
+.section {
+    padding: 100px 0;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+.section-num {
+    font-family: $fuente-mono;
+    font-size: 0.85em;
+    color: $azul-claro;
+    opacity: 0.6;
+    white-space: nowrap;
+}
+
+.section-title {
+    font-size: clamp(1.6em, 3vw, 2.2em);
+    color: $negro;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.section-line {
+    flex: 1;
+    height: 1px;
+    background: $borde-dark;
+    min-width: 20px;
 }

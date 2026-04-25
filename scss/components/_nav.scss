@@ -1,63 +1,120 @@
-/* NAV y Hamburguesa */
-nav {
-    background: $azul;
-    padding: 5px 20px;
+/* NAV */
+.main-nav {
+    background: rgba($gris-claro, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid $borde-dark;
 
-    ul {
+    .nav-container {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .nav-logo {
+        font-size: 1.5em;
+        font-weight: 700;
+        color: $negro;
+        text-decoration: none;
+        .accent { color: $azul-claro; }
+    }
+
+    .nav-links {
+        display: none;
         list-style: none;
         padding: 0;
         margin: 0;
 
-        li {
-            margin: 0 15px;
-
-            a {
-                font-size: 1.25em;
-                color: #fff;
-                text-decoration: none;
-                padding: 15px;
-                display: block;
-                transition: all 0.25s ease;
-
-                &:hover {
-                  background: $blanco;
-                  color: $azul;
-                  border-radius: 12px;
-                  transform: scale(1.1); 
-                }
-              
-                &:active {
-                  background: $blanco;
-                  color: $azul;
-                  border-radius: 12px;
-                  transform: scale(1.1); 
-                }
-              }
-              
-
+        &.active {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: rgba($gris-claro, 0.98);
+            border-bottom: 1px solid $borde-dark;
+            padding: 1.5rem 1rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border-bottom-left-radius: 16px;
+            border-bottom-right-radius: 16px;
+            animation: slideDown 0.3s ease forwards;
+            transform-origin: top;
         }
 
+        @media (min-width: 768px) {
+            display: flex;
+            align-items: center;
+        }
+
+        li {
+            margin: 5px 8px;
+
+            .nav-link {
+                font-size: 1em;
+                color: $negro;
+                font-weight: 500;
+                text-decoration: none;
+                padding: 8px 14px;
+                display: block;
+                transition: all 0.25s ease;
+                border-radius: 8px;
+
+                .nav-num {
+                    font-family: $fuente-mono;
+                    font-size: 0.75em;
+                    color: $azul-claro;
+                    margin-right: 6px;
+                    opacity: 0.7;
+                }
+
+                &:hover {
+                    background: rgba(56, 189, 248, 0.08);
+                    color: $azul-claro;
+                }
+
+                &.nav-link--cta {
+                    background: rgba($azul, 0.1);
+                    border: 1px solid rgba($azul, 0.4);
+                    color: $azul-claro;
+
+                    &:hover {
+                        background: $azul;
+                        color: #fff;
+                        border-color: $azul;
+                    }
+                }
+            }
+        }
+    }
+
+    .nav-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+        padding: 6px;
+        background: none;
+        border: none;
+        gap: 5px;
+
+        span {
+            width: 24px;
+            height: 2px;
+            background: $negro;
+            display: block;
+            transition: 0.3s;
+            border-radius: 2px;
+        }
+
+        @media (min-width: 768px) {
+            display: none;
+        }
     }
 }
-
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    padding: 3px;
-
-    .bar {
-        width: 25px;
-        height: 3px;
-        background: $blanco;
-        margin: 4px 0;
-    }
-}
-
-
-
-
-
-/* NAV y Hamburguesa */

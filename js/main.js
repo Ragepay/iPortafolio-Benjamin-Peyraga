@@ -1,42 +1,48 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const menuToggle = document.querySelector("#mobile-menu");
-    const navList = document.querySelector(".nav-list");
+    // Mobile menu toggle
+    const navToggle = document.querySelector(".nav-toggle");
+    const navLinks = document.querySelector(".nav-links");
 
-    menuToggle.addEventListener("click", function () {
-        navList.classList.toggle("active");
-    });
-});
+    if (navToggle && navLinks) {
+        navToggle.addEventListener("click", function () {
+            navLinks.classList.toggle("active");
+        });
 
-let currentIndex = 0;
+        // Close menu when a link is clicked
+        navLinks.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", () => {
+                navLinks.classList.remove("active");
+            });
+        });
 
-function changeImage(direction) {
-    const slides = document.querySelectorAll('.slide');
-    currentIndex += direction;
-
-    // Verifica que no se pase de los límites de las imágenes
-    if (currentIndex < 0) {
-        currentIndex = slides.length - 1;
-    } else if (currentIndex >= slides.length) {
-        currentIndex = 0;
+        // Close menu when clicking outside
+        document.addEventListener("click", function (e) {
+            if (!navToggle.contains(e.target) && !navLinks.contains(e.target)) {
+                navLinks.classList.remove("active");
+            }
+        });
     }
 
-    // Mueve las imágenes
-    const offset = -currentIndex * 100;
-    document.querySelector('.image-slider').style.transform = `translateX(${offset}%)`;
-}
-
-function descargarArchivos() {
-    const links = [
-        './docs/Benjamin-Peyraga-CV.pdf',
-        './docs/Benjamin Peyraga CV.pdf'
-    ];
-
-    links.forEach(link => {
-        const a = document.createElement('a');
-        a.href = link;
-        a.download = link.split('/').pop();
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
+    // Intersection Observer for reveal animations
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("reveal--active");
+            }
+        });
+    }, {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px"
     });
-}
+
+    document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+
+    // Parallax on hero background
+    const heroBg = document.querySelector(".hero-bg");
+    if (heroBg) {
+        window.addEventListener("scroll", () => {
+            const rate = window.pageYOffset * -0.4;
+            heroBg.style.transform = `translateY(${rate}px)`;
+        }, { passive: true });
+    }
+});

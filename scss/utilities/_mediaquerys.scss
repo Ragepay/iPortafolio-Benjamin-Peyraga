@@ -1,115 +1,19 @@
-@media (max-width: 400px) {
-    .tecnologia-div {
-        padding: 10px;
-        background-color: #ffffff;
-        font-size: 0.8em;
-    }
+// Mobile-first media queries
 
-    .tecnologia-item {
-        display: flex;
-        align-items: center;
-        margin: 5px;
-        padding: 10px;
-        border-radius: 8px;
-        background-color: #f7f7f7;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        /* Sombra suave */
-        transition: transform 0.3s, box-shadow 0.3s;
-        cursor: pointer;
-        /* Interacción */
+// Tablet (768px and up)
+@media (min-width: 768px) {
+    .section {
+        padding: 120px 0;
     }
-
-    .tecnologia-group {
-        flex: 1;
-        margin: 20px;
-        width: 200px;
-    }
-
-    .tecnologia-item img {
-        width: 40px;
-        height: 40px;
-        margin-right: 5px;
-        padding: 5px;
-        border-radius: 6px;
-        transition: transform 0.3s, background-color 0.3s;
-    }
-
-    .btn-exp {
-        position: static;
-        margin: 0 0 10px 0;
-        display: inline-block;
-        text-align: left;
-        width: 100%;
-    }
-
 }
 
-@media (max-width: 780px) {
-    .menu-toggle {
-        display: flex;
+// Desktop (1024px and up)
+@media (min-width: 1024px) {
+    .section {
+        padding: 140px 0;
     }
 
-    .nav-list {
-        display: none;
-        flex-direction: column;
-        width: 100%;
+    .contact-section .contact-grid {
+        grid-template-columns: repeat(4, 1fr);
     }
-
-    .nav-list.active {
-        display: flex;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    section .formacion-item1 img.logo,
-    section .formacion-item2 img.logo {
-        width: 25%;
-    }
-
-    .project-links .btn:last-child {
-        margin: 10px;
-    }
-
-    .btn-exp {
-        font-size: 0.75rem;
-        top: 8px;
-        right: 8px;
-        padding: 3px 8px;
-    }
-
-}
-
-@media (min-width: 1000px) {
-
-    section .formacion-item1 img.logo,
-    section .formacion-item2 img.logo {
-        width: 20%;
-    }
-
-    .level-bar {
-        width: 200px;
-    }
-
-
-}
-
-@media (min-width: 1200px) {
-
-    section .formacion-item1 img.logo,
-    section .formacion-item2 img.logo {
-        width: 15%;
-    }
-
-    .level-bar {
-        width: 300px;
-    }
-
-
 }

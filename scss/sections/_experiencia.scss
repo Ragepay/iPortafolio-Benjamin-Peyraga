@@ -1,104 +1,122 @@
-/* Estilo para la sección de experiencia */
-#experiencia {
-    margin: 10px;
-
-    .TASA {
-        background: #fff;
-        margin: 20px auto;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        border: 1px solid #ddd;
-
-
-    }
-
-    h2 {
-        font-size: 2.5em;
-        margin-bottom: 20px;
-        text-align: center;
-        color: $azul;
-    }
-
-    .job {
-        margin-bottom: 20px;
+/* Seccion Experiencia */
+.experience-section {
+    .timeline {
         position: relative;
-        padding-top: 40px; // espacio extra arriba para que el botón no tape el h3
+        padding-left: 30px;
+        max-width: 800px;
+        margin: 0 auto;
 
-        h3 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-            color: $azul;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-
-            img {
-                width: 50px;
-                height: 50px;
-                border-radius: 50%;
-            }
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: $borde-dark;
         }
 
-        p {
-            font-size: 1em;
-            margin-bottom: 15px;
-            color: $negro;
+        .timeline-item {
+            position: relative;
+            margin-bottom: 40px;
+            &:last-child { margin-bottom: 0; }
         }
 
-        h4 {
-            font-size: 1.2em;
-            margin-bottom: 10px;
-            color: $azul;
+        .timeline-marker {
+            position: absolute;
+            left: -36px;
+            top: 8px;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: $azul-claro;
+            border: 3px solid $gris-medio;
+            box-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
         }
 
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
+        .timeline-content {
+            background: $gris-medio;
+            border: 1px solid $borde-dark;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 
-            li {
-                margin-bottom: 10px;
+            .timeline-meta {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 15px;
 
-                strong {
-                    color: $negro;
+                .timeline-date {
+                    color: $azul;
+                    font-family: $fuente-mono;
+                    font-size: 0.85em;
+                }
+
+                .timeline-badge {
+                    padding: 4px 10px;
+                    border-radius: 20px;
+                    font-size: 0.8em;
+
+                    &--tech {
+                        background: rgba(56, 189, 248, 0.1);
+                        color: $azul-claro;
+                    }
+
+                    &--industry {
+                        background: rgba(129, 140, 248, 0.1);
+                        color: $purpura;
+                    }
                 }
             }
-        }
 
-        .btn-exp {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background-color: #eee;
-            color: $azul;
-            padding: 4px 10px;
-            border-radius: 5px;
-            font-size: 0.85rem;
-            white-space: nowrap;
-        }
+            .timeline-company {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                margin-bottom: 15px;
 
-        .btn-exp2 a {
-            display: inline-block;
-            color: $blanco;
-            background-color: $azul;
-            margin: 10px;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-size: 1rem;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-            max-width: auto;
-            cursor: pointer;
-            text-align: center;
+                .company-logo {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 8px;
+                    object-fit: cover;
+                }
 
-            &:hover {
-                background-color: darken($azul, 10%);
+                .company-name {
+                    color: $negro;
+                    font-size: 1.3em;
+                    margin: 0 0 4px;
+                }
+
+                .company-role {
+                    color: $azul;
+                    margin: 0;
+                    font-size: 0.95em;
+                }
+            }
+
+            .timeline-desc {
+                color: $text-muted;
+                line-height: 1.6;
+                margin-bottom: 20px;
+            }
+
+            .timeline-projects,
+            .timeline-tags {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+
+                span {
+                    background: rgba(0,0,0,0.2);
+                    border: 1px solid $borde-dark;
+                    color: $text-muted;
+                    padding: 6px 12px;
+                    border-radius: 6px;
+                    font-size: 0.85em;
+                }
             }
         }
     }
 }
-
-
-
-
-/* Estilo para la sección de experiencia */
