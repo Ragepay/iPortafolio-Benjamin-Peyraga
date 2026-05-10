@@ -23,7 +23,6 @@
 
   <title>Benjamín Peyraga — Full Stack Developer</title>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Outfit:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -42,6 +41,10 @@
         <li><a href="#formacion" class="nav-link"><span class="nav-num">04</span>Formación</a></li>
         <li><a href="#contacto" class="nav-link nav-link--cta">Contacto</a></li>
       </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
       <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
         <span></span><span></span><span></span>
       </button>
@@ -65,10 +68,10 @@
         </h1>
         <p class="hero-tagline reveal reveal--delay-2">
           Construyo productos digitales que generan resultados.<br>
-          <span class="tagline-accent">3 años de Toyota. Ahora en web.</span>
+          <span class="tagline-accent">Full Stack Developer. Código limpio, resultados reales.</span>
         </p>
         <div class="hero-actions reveal reveal--delay-3">
-          <a href="docs/Benjamin-Peyraga-CV.pdf" download class="btn-primary">
+          <a href="docs/CV-BenjaminPeyraga-2026.pdf" download class="btn-primary">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
             Descargar CV
           </a>
@@ -94,8 +97,8 @@
             <span class="badge-label">Proyectos</span>
           </div>
           <div class="hero-badge hero-badge--2">
-            <span class="badge-num">3 años</span>
-            <span class="badge-label">Toyota</span>
+            <span class="badge-num">2+</span>
+            <span class="badge-label">Años dev</span>
           </div>
           <div class="hero-badge hero-badge--3">
             <span class="badge-num">FS</span>
@@ -121,14 +124,23 @@
       </div>
       <div class="about-grid">
         <div class="about-bio reveal reveal--delay-1">
+          <div class="terminal-card">
+            <div class="terminal-header">
+              <span class="terminal-dot terminal-dot--red"></span>
+              <span class="terminal-dot terminal-dot--yellow"></span>
+              <span class="terminal-dot terminal-dot--green"></span>
+              <span class="terminal-title">benjamin@portfolio:~</span>
+            </div>
+            <div class="terminal-body" id="terminalBody"></div>
+          </div>
           <p class="about-text">
-            Soy <strong>Benjamín Peyraga</strong>, desarrollador Full Stack con base en Argentina. Pasé de 3 años como operador de producción en <strong>Toyota Argentina</strong> — donde aprendí que la calidad, la precisión y la mejora continua no son opcionales — a construir software con el mismo estándar.
+            Soy <strong>Benjamín Peyraga</strong>, desarrollador Full Stack con base en Argentina. Construyo productos digitales completos: interfaces en React, APIs robustas, bases de datos SQL y NoSQL, y despliegue en la nube con <strong>GCP</strong>.
           </p>
           <p class="about-text">
-            Trabajo con el stack completo: desde interfaces React hasta APIs con Node.js, bases de datos SQL y NoSQL. Me interesa el código limpio, las buenas prácticas y los proyectos que resuelven problemas reales.
+            Me interesa el código limpio, las buenas prácticas y la automatización de procesos. Disfruto resolver problemas reales con soluciones bien pensadas, desde la lógica de negocio hasta la infraestructura.
           </p>
           <div class="about-highlights">
-            <div class="highlight-item"><span class="highlight-icon">⚡</span><span>Aprendizaje continuo</span></div>
+            <div class="highlight-item"><span class="highlight-icon">⚡</span><span>Automatizaciones con n8n y Make</span></div>
             <div class="highlight-item"><span class="highlight-icon">🎯</span><span>Orientado a resultados</span></div>
             <div class="highlight-item"><span class="highlight-icon">🤝</span><span>Trabajo en equipo</span></div>
           </div>
@@ -139,11 +151,8 @@
             <h3 class="tech-label">Frontend</h3>
             <div class="tech-grid">
               <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React"><span>React</span></div>
-              <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt="Next.js"><span>Next.js</span></div>
-              <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript"><span>TypeScript</span></div>
+<div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript"><span>TypeScript</span></div>
               <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></div>
-              <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind"><span>Tailwind</span></div>
-              <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap"><span>Bootstrap</span></div>
               <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5"><span>HTML5</span></div>
               <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3"><span>CSS3</span></div>
             </div>
@@ -154,10 +163,29 @@
             <div class="tech-grid">
               <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js"><span>Node.js</span></div>
               <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" alt="Express"><span>Express</span></div>
-              <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg" alt="NestJS"><span>NestJS</span></div>
               <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="MongoDB"><span>MongoDB</span></div>
               <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL"><span>MySQL</span></div>
-              <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg" alt="Firebase"><span>Firebase</span></div>
+            </div>
+          </div>
+          <div class="tech-divider"></div>
+          <div class="tech-column">
+            <h3 class="tech-label">Herramientas</h3>
+            <div class="tech-grid">
+              <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git"><span>Git</span></div>
+              <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub"><span>GitHub</span></div>
+              <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="Docker"><span>Docker</span></div>
+              <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/trello/trello-original.svg" alt="Trello"><span>Trello</span></div>
+              <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg" alt="NPM"><span>NPM</span></div>
+              <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg" alt="GCP"><span>GCP</span></div>
+            </div>
+          </div>
+          <div class="tech-divider"></div>
+          <div class="tech-column">
+            <h3 class="tech-label">IA / Vibecoding</h3>
+            <div class="tech-grid">
+              <div class="tech-item"><img src="https://cdn.simpleicons.org/anthropic/ffffff" alt="Claude AI"><span>Claude AI</span></div>
+              <div class="tech-item"><img src="https://cdn.simpleicons.org/googlegemini/ffffff" alt="Gemini"><span>Gemini</span></div>
+              <div class="tech-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/openai.svg" alt="ChatGPT" style="filter:invert(1)"><span>ChatGPT</span></div>
             </div>
           </div>
         </div>
@@ -179,14 +207,14 @@
         <div class="project-card reveal">
           <div class="project-card-inner">
             <div class="project-media">
-              <div id="carousel-cp" class="carousel slide" data-bs-ride="false">
-                <div class="carousel-inner">
-                  <div class="carousel-item active"><img src="img/cp1.png" class="d-block w-100" alt="Checkpoint Zone 1"></div>
-                  <div class="carousel-item"><img src="img/cp2.PNG" class="d-block w-100" alt="Checkpoint Zone 2"></div>
-                  <div class="carousel-item"><img src="img/cp3.jpg" class="d-block w-100" alt="Checkpoint Zone 3"></div>
+              <div class="slider">
+                <div class="slider-track">
+                  <img src="img/cp1.png" alt="Checkpoint Zone 1">
+                  <img src="img/cp2.PNG" alt="Checkpoint Zone 2">
+                  <img src="img/cp3.jpg" alt="Checkpoint Zone 3">
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-cp" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carousel-cp" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+                <button class="slider-btn slider-prev" aria-label="Anterior">&#8592;</button>
+                <button class="slider-btn slider-next" aria-label="Siguiente">&#8594;</button>
               </div>
             </div>
             <div class="project-info">
@@ -219,16 +247,16 @@
         <div class="project-card reveal reveal--delay-1">
           <div class="project-card-inner">
             <div class="project-media">
-              <div id="carousel-bf" class="carousel slide" data-bs-ride="false">
-                <div class="carousel-inner">
-                  <div class="carousel-item active"><img src="img/bf1.PNG" class="d-block w-100" alt="Break & Focus 1"></div>
-                  <div class="carousel-item"><img src="img/bf2.PNG" class="d-block w-100" alt="Break & Focus 2"></div>
-                  <div class="carousel-item"><img src="img/bf3.PNG" class="d-block w-100" alt="Break & Focus 3"></div>
-                  <div class="carousel-item"><img src="img/bf4.PNG" class="d-block w-100" alt="Break & Focus 4"></div>
-                  <div class="carousel-item"><img src="img/bf5.PNG" class="d-block w-100" alt="Break & Focus 5"></div>
+              <div class="slider">
+                <div class="slider-track">
+                  <img src="img/bf1.PNG" alt="Break & Focus 1">
+                  <img src="img/bf2.PNG" alt="Break & Focus 2">
+                  <img src="img/bf3.PNG" alt="Break & Focus 3">
+                  <img src="img/bf4.PNG" alt="Break & Focus 4">
+                  <img src="img/bf5.PNG" alt="Break & Focus 5">
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-bf" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carousel-bf" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+                <button class="slider-btn slider-prev" aria-label="Anterior">&#8592;</button>
+                <button class="slider-btn slider-next" aria-label="Siguiente">&#8594;</button>
               </div>
             </div>
             <div class="project-info">
@@ -387,7 +415,34 @@
           <div class="timeline-marker"></div>
           <div class="timeline-content">
             <div class="timeline-meta">
-              <span class="timeline-date">Ago 2024 — Dic 2024</span>
+              <span class="timeline-date">Oct 2025 — Abr 2026 &nbsp;·&nbsp; 6 meses</span>
+              <span class="timeline-badge timeline-badge--tech">Tech</span>
+            </div>
+            <div class="timeline-company">
+              <img src="img/alephoo_logo.jfif" alt="Alephoo" class="company-logo">
+              <div>
+                <h3 class="company-name">Alephoo</h3>
+                <p class="company-role">Ecosystem Software Developer</p>
+              </div>
+            </div>
+            <p class="timeline-desc">Desarrollo y mantenimiento del ecosistema digital de Salutte2, implementando nuevas features en el ciclo completo de desarrollo, integrando módulos y servicios, y evolucionando el código existente para adaptarlo a las necesidades del negocio.</p>
+            <div class="timeline-tags">
+              <span class="timeline-tag">PHP</span>
+              <span class="timeline-tag">Doctrine ORM</span>
+              <span class="timeline-tag">SQL</span>
+              <span class="timeline-tag">Vue.js</span>
+              <span class="timeline-tag">Docker</span>
+              <span class="timeline-tag">AWS</span>
+              <span class="timeline-tag">Postman</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal reveal--delay-1">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-date">Ago 2024 — Dic 2024 &nbsp;·&nbsp; 5 meses</span>
               <span class="timeline-badge timeline-badge--tech">Tech</span>
             </div>
             <div class="timeline-company">
@@ -410,7 +465,7 @@
           <div class="timeline-marker"></div>
           <div class="timeline-content">
             <div class="timeline-meta">
-              <span class="timeline-date">Ago 2021 — May 2024</span>
+              <span class="timeline-date">Ago 2021 — May 2024 &nbsp;·&nbsp; 2 años 9 meses</span>
               <span class="timeline-badge timeline-badge--industry">Industria</span>
             </div>
             <div class="timeline-company">
@@ -448,13 +503,14 @@
           <div class="edu-card-header">
             <img src="img/utn.jpg" alt="UTN" class="edu-logo">
             <div>
-              <h3 class="edu-title">Técnico Universitario en Programación</h3>
+              <h3 class="edu-title"><a href="https://www.frd.utn.edu.ar/programacion/" target="_blank" rel="noopener" class="edu-title-link">Tecnicatura Universitaria en Programación</a></h3>
               <p class="edu-institution">Universidad Tecnológica Nacional (UTN)</p>
             </div>
           </div>
           <div class="edu-body">
             <span class="edu-tag">Título Universitario</span>
-            <p class="edu-desc">Formación técnica universitaria con enfoque en desarrollo de software, algoritmos, estructuras de datos y bases de datos.</p>
+            <p class="edu-date">Ago 2021 – 2024 &nbsp;·&nbsp; 5 cuatrimestres</p>
+            <p class="edu-desc">Carrera de 2 años (1980 hs). Materias: Programación I, II y III, Sistemas de Procesamiento de Datos, Arquitectura y Sistemas Operativos, Diseño y Administración de Bases de Datos, Metodología de Sistemas, Laboratorios de Computación I–IV, Estadística, Inglés I y II, y Práctica Profesional Supervisada.</p>
             <a href="docs/Analitico-Programación-Benjamin-Peyraga.pdf" download class="edu-download">
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
               Descargar Analítico
@@ -464,22 +520,53 @@
 
         <div class="edu-card reveal reveal--delay-1">
           <div class="edu-card-header">
-            <img src="img/coderhouse.png" alt="Coderhouse" class="edu-logo">
+            <img src="img/coderhouse.jfif" alt="Coderhouse" class="edu-logo">
             <div>
-              <h3 class="edu-title">Carrera Full Stack</h3>
+              <h3 class="edu-title"><a href="https://www.coderhouse.com/ar/carreras/carrera-desarrollo-fullstack" target="_blank" rel="noopener" class="edu-title-link">Carrera de Desarrollo Full Stack</a></h3>
               <p class="edu-institution">Coderhouse</p>
             </div>
           </div>
           <div class="edu-body">
             <span class="edu-tag">6 Certificaciones</span>
+            <p class="edu-date">2024 – 2025 &nbsp;·&nbsp; 2 semestres (53 semanas)</p>
             <div class="edu-courses">
-              <a href="https://www.coderhouse.com/ar/certificados/664d335341eefc411974862a?lang=en" target="_blank" rel="noopener" class="edu-course edu-course--link"><span class="course-dot"></span>Desarrollo Web<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-              <a href="https://www.coderhouse.com/ar/certificados/667bd66c526bea14c5dbf1b9?lang=en" target="_blank" rel="noopener" class="edu-course edu-course--link"><span class="course-dot"></span>JavaScript<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-              <a href="https://www.coderhouse.com/ar/certificados/673d0dec9f7020f017195442?lang=en" target="_blank" rel="noopener" class="edu-course edu-course--link"><span class="course-dot"></span>React JS<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-              <a href="https://www.coderhouse.com/ar/certificados/66c5f9489afd386a8863f4d6?lang=en" target="_blank" rel="noopener" class="edu-course edu-course--link"><span class="course-dot"></span>Backend I: Desarrollo Avanzado<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+              <a href="https://pub.coderhouse.com/legacy-certificates/664d335341eefc411974862a?lang=en" target="_blank" rel="noopener" class="edu-course edu-course--link"><span class="course-dot"></span>Desarrollo Web<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+              <a href="https://pub.coderhouse.com/legacy-certificates/667bd66c526bea14c5dbf1b9?lang=en" target="_blank" rel="noopener" class="edu-course edu-course--link"><span class="course-dot"></span>JavaScript<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+              <a href="https://pub.coderhouse.com/legacy-certificates/673d0dec9f7020f017195442?lang=en" target="_blank" rel="noopener" class="edu-course edu-course--link"><span class="course-dot"></span>React JS<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+              <a href="https://pub.coderhouse.com/legacy-certificates/66c5f9489afd386a8863f4d6?lang=en" target="_blank" rel="noopener" class="edu-course edu-course--link"><span class="course-dot"></span>Backend I: Desarrollo Avanzado<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
               <a href="https://pub.coderhouse.com/legacy-certificates/67877e429f7020f017195d37?lang=en" target="_blank" rel="noopener" class="edu-course edu-course--link"><span class="course-dot"></span>Backend II: Diseño y Arquitectura<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-              <div class="edu-course"><span class="course-dot"></span>Backend III: Testing (Próximamente)</div>
+              <a href="https://pub.coderhouse.com/legacy-certificates/67d97a39b0f4b7580cc3788b?lang=en" target="_blank" rel="noopener" class="edu-course edu-course--link"><span class="course-dot"></span>Backend III: Testing y Escalabilidad Backend<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
             </div>
+          </div>
+        </div>
+
+        <div class="edu-card reveal">
+          <div class="edu-card-header">
+            <img src="img/Untref-logo.png" alt="UNTREF" class="edu-logo edu-logo--contain">
+            <div>
+              <h3 class="edu-title">Diplomatura en Desarrollo de Backend</h3>
+              <p class="edu-institution">Universidad Nacional de Tres de Febrero (UNTREF)</p>
+            </div>
+          </div>
+          <div class="edu-body">
+            <span class="edu-tag edu-tag--pending">Diploma en trámite</span>
+            <p class="edu-date">2025 – 2026 &nbsp;·&nbsp; 2 cuatrimestres</p>
+            <p class="edu-desc">Diplomatura universitaria con foco en arquitectura de APIs, bases de datos relacionales y no relacionales, seguridad y despliegue de aplicaciones backend.</p>
+          </div>
+        </div>
+
+        <div class="edu-card reveal reveal--delay-1">
+          <div class="edu-card-header">
+            <img src="img/Untref-logo.png" alt="UNTREF" class="edu-logo edu-logo--contain">
+            <div>
+              <h3 class="edu-title">Diplomatura en IA Aplicada al Trabajo</h3>
+              <p class="edu-institution">Universidad Nacional de Tres de Febrero (UNTREF)</p>
+            </div>
+          </div>
+          <div class="edu-body">
+            <span class="edu-tag edu-tag--active">En curso</span>
+            <p class="edu-date">2026 &nbsp;·&nbsp; 1 cuatrimestre</p>
+            <p class="edu-desc">Formación práctica en inteligencia artificial aplicada a flujos de trabajo reales: automatización, herramientas de IA generativa, prompting avanzado e integración en proyectos de desarrollo.</p>
           </div>
         </div>
 
@@ -524,7 +611,7 @@
           </a>
         </div>
         <div class="contact-downloads reveal reveal--delay-2">
-          <a href="docs/Benjamin-Peyraga-CV.pdf" download class="download-btn">
+          <a href="docs/CV-BenjaminPeyraga-2026.pdf" download class="download-btn">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
             Descargar CV
           </a>
@@ -551,7 +638,6 @@
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
