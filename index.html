@@ -318,23 +318,40 @@
         <!-- 04 Marketplace -->
         <div class="project-card reveal reveal--delay-1">
           <div class="project-card-inner">
-            <div class="project-placeholder"><span class="placeholder-icon">🛒</span></div>
+            <div class="project-media">
+              <div class="slider">
+                <div class="slider-track">
+                  <img src="img/popmart1.png" alt="PopMart Marketplace 1">
+                  <img src="img/popmart2.png" alt="PopMart Marketplace 2">
+                  <img src="img/popmart3.png" alt="PopMart Marketplace 3">
+                  <img src="img/popmart4.png" alt="PopMart Marketplace 4">
+                  <img src="img/popmart5.png" alt="PopMart Marketplace 5">
+                  <img src="img/popmart6.png" alt="PopMart Marketplace 6">
+                </div>
+                <button class="slider-btn slider-prev" aria-label="Anterior">&#8592;</button>
+                <button class="slider-btn slider-next" aria-label="Siguiente">&#8594;</button>
+              </div>
+            </div>
             <div class="project-info">
               <span class="project-num">04</span>
-              <h3 class="project-name">Marketplace 🛒</h3>
-              <p class="project-desc">Plataforma peer-to-peer con autenticación segura, listado dinámico de productos y gestión completa de perfiles.</p>
+              <h3 class="project-name">PopMart — Marketplace 🏬</h3>
+              <p class="project-desc">Marketplace de comunidad estilo Facebook Marketplace: publicás lo que querés vender, los interesados te escriben por chat en tiempo real y cierran el trato.</p>
               <div class="project-case-study">
-                <p><strong>El desafío:</strong> Construir un marketplace donde usuarios puedan publicar y comprar productos con seguridad y confianza.</p>
-                <p><strong>La solución:</strong> Arquitectura MERN con autenticación JWT, validación en cliente y servidor, búsqueda y filtros dinámicos, historial de transacciones.</p>
-                <p><strong>El resultado:</strong> MVP funcional con 50+ publicaciones en testing; transacciones sin errores de integridad.</p>
+                <p><strong>El desafío:</strong> Construir un marketplace completo donde usuarios puedan publicar productos con múltiples imágenes, descubrirlos con búsqueda y filtros, y coordinar la venta de forma segura mediante chat directo.</p>
+                <p><strong>La solución:</strong> Arquitectura MERN con auth JWT (24h) + bcrypt, catálogo con búsqueda/filtros y orden resueltos en el servidor, scroll infinito, favoritos sincronizados por cuenta, reputación con reseñas, chat en tiempo real con Socket.IO (salas por chat y contador de no leídos), imágenes en Cloudinary y panel de moderación con rol admin. Frontend en Vercel y API REST en Railway.</p>
+                <p><strong>El resultado:</strong> Plataforma full stack online con CI en GitHub Actions (lint + tests + build), tema claro/oscuro, responsive y SEO/Open Graph por vista; frontend y backend desplegados en producción de forma independiente.</p>
               </div>
               <div class="project-tech">
-                <span class="tech-badge">React</span><span class="tech-badge">Node.js</span><span class="tech-badge">Express</span><span class="tech-badge">MongoDB</span>
+                <span class="tech-badge">React 18</span><span class="tech-badge">Vite</span><span class="tech-badge">Node.js</span><span class="tech-badge">Express</span><span class="tech-badge">MongoDB Atlas</span><span class="tech-badge">Socket.IO</span><span class="tech-badge">Cloudinary</span><span class="tech-badge">JWT</span><span class="tech-badge">Vercel</span><span class="tech-badge">Railway</span>
               </div>
               <div class="project-links">
-                <a href="https://github.com/Ragepay/Marketplace" target="_blank" class="project-link project-link--github">
+                <a href="https://github.com/Ragepay/marketplace" target="_blank" class="project-link project-link--github">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
                   Ver código fuente
+                </a>
+                <a href="https://marketplace-tau-drab.vercel.app/" target="_blank" class="project-link project-link--live">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Ver proyecto en vivo
                 </a>
               </div>
             </div>
@@ -456,7 +473,7 @@
             <div class="timeline-projects">
               <span class="timeline-project">🎮 Checkpoint Zone</span>
               <span class="timeline-project">🧘‍♂️ Break &amp; Focus</span>
-              <span class="timeline-project">🛒 Marketplace</span>
+              <span class="timeline-project">🏬 PopMart Marketplace</span>
             </div>
           </div>
         </div>
@@ -637,6 +654,15 @@
       </div>
     </div>
   </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Cerrar">&times;</button>
+    <button class="lightbox-btn lightbox-prev" aria-label="Anterior">&#8592;</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="">
+    <button class="lightbox-btn lightbox-next" aria-label="Siguiente">&#8594;</button>
+    <span class="lightbox-counter" id="lightboxCounter"></span>
+  </div>
 
   <script src="js/main.js"></script>
 </body>

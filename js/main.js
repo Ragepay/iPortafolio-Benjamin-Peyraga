@@ -85,10 +85,58 @@ document.addEventListener("DOMContentLoaded", function () {
     }, { passive: true });
   }
 
+  // Lightbox
+  const lightbox        = document.getElementById("lightbox");
+  const lightboxImg     = document.getElementById("lightboxImg");
+  const lightboxCounter = document.getElementById("lightboxCounter");
+  let lbGallery = [];
+  let lbIdx = 0;
+
+  const lbShow = () => {
+    const img = lbGallery[lbIdx];
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt || "";
+    lightboxCounter.textContent = lbGallery.length > 1 ? `${lbIdx + 1} / ${lbGallery.length}` : "";
+  };
+  const lbOpen = (gallery, start) => {
+    lbGallery = gallery;
+    lbIdx = start;
+    lbShow();
+    lightbox.classList.add("active");
+    lightbox.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  };
+  const lbClose = () => {
+    lightbox.classList.remove("active");
+    lightbox.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  };
+  const lbGo = n => { lbIdx = (n + lbGallery.length) % lbGallery.length; lbShow(); };
+
+  if (lightbox) {
+    lightbox.querySelector(".lightbox-close").addEventListener("click", lbClose);
+    lightbox.querySelector(".lightbox-prev").addEventListener("click", e => { e.stopPropagation(); lbGo(lbIdx - 1); });
+    lightbox.querySelector(".lightbox-next").addEventListener("click", e => { e.stopPropagation(); lbGo(lbIdx + 1); });
+    lightbox.addEventListener("click", e => { if (e.target === lightbox) lbClose(); });
+    document.addEventListener("keydown", e => {
+      if (!lightbox.classList.contains("active")) return;
+      if (e.key === "Escape") lbClose();
+      else if (e.key === "ArrowLeft") lbGo(lbIdx - 1);
+      else if (e.key === "ArrowRight") lbGo(lbIdx + 1);
+    });
+  }
+
   // Custom sliders
   document.querySelectorAll(".slider").forEach(slider => {
     const track = slider.querySelector(".slider-track");
-    const imgs  = track.querySelectorAll("img");
+    const imgs  = Array.from(track.querySelectorAll("img"));
+
+    // Click en una imagen abre el lightbox con la galería de ese slider
+    imgs.forEach((img, i) => {
+      img.style.cursor = "zoom-in";
+      img.addEventListener("click", () => lbOpen(imgs, i));
+    });
+
     if (imgs.length < 2) return;
     let idx = 0;
     const go = n => {
