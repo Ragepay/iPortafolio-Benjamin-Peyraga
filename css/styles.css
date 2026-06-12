@@ -494,21 +494,30 @@ body.light-mode .icon-moon { display: none; }
   border-color: var(--blue);
 }
 .project-card-inner { display: flex; flex-direction: column; }
-@media (min-width: 992px) { .project-card-inner { flex-direction: row; } }
+/* Pantallas medias (tablets/netbooks): imagen al costado + descripción al lado */
+@media (min-width: 992px) and (max-width: 1399px) {
+  .project-card-inner { flex-direction: row; }
+}
 
 /* Slider */
 .project-media {
   flex: 1;
-  min-height: 220px;
-  background: rgba(0,0,0,0.2);
+  min-height: 320px;
+  background: rgba(0,0,0,0.25);
   border-bottom: 1px solid var(--border);
   overflow: hidden;
   position: relative;
 }
-@media (min-width: 992px) {
+/* Pantallas medias: borde a la derecha en vez de abajo */
+@media (min-width: 992px) and (max-width: 1399px) {
   .project-media { border-bottom: none; border-right: 1px solid var(--border); }
 }
-.slider { position: relative; width: 100%; height: 100%; min-height: 220px; overflow: hidden; }
+/* Pantallas grandes: imagen apaisada a todo el ancho, más alta */
+@media (min-width: 1400px) {
+  .project-media { min-height: 560px; }
+}
+.slider { position: relative; width: 100%; height: 100%; min-height: 320px; overflow: hidden; }
+@media (min-width: 1400px) { .slider { min-height: 560px; } }
 .slider-track {
   display: flex;
   height: 100%;
@@ -519,6 +528,8 @@ body.light-mode .icon-moon { display: none; }
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
+  cursor: zoom-in;
 }
 .slider-btn {
   position: absolute;
@@ -553,7 +564,7 @@ body.light-mode .icon-moon { display: none; }
   background: rgba(0,0,0,0.15);
   border-bottom: 1px solid var(--border);
 }
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1399px) {
   .project-placeholder { border-bottom: none; border-right: 1px solid var(--border); }
 }
 
