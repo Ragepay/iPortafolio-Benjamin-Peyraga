@@ -39,6 +39,7 @@
         <li><a href="#proyectos" class="nav-link"><span class="nav-num">02</span>Proyectos</a></li>
         <li><a href="#experiencia" class="nav-link"><span class="nav-num">03</span>Experiencia</a></li>
         <li><a href="#formacion" class="nav-link"><span class="nav-num">04</span>Formación</a></li>
+        <li><a href="en-construccion.html" target="_blank" rel="noopener" class="nav-link">Emprendimiento</a></li>
         <li><a href="#contacto" class="nav-link nav-link--cta">Contacto</a></li>
       </ul>
       <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
@@ -203,8 +204,51 @@
       </div>
       <div class="projects-grid">
 
-        <!-- 01 Checkpoint Zone -->
+        <!-- 01 Estudio Tuculet — CRM -->
         <div class="project-card reveal">
+          <div class="project-card-inner">
+            <div class="project-media">
+              <div class="slider">
+                <div class="slider-track">
+                  <img src="img/estudio1.png" alt="Estudio Tuculet CRM 1">
+                  <img src="img/estudio2.png" alt="Estudio Tuculet CRM 2">
+                  <img src="img/estudio3.png" alt="Estudio Tuculet CRM 3">
+                  <img src="img/estudio4.png" alt="Estudio Tuculet CRM 4">
+                  <img src="img/estudio5.png" alt="Estudio Tuculet CRM 5">
+                  <img src="img/estudio6.png" alt="Estudio Tuculet CRM 6">
+                  <img src="img/estudio7.png" alt="Estudio Tuculet CRM 7">
+                  <img src="img/estudio8.png" alt="Estudio Tuculet CRM 8">
+                  <img src="img/estudio9.png" alt="Estudio Tuculet CRM 9">
+                  <img src="img/estudio10.png" alt="Estudio Tuculet CRM 10">
+                </div>
+                <button class="slider-btn slider-prev" aria-label="Anterior">&#8592;</button>
+                <button class="slider-btn slider-next" aria-label="Siguiente">&#8594;</button>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-num">01</span>
+              <h3 class="project-name">Estudio Tuculet — CRM 🏛️</h3>
+              <p class="project-desc">Sistema de gestión interna (CRM) para un estudio jurídico-contable: clientes, control impositivo mensual (IVA e IIBB), honorarios, cuenta corriente, cobranzas y comunicaciones por email y WhatsApp.</p>
+              <div class="project-case-study">
+                <p><strong>El desafío:</strong> Reemplazar las planillas sueltas del estudio y unificar en un solo lugar la cartera de clientes, sus datos fiscales, el control mensual de impuestos, la facturación de honorarios, la cobranza y las comunicaciones.</p>
+                <p><strong>La solución:</strong> Aplicación web con API REST en Node.js + Express + Sequelize sobre MySQL y un SPA en React + Vite + Tailwind. Autenticación JWT en cookie httpOnly con perfiles de acceso, claves de clientes encriptadas con AES-256-GCM, almacenamiento de PDFs en Google Cloud Storage o disco local, envío de email (Nodemailer) y WhatsApp (Meta Cloud API), reportes con exportación a Excel y borrado lógico en toda la base.</p>
+                <p><strong>El resultado:</strong> CRM en uso interno del estudio que centraliza decenas de clientes y sus obligaciones mensuales, dockerizado (imágenes en Docker Hub) y preparado para Google Cloud Run.</p>
+              </div>
+              <div class="project-tech">
+                <span class="tech-badge">Node.js</span><span class="tech-badge">Express</span><span class="tech-badge">Sequelize</span><span class="tech-badge">MySQL</span><span class="tech-badge">JWT</span><span class="tech-badge">React 18</span><span class="tech-badge">Vite</span><span class="tech-badge">Tailwind</span><span class="tech-badge">Docker</span><span class="tech-badge">Google Cloud</span>
+              </div>
+              <div class="project-links">
+                <span class="project-link project-link--private">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                  Proyecto privado · uso interno del estudio
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 02 Checkpoint Zone -->
+        <div class="project-card reveal reveal--delay-1">
           <div class="project-card-inner">
             <div class="project-media">
               <div class="slider">
@@ -218,7 +262,7 @@
               </div>
             </div>
             <div class="project-info">
-              <span class="project-num">01</span>
+              <span class="project-num">02</span>
               <h3 class="project-name">Checkpoint Zone 🎮</h3>
               <p class="project-desc">E-commerce de videojuegos digitales: catálogo con filtros, carrito, checkout por pasos y panel de administración con roles.</p>
               <div class="project-case-study">
@@ -243,7 +287,7 @@
           </div>
         </div>
 
-        <!-- 02 Break & Focus -->
+        <!-- 03 Break & Focus -->
         <div class="project-card reveal reveal--delay-1">
           <div class="project-card-inner">
             <div class="project-media">
@@ -260,7 +304,7 @@
               </div>
             </div>
             <div class="project-info">
-              <span class="project-num">02</span>
+              <span class="project-num">03</span>
               <h3 class="project-name">Break &amp; Focus 🧘‍♂️</h3>
               <p class="project-desc">App de productividad con Pomodoro, tareas persistentes y estadísticas. Diseñada para mejorar concentración y ritmo de trabajo.</p>
               <div class="project-case-study">
@@ -272,20 +316,20 @@
                 <span class="tech-badge">React</span><span class="tech-badge">Next.js</span><span class="tech-badge">TypeScript</span><span class="tech-badge">Tailwind</span><span class="tech-badge">Node.js</span><span class="tech-badge">MongoDB</span>
               </div>
               <div class="project-links">
-                <a href="https://github.com/Ragepay/Break-and-Focus" target="_blank" class="project-link project-link--github">
+                <a href="https://github.com/Ragepay/breakandfocus" target="_blank" class="project-link project-link--github">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
                   Ver código fuente
                 </a>
-                <a href="https://github.com/Ragepay/Break-and-Focus" target="_blank" class="project-link project-link--live">
+                <a href="https://breakandfocus.vercel.app/" target="_blank" class="project-link project-link--live">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                  Documentación
+                  Ver proyecto en vivo
                 </a>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- 03 Finantips -->
+        <!-- 04 Finantips -->
         <div class="project-card reveal">
           <div class="project-card-inner">
             <div class="project-media">
@@ -310,7 +354,7 @@
               </div>
             </div>
             <div class="project-info">
-              <span class="project-num">03</span>
+              <span class="project-num">04</span>
               <h3 class="project-name">Finantips 2.0 💰</h3>
               <p class="project-desc">Calculadora financiera completa con herramientas de planificación económica, integración AdSense e impacto real en usuarios.</p>
               <div class="project-case-study">
@@ -335,7 +379,7 @@
           </div>
         </div>
 
-        <!-- 04 Marketplace -->
+        <!-- 05 Marketplace -->
         <div class="project-card reveal reveal--delay-1">
           <div class="project-card-inner">
             <div class="project-media">
@@ -353,7 +397,7 @@
               </div>
             </div>
             <div class="project-info">
-              <span class="project-num">04</span>
+              <span class="project-num">05</span>
               <h3 class="project-name">PopMart — Marketplace 🏬</h3>
               <p class="project-desc">Marketplace de comunidad estilo Facebook Marketplace: publicás lo que querés vender, los interesados te escriben por chat en tiempo real y cierran el trato.</p>
               <div class="project-case-study">
@@ -378,12 +422,12 @@
           </div>
         </div>
 
-        <!-- 05 Chat Grupal -->
+        <!-- 06 Chat Grupal -->
         <div class="project-card reveal">
           <div class="project-card-inner">
             <div class="project-placeholder"><span class="placeholder-icon">💬</span></div>
             <div class="project-info">
-              <span class="project-num">05</span>
+              <span class="project-num">06</span>
               <h3 class="project-name">Chat Grupal 💬</h3>
               <p class="project-desc">Comunicación en tiempo real con WebSockets, múltiples salas y persistencia de historial con gestión de usuarios.</p>
               <div class="project-case-study">
@@ -408,32 +452,6 @@
           </div>
         </div>
 
-        <!-- 06 Backend Carrito -->
-        <div class="project-card reveal reveal--delay-1">
-          <div class="project-card-inner">
-            <div class="project-placeholder"><span class="placeholder-icon">🖥️</span></div>
-            <div class="project-info">
-              <span class="project-num">06</span>
-              <h3 class="project-name">Backend de Carrito 🖥️</h3>
-              <p class="project-desc">API REST escalable con autenticación JWT, gestión de productos y carritos mediante arquitectura por capas.</p>
-              <div class="project-case-study">
-                <p><strong>El desafío:</strong> Diseñar una API backend limpia, segura y extensible para un e-commerce sin UI, sólo datos.</p>
-                <p><strong>La solución:</strong> Express + MongoDB con validación strict, autenticación JWT, middlewares de error, separación clara entre rutas-controladores-servicios, documentación con ejemplos.</p>
-                <p><strong>El resultado:</strong> API documentada y testeada; +20 endpoints funcionales, 99% uptime en testing.</p>
-              </div>
-              <div class="project-tech">
-                <span class="tech-badge">Node.js</span><span class="tech-badge">Express</span><span class="tech-badge">MongoDB</span><span class="tech-badge">JWT</span><span class="tech-badge">RESTful</span>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/Ragepay/Proyecto-Peyraga-Backend1-coderhouse" target="_blank" class="project-link project-link--github">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                  Ver código fuente
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
@@ -449,6 +467,30 @@
       <div class="timeline">
 
         <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-date">Jun 2026 — Actualidad<span class="timeline-duration" data-since="2026-06-08"></span></span>
+              <span class="timeline-badge timeline-badge--tech">Tech</span>
+            </div>
+            <div class="timeline-company">
+              <img src="img/logoestudiotuculet.png" alt="Estudio Contable Tuculet" class="company-logo">
+              <div>
+                <h3 class="company-name">Estudio Contable Tuculet</h3>
+                <p class="company-role">Desarrollador / IT</p>
+              </div>
+            </div>
+            <p class="timeline-desc">Desarrollo desde cero un sistema a medida para el estudio. En paralelo estoy aprendiendo contabilidad y los procesos del negocio, lo que me permite entender a fondo las necesidades reales y traducirlas en nuevas funcionalidades y automatizaciones que optimizan el trabajo diario del equipo.</p>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Desarrollo de sistemas</span>
+              <span class="timeline-tag">Automatización</span>
+              <span class="timeline-tag">Contabilidad</span>
+              <span class="timeline-tag">Procesos del negocio</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal reveal--delay-1">
           <div class="timeline-marker"></div>
           <div class="timeline-content">
             <div class="timeline-meta">
@@ -574,6 +616,10 @@
               <a href="https://pub.coderhouse.com/legacy-certificates/67877e429f7020f017195d37?lang=en" target="_blank" rel="noopener" class="edu-course edu-course--link"><span class="course-dot"></span>Backend II: Diseño y Arquitectura<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
               <a href="https://pub.coderhouse.com/legacy-certificates/67d97a39b0f4b7580cc3788b?lang=en" target="_blank" rel="noopener" class="edu-course edu-course--link"><span class="course-dot"></span>Backend III: Testing y Escalabilidad Backend<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
             </div>
+            <a href="https://pub.coderhouse.com/legacy-certificates/6831f301080369d064b4b92a?lang=en" target="_blank" rel="noopener" class="edu-download">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Ver certificado de carrera
+            </a>
           </div>
         </div>
 
@@ -586,9 +632,13 @@
             </div>
           </div>
           <div class="edu-body">
-            <span class="edu-tag edu-tag--pending">Diploma en trámite</span>
+            <span class="edu-tag edu-tag--done">Título obtenido</span>
             <p class="edu-date">2025 – 2026 &nbsp;·&nbsp; 2 cuatrimestres</p>
             <p class="edu-desc">Diplomatura universitaria con foco en arquitectura de APIs, bases de datos relacionales y no relacionales, seguridad y despliegue de aplicaciones backend.</p>
+            <a href="img/DiplomaBackend.jpeg" target="_blank" rel="noopener" class="edu-download">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              Ver diploma
+            </a>
           </div>
         </div>
 
@@ -604,6 +654,36 @@
             <span class="edu-tag edu-tag--active">En curso</span>
             <p class="edu-date">2026 &nbsp;·&nbsp; 1 cuatrimestre</p>
             <p class="edu-desc">Formación práctica en inteligencia artificial aplicada a flujos de trabajo reales: automatización, herramientas de IA generativa, prompting avanzado e integración en proyectos de desarrollo.</p>
+          </div>
+        </div>
+
+        <div class="edu-card reveal">
+          <div class="edu-card-header">
+            <img src="img/coderhouse.jfif" alt="Coderhouse" class="edu-logo">
+            <div>
+              <h3 class="edu-title"><a href="https://www.coderhouse.com/ar/carreras/carrera-data-analytics-live" target="_blank" rel="noopener" class="edu-title-link">Carrera de Data Analytics</a></h3>
+              <p class="edu-institution">Coderhouse</p>
+            </div>
+          </div>
+          <div class="edu-body">
+            <span class="edu-tag edu-tag--active">En curso</span>
+            <p class="edu-date">2026</p>
+            <p class="edu-desc">Carrera orientada al análisis de datos: SQL, Python, limpieza y transformación de datos, visualización y dashboards para la toma de decisiones basada en datos.</p>
+          </div>
+        </div>
+
+        <div class="edu-card reveal reveal--delay-1">
+          <div class="edu-card-header">
+            <img src="img/logoUTNAvellaneda.png" alt="UTN Facultad Regional Avellaneda" class="edu-logo edu-logo--contain">
+            <div>
+              <h3 class="edu-title">Tramo de Formación Pedagógica</h3>
+              <p class="edu-institution">UTN — Facultad Regional Avellaneda</p>
+            </div>
+          </div>
+          <div class="edu-body">
+            <span class="edu-tag edu-tag--active">En curso</span>
+            <p class="edu-date">2026</p>
+            <p class="edu-desc">Formación docente que habilita para ejercer como profesor de materias técnicas en instituciones educativas de la Provincia de Buenos Aires, complementando mi perfil técnico con herramientas pedagógicas.</p>
           </div>
         </div>
 

@@ -77,6 +77,30 @@ document.addEventListener("DOMContentLoaded", function () {
   }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
   document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
 
+  // Duración dinámica de experiencias en curso (data-since="YYYY-MM-DD")
+  document.querySelectorAll(".timeline-duration[data-since]").forEach(el => {
+    const start = new Date(el.dataset.since + "T00:00:00");
+    const now = new Date();
+    if (isNaN(start) || start > now) return;
+
+    let months = (now.getFullYear() - start.getFullYear()) * 12 + (now.getMonth() - start.getMonth());
+    if (now.getDate() < start.getDate()) months--;
+
+    let text;
+    if (months < 1) {
+      const days = Math.max(1, Math.floor((now - start) / 86400000));
+      text = days === 1 ? "1 día" : `${days} días`;
+    } else {
+      const years = Math.floor(months / 12);
+      const rem = months % 12;
+      const parts = [];
+      if (years) parts.push(years === 1 ? "1 año" : `${years} años`);
+      if (rem)   parts.push(rem === 1 ? "1 mes" : `${rem} meses`);
+      text = parts.join(" ");
+    }
+    el.innerHTML = `&nbsp;·&nbsp; ${text}`;
+  });
+
   // Hero parallax
   const heroBg = document.querySelector(".hero-bg");
   if (heroBg) {
