@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Benjamín Peyraga — Full Stack Developer. Portfolio de proyectos y experiencia profesional en Argentina.">
+  <meta name="description" content="Benjamín Peyraga — Full Stack Developer y fundador de peycode.dev. Portfolio de proyectos y experiencia profesional en Argentina.">
   <meta name="author" content="Benjamín Peyraga">
   <meta name="theme-color" content="#0f172a">
 
@@ -11,14 +11,14 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://tu-dominio.com/">
   <meta property="og:title" content="Benjamín Peyraga — Full Stack Developer">
-  <meta property="og:description" content="Portfolio de proyectos, tecnologías y experiencia profesional como Full Stack Developer.">
+  <meta property="og:description" content="Full Stack Developer y fundador de peycode.dev. Portfolio de proyectos, tecnologías y experiencia profesional.">
   <meta property="og:image" content="https://tu-dominio.com/img/fotocarnet.jpg">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://tu-dominio.com/">
   <meta property="twitter:title" content="Benjamín Peyraga — Full Stack Developer">
-  <meta property="twitter:description" content="Portfolio de proyectos, tecnologías y experiencia profesional como Full Stack Developer.">
+  <meta property="twitter:description" content="Full Stack Developer y fundador de peycode.dev. Portfolio de proyectos, tecnologías y experiencia profesional.">
   <meta property="twitter:image" content="https://tu-dominio.com/img/fotocarnet.jpg">
 
   <title>Benjamín Peyraga — Full Stack Developer</title>
@@ -27,6 +27,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Outfit:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Favicon inline (evita el 404 de /favicon.ico sin sumar un archivo) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f172a'/%3E%3Ctext x='50%25' y='50%25' dy='.35em' text-anchor='middle' font-family='Verdana,sans-serif' font-size='30' font-weight='bold' fill='%2338bdf8'%3EBP%3C/text%3E%3C/svg%3E">
 </head>
 <body>
 
@@ -36,10 +39,10 @@
       <a href="#inicio" class="nav-logo">BP<span class="accent">.</span></a>
       <ul class="nav-links" id="navLinks">
         <li><a href="#sobre-mi" class="nav-link"><span class="nav-num">01</span>Sobre mí</a></li>
-        <li><a href="#proyectos" class="nav-link"><span class="nav-num">02</span>Proyectos</a></li>
-        <li><a href="#experiencia" class="nav-link"><span class="nav-num">03</span>Experiencia</a></li>
-        <li><a href="#formacion" class="nav-link"><span class="nav-num">04</span>Formación</a></li>
-        <li><a href="en-construccion.html" target="_blank" rel="noopener" class="nav-link">Emprendimiento</a></li>
+        <li><a href="#emprendimiento" class="nav-link"><span class="nav-num">02</span>Emprendimiento</a></li>
+        <li><a href="#proyectos" class="nav-link"><span class="nav-num">03</span>Proyectos</a></li>
+        <li><a href="#experiencia" class="nav-link"><span class="nav-num">04</span>Experiencia</a></li>
+        <li><a href="#formacion" class="nav-link"><span class="nav-num">05</span>Formación</a></li>
         <li><a href="#contacto" class="nav-link nav-link--cta">Contacto</a></li>
       </ul>
       <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
@@ -62,7 +65,7 @@
       <div class="hero-content">
         <div class="hero-label reveal">
           <span class="label-dot"></span>
-          Full Stack Developer &middot; Argentina
+          Full Stack Developer &middot; Fundador de peycode.dev
         </div>
         <h1 class="hero-name reveal reveal--delay-1">
           Benjamín<br><span class="hero-name--accent">Peyraga</span>
@@ -75,6 +78,10 @@
           <a href="docs/CV-BenjaminPeyraga-2026.pdf" download class="btn-primary">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
             Descargar CV
+          </a>
+          <a href="https://peycode.dev" target="_blank" rel="noopener" class="btn-secondary">
+            Ver peycode.dev
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
           </a>
           <a href="#contacto" class="btn-secondary">Contactame</a>
         </div>
@@ -94,7 +101,7 @@
             <img src="img/fotocarnet.jpg" alt="Benjamín Peyraga" class="hero-photo">
           </div>
           <div class="hero-badge hero-badge--1">
-            <span class="badge-num">6+</span>
+            <span class="badge-num">10+</span>
             <span class="badge-label">Proyectos</span>
           </div>
           <div class="hero-badge hero-badge--2">
@@ -139,6 +146,9 @@
           </p>
           <p class="about-text">
             Me interesa el código limpio, las buenas prácticas y la automatización de procesos. Disfruto resolver problemas reales con soluciones bien pensadas, desde la lógica de negocio hasta la infraestructura.
+          </p>
+          <p class="about-text">
+            Hoy llevo adelante <a href="https://peycode.dev" target="_blank" rel="noopener" class="about-link">peycode</a>, mi emprendimiento de desarrollo de software, donde construyo webs, tiendas online y aplicaciones a medida para clientes reales.
           </p>
           <div class="about-highlights">
             <div class="highlight-item"><span class="highlight-icon">⚡</span><span>Automatizaciones con n8n y Make</span></div>
@@ -194,60 +204,91 @@
     </div>
   </section>
 
+  <!-- EMPRENDIMIENTO -->
+  <section class="section venture-section" id="emprendimiento">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num">02</span>
+        <h2 class="section-title">Emprendimiento</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="venture-card reveal reveal--delay-1">
+        <div class="venture-main">
+          <div class="venture-brand">
+            <span class="venture-logo">pey<span class="accent">code</span></span>
+            <span class="venture-status"><span class="label-dot"></span>Activo</span>
+          </div>
+          <p class="venture-tagline">Convertimos tu idea en software que genera clientes.</p>
+          <p class="venture-text">
+            <strong>peycode</strong> es mi emprendimiento de desarrollo de software. Trabajo con clientes reales de punta a punta: descubrimiento, diseño, desarrollo por etapas y lanzamiento. Apalancado en IA para entregar rápido y a precios accesibles, sin resignar código mantenible.
+          </p>
+          <p class="venture-text">
+            Ahí vive mi trabajo actual: webs institucionales, tiendas online, web apps de gestión a medida, automatizaciones y productos SaaS propios.
+          </p>
+          <div class="venture-stats">
+            <div class="venture-stat"><span class="venture-stat-num">8</span><span class="venture-stat-label">Servicios</span></div>
+            <div class="venture-stat"><span class="venture-stat-num">6</span><span class="venture-stat-label">Productos SaaS</span></div>
+            <div class="venture-stat"><span class="venture-stat-num">6+</span><span class="venture-stat-label">Proyectos de clientes</span></div>
+          </div>
+          <div class="venture-actions">
+            <a href="https://peycode.dev" target="_blank" rel="noopener" class="btn-primary">
+              Visitar peycode.dev
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+            <a href="https://wa.me/5493487512474" target="_blank" rel="noopener" class="btn-secondary">Consultar un proyecto</a>
+          </div>
+        </div>
+
+        <div class="venture-side">
+          <h3 class="venture-side-title">Servicios</h3>
+          <ul class="venture-services">
+            <li class="venture-service"><span class="venture-service-icon">🧩</span>Portafolios personales</li>
+            <li class="venture-service"><span class="venture-service-icon">🚀</span>Landing pages</li>
+            <li class="venture-service"><span class="venture-service-icon">🌐</span>Sitios web</li>
+            <li class="venture-service"><span class="venture-service-icon">🛒</span>Tiendas online</li>
+            <li class="venture-service"><span class="venture-service-icon">⚙️</span>Web apps y PWA</li>
+            <li class="venture-service"><span class="venture-service-icon">🤖</span>Inteligencia artificial</li>
+            <li class="venture-service"><span class="venture-service-icon">⚡</span>Automatizaciones</li>
+            <li class="venture-service"><span class="venture-service-icon">📊</span>Data analytics</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="venture-work reveal reveal--delay-2">
+        <h3 class="venture-work-title">Trabajo reciente en peycode</h3>
+        <div class="venture-work-grid">
+          <span class="venture-work-item">Gestión Contable — Estudio Tuculet</span>
+          <span class="venture-work-item">Gestión de Obras — Zukowski</span>
+          <span class="venture-work-item">Servicios Industriales Zukowski</span>
+          <span class="venture-work-item">Pachulí Parfum</span>
+          <span class="venture-work-item">ErpGranos</span>
+          <span class="venture-work-item">ICE San Martín 19</span>
+          <span class="venture-work-item">CapitalSync</span>
+        </div>
+        <a href="https://peycode.dev" target="_blank" rel="noopener" class="venture-work-link">
+          Ver el detalle de cada proyecto en peycode.dev
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <!-- PROYECTOS -->
   <section class="section projects-section" id="proyectos">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-num">02</span>
+        <span class="section-num">03</span>
         <h2 class="section-title">Proyectos</h2>
         <div class="section-line"></div>
       </div>
+      <p class="projects-intro reveal">
+        Estos son los proyectos con los que arranqué: los que me formaron como desarrollador. Mi trabajo actual y los proyectos de clientes están en
+        <a href="https://peycode.dev" target="_blank" rel="noopener">peycode.dev</a>.
+      </p>
       <div class="projects-grid">
 
-        <!-- 01 Estudio Tuculet — CRM -->
-        <div class="project-card reveal">
-          <div class="project-card-inner">
-            <div class="project-media">
-              <div class="slider">
-                <div class="slider-track">
-                  <img src="img/estudio1.png" alt="Estudio Tuculet CRM 1">
-                  <img src="img/estudio2.png" alt="Estudio Tuculet CRM 2">
-                  <img src="img/estudio3.png" alt="Estudio Tuculet CRM 3">
-                  <img src="img/estudio4.png" alt="Estudio Tuculet CRM 4">
-                  <img src="img/estudio5.png" alt="Estudio Tuculet CRM 5">
-                  <img src="img/estudio6.png" alt="Estudio Tuculet CRM 6">
-                  <img src="img/estudio7.png" alt="Estudio Tuculet CRM 7">
-                  <img src="img/estudio8.png" alt="Estudio Tuculet CRM 8">
-                  <img src="img/estudio9.png" alt="Estudio Tuculet CRM 9">
-                  <img src="img/estudio10.png" alt="Estudio Tuculet CRM 10">
-                </div>
-                <button class="slider-btn slider-prev" aria-label="Anterior">&#8592;</button>
-                <button class="slider-btn slider-next" aria-label="Siguiente">&#8594;</button>
-              </div>
-            </div>
-            <div class="project-info">
-              <span class="project-num">01</span>
-              <h3 class="project-name">Estudio Tuculet — CRM 🏛️</h3>
-              <p class="project-desc">Sistema de gestión interna (CRM) para un estudio jurídico-contable: clientes, control impositivo mensual (IVA e IIBB), honorarios, cuenta corriente, cobranzas y comunicaciones por email y WhatsApp.</p>
-              <div class="project-case-study">
-                <p><strong>El desafío:</strong> Reemplazar las planillas sueltas del estudio y unificar en un solo lugar la cartera de clientes, sus datos fiscales, el control mensual de impuestos, la facturación de honorarios, la cobranza y las comunicaciones.</p>
-                <p><strong>La solución:</strong> Aplicación web con API REST en Node.js + Express + Sequelize sobre MySQL y un SPA en React + Vite + Tailwind. Autenticación JWT en cookie httpOnly con perfiles de acceso, claves de clientes encriptadas con AES-256-GCM, almacenamiento de PDFs en Google Cloud Storage o disco local, envío de email (Nodemailer) y WhatsApp (Meta Cloud API), reportes con exportación a Excel y borrado lógico en toda la base.</p>
-                <p><strong>El resultado:</strong> CRM en uso interno del estudio que centraliza decenas de clientes y sus obligaciones mensuales, dockerizado (imágenes en Docker Hub) y preparado para Google Cloud Run.</p>
-              </div>
-              <div class="project-tech">
-                <span class="tech-badge">Node.js</span><span class="tech-badge">Express</span><span class="tech-badge">Sequelize</span><span class="tech-badge">MySQL</span><span class="tech-badge">JWT</span><span class="tech-badge">React 18</span><span class="tech-badge">Vite</span><span class="tech-badge">Tailwind</span><span class="tech-badge">Docker</span><span class="tech-badge">Google Cloud</span>
-              </div>
-              <div class="project-links">
-                <span class="project-link project-link--private">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                  Proyecto privado · uso interno del estudio
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 02 Checkpoint Zone -->
+        <!-- 01 Checkpoint Zone -->
         <div class="project-card reveal reveal--delay-1">
           <div class="project-card-inner">
             <div class="project-media">
@@ -262,7 +303,7 @@
               </div>
             </div>
             <div class="project-info">
-              <span class="project-num">02</span>
+              <span class="project-num">01</span>
               <h3 class="project-name">Checkpoint Zone 🎮</h3>
               <p class="project-desc">E-commerce de videojuegos digitales: catálogo con filtros, carrito, checkout por pasos y panel de administración con roles.</p>
               <div class="project-case-study">
@@ -274,11 +315,11 @@
                 <span class="tech-badge">React 18</span><span class="tech-badge">Vite</span><span class="tech-badge">Redux Toolkit</span><span class="tech-badge">TypeScript</span><span class="tech-badge">Node.js</span><span class="tech-badge">Express</span><span class="tech-badge">TypeORM</span><span class="tech-badge">MySQL</span>
               </div>
               <div class="project-links">
-                <a href="https://github.com/Ragepay/checkpoint-zone" target="_blank" class="project-link project-link--github">
+                <a href="https://github.com/Ragepay/checkpoint-zone" target="_blank" rel="noopener" class="project-link project-link--github">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
                   Ver código fuente
                 </a>
-                <a href="https://checkpoint-zone-sigma.vercel.app/" target="_blank" class="project-link project-link--live">
+                <a href="https://checkpoint-zone-sigma.vercel.app/" target="_blank" rel="noopener" class="project-link project-link--live">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                   Ver proyecto en vivo
                 </a>
@@ -287,7 +328,7 @@
           </div>
         </div>
 
-        <!-- 03 Break & Focus -->
+        <!-- 02 Break & Focus -->
         <div class="project-card reveal reveal--delay-1">
           <div class="project-card-inner">
             <div class="project-media">
@@ -304,7 +345,7 @@
               </div>
             </div>
             <div class="project-info">
-              <span class="project-num">03</span>
+              <span class="project-num">02</span>
               <h3 class="project-name">Break &amp; Focus 🧘‍♂️</h3>
               <p class="project-desc">App de productividad con Pomodoro, tareas persistentes y estadísticas. Diseñada para mejorar concentración y ritmo de trabajo.</p>
               <div class="project-case-study">
@@ -316,11 +357,11 @@
                 <span class="tech-badge">React</span><span class="tech-badge">Next.js</span><span class="tech-badge">TypeScript</span><span class="tech-badge">Tailwind</span><span class="tech-badge">Node.js</span><span class="tech-badge">MongoDB</span>
               </div>
               <div class="project-links">
-                <a href="https://github.com/Ragepay/breakandfocus" target="_blank" class="project-link project-link--github">
+                <a href="https://github.com/Ragepay/breakandfocus" target="_blank" rel="noopener" class="project-link project-link--github">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
                   Ver código fuente
                 </a>
-                <a href="https://breakandfocus.vercel.app/" target="_blank" class="project-link project-link--live">
+                <a href="https://breakandfocus.vercel.app/" target="_blank" rel="noopener" class="project-link project-link--live">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                   Ver proyecto en vivo
                 </a>
@@ -329,7 +370,7 @@
           </div>
         </div>
 
-        <!-- 04 Finantips -->
+        <!-- 03 Finantips -->
         <div class="project-card reveal">
           <div class="project-card-inner">
             <div class="project-media">
@@ -354,7 +395,7 @@
               </div>
             </div>
             <div class="project-info">
-              <span class="project-num">04</span>
+              <span class="project-num">03</span>
               <h3 class="project-name">Finantips 2.0 💰</h3>
               <p class="project-desc">Calculadora financiera completa con herramientas de planificación económica, integración AdSense e impacto real en usuarios.</p>
               <div class="project-case-study">
@@ -366,11 +407,11 @@
                 <span class="tech-badge">HTML5</span><span class="tech-badge">CSS3</span><span class="tech-badge">SCSS</span><span class="tech-badge">JavaScript</span><span class="tech-badge">AdSense</span>
               </div>
               <div class="project-links">
-                <a href="https://github.com/Ragepay/Finantips-2.0" target="_blank" class="project-link project-link--github">
+                <a href="https://github.com/Ragepay/Finantips-2.0" target="_blank" rel="noopener" class="project-link project-link--github">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
                   Ver código fuente
                 </a>
-                <a href="https://finantips.netlify.app/" target="_blank" class="project-link project-link--live">
+                <a href="https://finantips.netlify.app/" target="_blank" rel="noopener" class="project-link project-link--live">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                   Ver proyecto en vivo
                 </a>
@@ -379,7 +420,7 @@
           </div>
         </div>
 
-        <!-- 05 Marketplace -->
+        <!-- 04 Marketplace -->
         <div class="project-card reveal reveal--delay-1">
           <div class="project-card-inner">
             <div class="project-media">
@@ -397,7 +438,7 @@
               </div>
             </div>
             <div class="project-info">
-              <span class="project-num">05</span>
+              <span class="project-num">04</span>
               <h3 class="project-name">PopMart — Marketplace 🏬</h3>
               <p class="project-desc">Marketplace de comunidad estilo Facebook Marketplace: publicás lo que querés vender, los interesados te escriben por chat en tiempo real y cierran el trato.</p>
               <div class="project-case-study">
@@ -409,11 +450,11 @@
                 <span class="tech-badge">React 18</span><span class="tech-badge">Vite</span><span class="tech-badge">Node.js</span><span class="tech-badge">Express</span><span class="tech-badge">MongoDB Atlas</span><span class="tech-badge">Socket.IO</span><span class="tech-badge">Cloudinary</span><span class="tech-badge">JWT</span><span class="tech-badge">Vercel</span><span class="tech-badge">Railway</span>
               </div>
               <div class="project-links">
-                <a href="https://github.com/Ragepay/marketplace" target="_blank" class="project-link project-link--github">
+                <a href="https://github.com/Ragepay/marketplace" target="_blank" rel="noopener" class="project-link project-link--github">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
                   Ver código fuente
                 </a>
-                <a href="https://marketplace-tau-drab.vercel.app/" target="_blank" class="project-link project-link--live">
+                <a href="https://marketplace-tau-drab.vercel.app/" target="_blank" rel="noopener" class="project-link project-link--live">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                   Ver proyecto en vivo
                 </a>
@@ -422,12 +463,12 @@
           </div>
         </div>
 
-        <!-- 06 Chat Grupal -->
+        <!-- 05 Chat Grupal -->
         <div class="project-card reveal">
           <div class="project-card-inner">
             <div class="project-placeholder"><span class="placeholder-icon">💬</span></div>
             <div class="project-info">
-              <span class="project-num">06</span>
+              <span class="project-num">05</span>
               <h3 class="project-name">Chat Grupal 💬</h3>
               <p class="project-desc">Comunicación en tiempo real con WebSockets, múltiples salas y persistencia de historial con gestión de usuarios.</p>
               <div class="project-case-study">
@@ -439,11 +480,11 @@
                 <span class="tech-badge">Node.js</span><span class="tech-badge">Express</span><span class="tech-badge">WebSockets</span><span class="tech-badge">Socket.io</span><span class="tech-badge">Handlebars</span>
               </div>
               <div class="project-links">
-                <a href="https://github.com/Ragepay/chat-grupal" target="_blank" class="project-link project-link--github">
+                <a href="https://github.com/Ragepay/chat-grupal" target="_blank" rel="noopener" class="project-link project-link--github">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
                   Ver código fuente
                 </a>
-                <a href="https://succulent-omniscient-trowel.glitch.me/chat" target="_blank" class="project-link project-link--live">
+                <a href="https://succulent-omniscient-trowel.glitch.me/chat" target="_blank" rel="noopener" class="project-link project-link--live">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                   Ver proyecto en vivo
                 </a>
@@ -460,11 +501,38 @@
   <section class="section experience-section" id="experiencia">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-num">03</span>
+        <span class="section-num">04</span>
         <h2 class="section-title">Experiencia</h2>
         <div class="section-line"></div>
       </div>
       <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-date">2026 — Actualidad</span>
+              <span class="timeline-badge timeline-badge--venture">Emprendimiento</span>
+            </div>
+            <div class="timeline-company">
+              <div class="company-logo-placeholder">P</div>
+              <div>
+                <h3 class="company-name"><a href="https://peycode.dev" target="_blank" rel="noopener" class="company-name-link">peycode</a></h3>
+                <p class="company-role">Fundador &amp; Full Stack Developer</p>
+              </div>
+            </div>
+            <p class="timeline-desc">Emprendimiento propio de desarrollo de software. Llevo los proyectos de punta a punta: relevamiento con el cliente, propuesta, diseño, desarrollo por etapas, despliegue y soporte. Construyo sitios web, tiendas online, web apps de gestión a medida, automatizaciones y productos SaaS propios.</p>
+            <div class="timeline-tags">
+              <span class="timeline-tag">React</span>
+              <span class="timeline-tag">Node.js</span>
+              <span class="timeline-tag">MongoDB</span>
+              <span class="timeline-tag">MySQL</span>
+              <span class="timeline-tag">n8n / Make</span>
+              <span class="timeline-tag">IA aplicada</span>
+              <span class="timeline-tag">Trato con clientes</span>
+            </div>
+          </div>
+        </div>
 
         <div class="timeline-item reveal">
           <div class="timeline-marker"></div>
@@ -572,7 +640,7 @@
   <section class="section education-section" id="formacion">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-num">04</span>
+        <span class="section-num">05</span>
         <h2 class="section-title">Formación</h2>
         <div class="section-line"></div>
       </div>
@@ -695,14 +763,14 @@
   <section class="section contact-section" id="contacto">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-num">05</span>
+        <span class="section-num">06</span>
         <h2 class="section-title">Contacto</h2>
         <div class="section-line"></div>
       </div>
       <div class="contact-content">
         <div class="contact-headline reveal">
           <p class="contact-sub">¿Tenés un proyecto o necesitás un Full Stack Developer?</p>
-          <p class="contact-description">Me encanta resolver problemas reales con código limpio. Desde startups hasta empresas establecidas, ayudo a llevar ideas a producción.</p>
+          <p class="contact-description">Me encanta resolver problemas reales con código limpio. Desde startups hasta empresas establecidas, ayudo a llevar ideas a producción. Si buscás contratar un desarrollo, también podés hacerlo a través de <a href="https://peycode.dev" target="_blank" rel="noopener">peycode.dev</a>.</p>
           <a href="mailto:benjapey99@gmail.com" class="contact-email">benjapey99@gmail.com</a>
         </div>
         <div class="contact-grid reveal reveal--delay-1">
@@ -746,10 +814,11 @@
     <div class="container">
       <div class="footer-content">
         <span class="footer-logo">BP<span class="accent">.</span></span>
-        <p class="footer-copy">Diseñado y desarrollado por Benjamín Peyraga &middot; 2025</p>
+        <p class="footer-copy">Diseñado y desarrollado por Benjamín Peyraga &middot; 2026</p>
         <div class="footer-links">
-          <a href="https://github.com/Ragepay" target="_blank">GitHub</a>
-          <a href="https://www.linkedin.com/in/benjamin-peyraga-53812a163/" target="_blank">LinkedIn</a>
+          <a href="https://peycode.dev" target="_blank" rel="noopener">peycode.dev</a>
+          <a href="https://github.com/Ragepay" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/benjamin-peyraga-53812a163/" target="_blank" rel="noopener">LinkedIn</a>
         </div>
       </div>
     </div>
@@ -759,7 +828,7 @@
   <div class="lightbox" id="lightbox" aria-hidden="true">
     <button class="lightbox-close" aria-label="Cerrar">&times;</button>
     <button class="lightbox-btn lightbox-prev" aria-label="Anterior">&#8592;</button>
-    <img class="lightbox-img" id="lightboxImg" src="" alt="">
+    <img class="lightbox-img" id="lightboxImg" alt="">
     <button class="lightbox-btn lightbox-next" aria-label="Siguiente">&#8594;</button>
     <span class="lightbox-counter" id="lightboxCounter"></span>
   </div>

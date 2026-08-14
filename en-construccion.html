@@ -3,9 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Soluciones & Desarrollo Peyraga — Sitio en construcción.">
+  <meta name="description" content="peycode — desarrollo de software. Ya estamos online en peycode.dev">
   <meta name="theme-color" content="#0f172a">
-  <title>Soluciones &amp; Desarrollo Peyraga — En construcción</title>
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://peycode.dev">
+  <meta http-equiv="refresh" content="4; url=https://peycode.dev">
+  <title>peycode — Ya estamos online</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +17,6 @@
   <style>
     :root {
       --bg: #0f172a;
-      --bg-card: #1e293b;
       --text: #f8fafc;
       --text-muted: #cbd5e1;
       --blue-light: #38bdf8;
@@ -50,8 +52,8 @@
       font-size: 0.8rem;
       letter-spacing: 2px;
       text-transform: uppercase;
-      color: var(--blue-light);
-      border: 1px solid rgba(56, 189, 248, 0.4);
+      color: var(--green);
+      border: 1px solid rgba(52, 211, 153, 0.4);
       border-radius: 999px;
       padding: 8px 18px;
       display: inline-flex;
@@ -66,12 +68,12 @@
       animation: pulse 1.6s ease-in-out infinite;
     }
     @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
-    .icon { color: var(--blue-light); margin-bottom: 24px; }
     h1 {
       font-family: 'Syne', sans-serif;
       font-weight: 800;
-      font-size: clamp(2rem, 6vw, 3.4rem);
+      font-size: clamp(2.4rem, 8vw, 4rem);
       line-height: 1.1;
+      letter-spacing: -0.02em;
       margin-bottom: 16px;
     }
     h1 .accent {
@@ -87,21 +89,31 @@
       color: var(--text);
       margin-bottom: 20px;
     }
-    p.desc { color: var(--text-muted); font-size: 1.05rem; line-height: 1.7; margin-bottom: 40px; }
-    .back {
+    p.desc { color: var(--text-muted); font-size: 1.05rem; line-height: 1.7; margin-bottom: 36px; }
+    .actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .btn {
       display: inline-flex;
       align-items: center;
       gap: 10px;
       font-family: 'Space Mono', monospace;
       font-size: 0.9rem;
-      color: var(--blue-light);
       text-decoration: none;
-      border: 1px solid rgba(56, 189, 248, 0.4);
       border-radius: 10px;
       padding: 12px 22px;
-      transition: background 0.2s, border-color 0.2s;
+      transition: background 0.2s, border-color 0.2s, transform 0.2s;
+      border: 1px solid transparent;
     }
-    .back:hover { background: rgba(56, 189, 248, 0.1); border-color: var(--blue-light); }
+    .btn--primary { background: var(--blue-light); color: var(--bg); font-weight: 700; }
+    .btn--primary:hover { transform: translateY(-2px); }
+    .btn--ghost { color: var(--blue-light); border-color: rgba(56, 189, 248, 0.4); }
+    .btn--ghost:hover { background: rgba(56, 189, 248, 0.1); border-color: var(--blue-light); }
+    .redirect-note {
+      margin-top: 28px;
+      font-family: 'Space Mono', monospace;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      opacity: 0.7;
+    }
   </style>
 </head>
 <body>
@@ -109,22 +121,24 @@
   <div class="glow glow--2"></div>
 
   <div class="wrap">
-    <span class="badge"><span class="pulse"></span>En construcción</span>
+    <span class="badge"><span class="pulse"></span>Ya estamos online</span>
 
-    <div class="icon">
-      <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M2 20h20"/><path d="M4 20V8l8-4 8 4v12"/><path d="M9 20v-6h6v6"/><path d="M12 4v4"/>
-      </svg>
+    <h1>pey<span class="accent">code</span></h1>
+    <p class="subtitle">Convertimos tu idea en software que genera clientes</p>
+    <p class="desc">Mi emprendimiento de desarrollo de software ya tiene su sitio propio. Ahí vas a encontrar los servicios, los proyectos y las formas de contacto.</p>
+
+    <div class="actions">
+      <a class="btn btn--primary" href="https://peycode.dev">
+        Ir a peycode.dev
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>
+      <a class="btn btn--ghost" href="index.html">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        Volver al portafolio
+      </a>
     </div>
 
-    <h1>Soluciones &amp; Desarrollo <span class="accent">Peyraga</span></h1>
-    <p class="subtitle">Estamos trabajando en algo grande 🚧</p>
-    <p class="desc">Este espacio está en construcción. Muy pronto vas a encontrar acá los servicios y proyectos de mi emprendimiento. ¡Gracias por la paciencia!</p>
-
-    <a class="back" href="index.html">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
-      Volver al portafolio
-    </a>
+    <p class="redirect-note">Te redirigimos automáticamente en unos segundos…</p>
   </div>
 </body>
 </html>

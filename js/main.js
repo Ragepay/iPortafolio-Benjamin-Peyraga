@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
       { type: "out",  html: "Benjamín Peyraga &mdash; Full Stack Developer" },
       { type: "cmd",  text: "cat skills.json" },
       { type: "out",  html: '{ <span class="t-key">"stack"</span>: [<span class="t-str">"React"</span>, <span class="t-str">"Vue"</span>, <span class="t-str">"Node"</span>, <span class="t-str">"GCP"</span>],' },
+      { type: "out",  html: '&nbsp;&nbsp;<span class="t-key">"venture"</span>: <span class="t-str">"peycode.dev"</span>,' },
       { type: "out",  html: '&nbsp;&nbsp;<span class="t-key">"passion"</span>: <span class="t-str">"clean code &amp; automation"</span> }' },
     ];
 

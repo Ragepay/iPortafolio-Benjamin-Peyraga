@@ -55,9 +55,11 @@ ul { list-style: none; }
 }
 .section-title {
   font-family: 'Syne', sans-serif;
-  font-size: clamp(1.8em, 4vw, 2.8em);
+  /* el mínimo baja a 1.45rem para que "Emprendimiento" entre en pantallas de 320px */
+  font-size: clamp(1.45rem, 6vw, 2.8em);
   font-weight: 700;
   color: var(--text);
+  min-width: 0;
 }
 .section-line {
   flex: 1;
@@ -144,10 +146,17 @@ ul { list-style: none; }
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   animation: slideDown 0.3s ease forwards;
 }
-@media (min-width: 768px) {
+/* 992px, no 768: con 6 items el nav horizontal necesita ~930px y se desbordaba */
+@media (min-width: 992px) {
   .nav-links { display: flex; align-items: center; }
 }
 .nav-links li { margin: 5px 8px; }
+/* Entre 992 y 1200 el nav va justo: achicamos separación y padding */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .nav-links li { margin: 5px 3px; }
+  .nav-link { padding: 8px 9px; font-size: 0.94em; }
+  .nav-num { margin-right: 4px; }
+}
 .nav-link {
   font-size: 1em;
   color: var(--text);
@@ -205,7 +214,7 @@ body.light-mode .icon-moon { display: none; }
   border-radius: 2px;
   transition: var(--transition);
 }
-@media (min-width: 768px) { .nav-toggle { display: none; } }
+@media (min-width: 992px) { .nav-toggle { display: none; } }
 
 /* === HERO === */
 .hero {
@@ -1010,4 +1019,173 @@ body.light-mode .slider-btn:hover {
   .lightbox-btn { width: 38px; height: 38px; font-size: 1.1rem; }
   .lightbox-prev { left: 8px; }
   .lightbox-next { right: 8px; }
+}
+
+/* === EMPRENDIMIENTO (peycode) === */
+.venture-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.venture-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--blue), var(--purple), var(--green));
+}
+@media (min-width: 992px) {
+  .venture-card { flex-direction: row; }
+}
+.venture-main { flex: 1.7; padding: 34px 28px; }
+.venture-brand { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-bottom: 14px; }
+.venture-logo {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(1.7em, 4vw, 2.2em);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+.venture-logo .accent {
+  background: linear-gradient(90deg, var(--blue-light), var(--purple));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.venture-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  background: rgba(52, 211, 153, 0.1);
+  border: 1px solid rgba(52, 211, 153, 0.25);
+  color: var(--green);
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75em;
+  letter-spacing: 0.5px;
+}
+.venture-status .label-dot { background: var(--green); }
+.venture-tagline {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(1.1em, 2.4vw, 1.4em);
+  font-weight: 600;
+  color: var(--blue-light);
+  margin-bottom: 18px;
+  line-height: 1.4;
+}
+.venture-text { color: var(--text-muted); margin-bottom: 14px; }
+.venture-text strong { color: var(--text); }
+
+.venture-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 24px 0;
+  padding: 18px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.venture-stat { display: flex; flex-direction: column; gap: 4px; text-align: center; }
+.venture-stat-num {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.6em;
+  font-weight: 800;
+  color: var(--text);
+}
+.venture-stat-label { font-size: 0.78em; color: var(--text-muted); line-height: 1.3; }
+
+.venture-actions { display: flex; flex-wrap: wrap; gap: 14px; }
+
+.venture-side {
+  flex: 1;
+  padding: 34px 28px;
+  background: rgba(255, 255, 255, 0.02);
+  border-top: 1px solid var(--border);
+}
+body.light-mode .venture-side { background: rgba(0, 0, 0, 0.02); }
+@media (min-width: 992px) {
+  .venture-side { border-top: none; border-left: 1px solid var(--border); }
+}
+.venture-side-title {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--blue-light);
+  margin-bottom: 18px;
+}
+.venture-services { display: flex; flex-direction: column; gap: 2px; }
+.venture-service {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 9px 10px;
+  border-radius: 8px;
+  color: var(--text-muted);
+  font-size: 0.95em;
+  transition: all var(--transition);
+}
+.venture-service:hover { background: rgba(56, 189, 248, 0.07); color: var(--text); transform: translateX(4px); }
+.venture-service-icon { font-size: 1.05em; width: 22px; text-align: center; flex-shrink: 0; }
+
+.venture-work { margin-top: 32px; text-align: center; }
+.venture-work-title {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--text-muted);
+  margin-bottom: 18px;
+}
+.venture-work-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 22px; }
+.venture-work-item {
+  padding: 8px 16px;
+  border-radius: 20px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.85em;
+  transition: all var(--transition);
+}
+.venture-work-item:hover { border-color: var(--blue); color: var(--text); transform: translateY(-2px); }
+.venture-work-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--blue-light);
+  font-weight: 600;
+  font-size: 0.95em;
+  transition: gap var(--transition), color var(--transition);
+}
+.venture-work-link:hover { gap: 12px; color: var(--purple); }
+
+.timeline-badge--venture { background: rgba(52, 211, 153, 0.1); color: var(--green); }
+.company-name-link { color: inherit; transition: color var(--transition); }
+.company-name-link:hover { color: var(--blue-light); }
+.about-link { color: var(--blue-light); font-weight: 600; border-bottom: 1px solid rgba(56, 189, 248, 0.35); transition: color var(--transition), border-color var(--transition); }
+.about-link:hover { color: var(--purple); border-color: var(--purple); }
+
+/* Intro de la sección Proyectos */
+.projects-intro {
+  color: var(--text-muted);
+  max-width: 760px;
+  margin: -35px 0 45px;
+  font-size: 1.02em;
+}
+.projects-intro a { color: var(--blue-light); font-weight: 600; border-bottom: 1px solid rgba(56, 189, 248, 0.35); transition: color var(--transition), border-color var(--transition); }
+.projects-intro a:hover { color: var(--purple); border-color: var(--purple); }
+.contact-description a { color: var(--blue-light); font-weight: 600; }
+.contact-description a:hover { color: var(--purple); }
+
+@media (max-width: 480px) {
+  .venture-main, .venture-side { padding: 26px 20px; }
+  .venture-stats { grid-template-columns: 1fr; gap: 16px; }
+  .venture-actions .btn-primary,
+  .venture-actions .btn-secondary { width: 100%; justify-content: center; }
 }
