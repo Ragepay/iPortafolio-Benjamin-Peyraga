@@ -3,38 +3,133 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Benjamín Peyraga — Full Stack Developer y fundador de peycode.dev. Portfolio de proyectos y experiencia profesional en Argentina.">
+  <meta name="description" content="Benjamín Peyraga, Full Stack Developer en Argentina y fundador de peycode.dev. React, Node.js, MySQL y MongoDB. Mirá mis proyectos, experiencia y formación.">
   <meta name="author" content="Benjamín Peyraga">
   <meta name="theme-color" content="#0f172a">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="https://ragepay.github.io/iPortafolio-Benjamin-Peyraga/">
+
+  <title>Benjamín Peyraga — Full Stack Developer | React, Node.js y GCP</title>
 
   <!-- Open Graph / LinkedIn / Facebook / WhatsApp -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://tu-dominio.com/">
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Benjamín Peyraga">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:url" content="https://ragepay.github.io/iPortafolio-Benjamin-Peyraga/">
   <meta property="og:title" content="Benjamín Peyraga — Full Stack Developer">
-  <meta property="og:description" content="Full Stack Developer y fundador de peycode.dev. Portfolio de proyectos, tecnologías y experiencia profesional.">
-  <meta property="og:image" content="https://tu-dominio.com/img/fotocarnet.jpg">
+  <meta property="og:description" content="Full Stack Developer en Argentina y fundador de peycode.dev. React, Node.js, MySQL y MongoDB. Proyectos, experiencia y formación.">
+  <meta property="og:image" content="https://ragepay.github.io/iPortafolio-Benjamin-Peyraga/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="Benjamín Peyraga — Full Stack Developer, fundador de peycode.dev">
+  <meta property="profile:first_name" content="Benjamín">
+  <meta property="profile:last_name" content="Peyraga">
 
   <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://tu-dominio.com/">
-  <meta property="twitter:title" content="Benjamín Peyraga — Full Stack Developer">
-  <meta property="twitter:description" content="Full Stack Developer y fundador de peycode.dev. Portfolio de proyectos, tecnologías y experiencia profesional.">
-  <meta property="twitter:image" content="https://tu-dominio.com/img/fotocarnet.jpg">
-
-  <title>Benjamín Peyraga — Full Stack Developer</title>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://ragepay.github.io/iPortafolio-Benjamin-Peyraga/">
+  <meta name="twitter:title" content="Benjamín Peyraga — Full Stack Developer">
+  <meta name="twitter:description" content="Full Stack Developer en Argentina y fundador de peycode.dev. React, Node.js, MySQL y MongoDB. Proyectos, experiencia y formación.">
+  <meta name="twitter:image" content="https://ragepay.github.io/iPortafolio-Benjamin-Peyraga/img/og-cover.png">
+  <meta name="twitter:image:alt" content="Benjamín Peyraga — Full Stack Developer, fundador de peycode.dev">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Outfit:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <!-- El fondo del hero es el LCP: lo pedimos temprano -->
+  <link rel="preload" as="image" href="img/fondo.webp" fetchpriority="high">
 
-  <!-- Favicon inline (evita el 404 de /favicon.ico sin sumar un archivo) -->
+  <!-- Favicon inline (evita el 404 del icono por defecto sin sumar un archivo) -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f172a'/%3E%3Ctext x='50%25' y='50%25' dy='.35em' text-anchor='middle' font-family='Verdana,sans-serif' font-size='30' font-weight='bold' fill='%2338bdf8'%3EBP%3C/text%3E%3C/svg%3E">
+
+  <!-- Datos estructurados: Persona + sitio + emprendimiento -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://ragepay.github.io/iPortafolio-Benjamin-Peyraga/#benjamin",
+        "name": "Benjamín Peyraga",
+        "givenName": "Benjamín",
+        "familyName": "Peyraga",
+        "jobTitle": "Full Stack Developer",
+        "description": "Desarrollador Full Stack argentino. Construye interfaces en React, APIs en Node.js, bases SQL y NoSQL, y despliegue en Google Cloud. Fundador de peycode.",
+        "url": "https://ragepay.github.io/iPortafolio-Benjamin-Peyraga/",
+        "image": "https://ragepay.github.io/iPortafolio-Benjamin-Peyraga/img/fotocarnet.jpg",
+        "email": "mailto:benjapey99@gmail.com",
+        "telephone": "+5493487512474",
+        "nationality": { "@type": "Country", "name": "Argentina" },
+        "address": { "@type": "PostalAddress", "addressCountry": "AR" },
+        "knowsLanguage": ["es", "en"],
+        "sameAs": [
+          "https://github.com/Ragepay",
+          "https://www.linkedin.com/in/benjamin-peyraga-53812a163/",
+          "https://peycode.dev"
+        ],
+        "knowsAbout": [
+          "React", "TypeScript", "JavaScript", "Node.js", "Express",
+          "MongoDB", "MySQL", "Docker", "Google Cloud Platform",
+          "Vue.js", "PHP", "Automatización con n8n", "Inteligencia artificial aplicada"
+        ],
+        "alumniOf": [
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "Universidad Tecnológica Nacional (UTN)",
+            "sameAs": "https://www.frd.utn.edu.ar/programacion/"
+          },
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "Universidad Nacional de Tres de Febrero (UNTREF)",
+            "sameAs": "https://www.untref.edu.ar/"
+          },
+          {
+            "@type": "EducationalOrganization",
+            "name": "Coderhouse",
+            "sameAs": "https://www.coderhouse.com/"
+          }
+        ],
+        "worksFor": { "@id": "https://peycode.dev/#organization" },
+        "founder": { "@id": "https://peycode.dev/#organization" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://peycode.dev/#organization",
+        "name": "peycode",
+        "url": "https://peycode.dev",
+        "description": "Desarrollo de software a medida: sitios web, tiendas online, web apps de gestión, automatizaciones y productos SaaS.",
+        "slogan": "Convertimos tu idea en software que genera clientes",
+        "founder": { "@id": "https://ragepay.github.io/iPortafolio-Benjamin-Peyraga/#benjamin" },
+        "areaServed": { "@type": "Country", "name": "Argentina" },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "email": "benjapey99@gmail.com",
+          "telephone": "+5493487512474",
+          "availableLanguage": ["es"]
+        }
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "https://ragepay.github.io/iPortafolio-Benjamin-Peyraga/#webpage",
+        "url": "https://ragepay.github.io/iPortafolio-Benjamin-Peyraga/",
+        "name": "Benjamín Peyraga — Full Stack Developer",
+        "inLanguage": "es-AR",
+        "mainEntity": { "@id": "https://ragepay.github.io/iPortafolio-Benjamin-Peyraga/#benjamin" },
+        "about": { "@id": "https://ragepay.github.io/iPortafolio-Benjamin-Peyraga/#benjamin" }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
+  <a href="#contenido" class="skip-link">Saltar al contenido</a>
+
   <!-- NAV -->
-  <nav class="main-nav" id="mainNav">
+  <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
     <div class="nav-container">
       <a href="#inicio" class="nav-logo">BP<span class="accent">.</span></a>
       <ul class="nav-links" id="navLinks">
@@ -54,6 +149,8 @@
       </button>
     </div>
   </nav>
+
+  <main id="contenido">
 
   <!-- HERO -->
   <section class="hero" id="inicio">
@@ -98,7 +195,7 @@
       <div class="hero-visual reveal reveal--delay-2">
         <div class="hero-photo-wrap">
           <div class="hero-photo-frame">
-            <img src="img/fotocarnet.jpg" alt="Benjamín Peyraga" class="hero-photo">
+            <img src="img/fotocarnet.jpg" alt="Benjamín Peyraga" class="hero-photo" width="900" height="1998" loading="eager" fetchpriority="high" decoding="async">
           </div>
           <div class="hero-badge hero-badge--1">
             <span class="badge-num">10+</span>
@@ -161,42 +258,42 @@
           <div class="tech-column">
             <h3 class="tech-label">Frontend</h3>
             <div class="tech-grid">
-              <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React"><span>React</span></div>
-<div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript"><span>TypeScript</span></div>
-              <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></div>
-              <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5"><span>HTML5</span></div>
-              <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3"><span>CSS3</span></div>
+              <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" width="36" height="36" loading="lazy" decoding="async"><span>React</span></div>
+<div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" width="36" height="36" loading="lazy" decoding="async"><span>TypeScript</span></div>
+              <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" width="36" height="36" loading="lazy" decoding="async"><span>JavaScript</span></div>
+              <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5" width="36" height="36" loading="lazy" decoding="async"><span>HTML5</span></div>
+              <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3" width="36" height="36" loading="lazy" decoding="async"><span>CSS3</span></div>
             </div>
           </div>
           <div class="tech-divider"></div>
           <div class="tech-column">
             <h3 class="tech-label">Backend</h3>
             <div class="tech-grid">
-              <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js"><span>Node.js</span></div>
-              <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" alt="Express"><span>Express</span></div>
-              <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="MongoDB"><span>MongoDB</span></div>
-              <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL"><span>MySQL</span></div>
+              <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js" width="36" height="36" loading="lazy" decoding="async"><span>Node.js</span></div>
+              <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" alt="Express" width="36" height="36" loading="lazy" decoding="async"><span>Express</span></div>
+              <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="MongoDB" width="36" height="36" loading="lazy" decoding="async"><span>MongoDB</span></div>
+              <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL" width="36" height="36" loading="lazy" decoding="async"><span>MySQL</span></div>
             </div>
           </div>
           <div class="tech-divider"></div>
           <div class="tech-column">
             <h3 class="tech-label">Herramientas</h3>
             <div class="tech-grid">
-              <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git"><span>Git</span></div>
-              <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub"><span>GitHub</span></div>
-              <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="Docker"><span>Docker</span></div>
-              <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/trello/trello-original.svg" alt="Trello"><span>Trello</span></div>
-              <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg" alt="NPM"><span>NPM</span></div>
-              <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg" alt="GCP"><span>GCP</span></div>
+              <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" width="36" height="36" loading="lazy" decoding="async"><span>Git</span></div>
+              <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" width="36" height="36" loading="lazy" decoding="async"><span>GitHub</span></div>
+              <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="Docker" width="36" height="36" loading="lazy" decoding="async"><span>Docker</span></div>
+              <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/trello/trello-original.svg" alt="Trello" width="36" height="36" loading="lazy" decoding="async"><span>Trello</span></div>
+              <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg" alt="NPM" width="36" height="36" loading="lazy" decoding="async"><span>NPM</span></div>
+              <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg" alt="GCP" width="36" height="36" loading="lazy" decoding="async"><span>GCP</span></div>
             </div>
           </div>
           <div class="tech-divider"></div>
           <div class="tech-column">
             <h3 class="tech-label">IA / Vibecoding</h3>
             <div class="tech-grid">
-              <div class="tech-item"><img src="https://cdn.simpleicons.org/anthropic/ffffff" alt="Claude AI"><span>Claude AI</span></div>
-              <div class="tech-item"><img src="https://cdn.simpleicons.org/googlegemini/ffffff" alt="Gemini"><span>Gemini</span></div>
-              <div class="tech-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/openai.svg" alt="ChatGPT" style="filter:invert(1)"><span>ChatGPT</span></div>
+              <div class="tech-item"><img src="https://cdn.simpleicons.org/anthropic/ffffff" alt="Claude AI" width="36" height="36" loading="lazy" decoding="async"><span>Claude AI</span></div>
+              <div class="tech-item"><img src="https://cdn.simpleicons.org/googlegemini/ffffff" alt="Gemini" width="36" height="36" loading="lazy" decoding="async"><span>Gemini</span></div>
+              <div class="tech-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/openai.svg" alt="ChatGPT" style="filter:invert(1)" width="36" height="36" loading="lazy" decoding="async"><span>ChatGPT</span></div>
             </div>
           </div>
         </div>
@@ -294,9 +391,9 @@
             <div class="project-media">
               <div class="slider">
                 <div class="slider-track">
-                  <img src="img/cp1.png" alt="Checkpoint Zone 1">
-                  <img src="img/cp2.PNG" alt="Checkpoint Zone 2">
-                  <img src="img/cp3.jpg" alt="Checkpoint Zone 3">
+                  <img src="img/cp1.png" alt="Checkpoint Zone 1" width="1198" height="744" loading="lazy" decoding="async">
+                  <img src="img/cp2.PNG" alt="Checkpoint Zone 2" width="1207" height="751" loading="lazy" decoding="async">
+                  <img src="img/cp3.jpg" alt="Checkpoint Zone 3" width="1904" height="878" loading="lazy" decoding="async">
                 </div>
                 <button class="slider-btn slider-prev" aria-label="Anterior">&#8592;</button>
                 <button class="slider-btn slider-next" aria-label="Siguiente">&#8594;</button>
@@ -334,11 +431,11 @@
             <div class="project-media">
               <div class="slider">
                 <div class="slider-track">
-                  <img src="img/bf1.PNG" alt="Break & Focus 1">
-                  <img src="img/bf2.PNG" alt="Break & Focus 2">
-                  <img src="img/bf3.PNG" alt="Break & Focus 3">
-                  <img src="img/bf4.PNG" alt="Break & Focus 4">
-                  <img src="img/bf5.PNG" alt="Break & Focus 5">
+                  <img src="img/bf1.PNG" alt="Break & Focus 1" width="1276" height="796" loading="lazy" decoding="async">
+                  <img src="img/bf2.PNG" alt="Break & Focus 2" width="1274" height="788" loading="lazy" decoding="async">
+                  <img src="img/bf3.PNG" alt="Break & Focus 3" width="1268" height="787" loading="lazy" decoding="async">
+                  <img src="img/bf4.PNG" alt="Break & Focus 4" width="1272" height="795" loading="lazy" decoding="async">
+                  <img src="img/bf5.PNG" alt="Break & Focus 5" width="1261" height="791" loading="lazy" decoding="async">
                 </div>
                 <button class="slider-btn slider-prev" aria-label="Anterior">&#8592;</button>
                 <button class="slider-btn slider-next" aria-label="Siguiente">&#8594;</button>
@@ -376,19 +473,19 @@
             <div class="project-media">
               <div class="slider">
                 <div class="slider-track">
-                  <img src="img/finantips1.png" alt="Finantips 2.0 1">
-                  <img src="img/finantips2.png" alt="Finantips 2.0 2">
-                  <img src="img/finantips3.png" alt="Finantips 2.0 3">
-                  <img src="img/finantips4.png" alt="Finantips 2.0 4">
-                  <img src="img/finantips5.png" alt="Finantips 2.0 5">
-                  <img src="img/finantips6.png" alt="Finantips 2.0 6">
-                  <img src="img/finantips7.png" alt="Finantips 2.0 7">
-                  <img src="img/finantips8.png" alt="Finantips 2.0 8">
-                  <img src="img/finantips9.png" alt="Finantips 2.0 9">
-                  <img src="img/finantips10.png" alt="Finantips 2.0 10">
-                  <img src="img/finantips11.png" alt="Finantips 2.0 11">
-                  <img src="img/finantips12.png" alt="Finantips 2.0 12">
-                  <img src="img/finantips13.png" alt="Finantips 2.0 13">
+                  <img src="img/finantips1.png" alt="Finantips 2.0 1" width="1846" height="955" loading="lazy" decoding="async">
+                  <img src="img/finantips2.png" alt="Finantips 2.0 2" width="1892" height="934" loading="lazy" decoding="async">
+                  <img src="img/finantips3.png" alt="Finantips 2.0 3" width="799" height="906" loading="lazy" decoding="async">
+                  <img src="img/finantips4.png" alt="Finantips 2.0 4" width="735" height="889" loading="lazy" decoding="async">
+                  <img src="img/finantips5.png" alt="Finantips 2.0 5" width="1845" height="940" loading="lazy" decoding="async">
+                  <img src="img/finantips6.png" alt="Finantips 2.0 6" width="1819" height="936" loading="lazy" decoding="async">
+                  <img src="img/finantips7.png" alt="Finantips 2.0 7" width="1839" height="858" loading="lazy" decoding="async">
+                  <img src="img/finantips8.png" alt="Finantips 2.0 8" width="1821" height="793" loading="lazy" decoding="async">
+                  <img src="img/finantips9.png" alt="Finantips 2.0 9" width="951" height="911" loading="lazy" decoding="async">
+                  <img src="img/finantips10.png" alt="Finantips 2.0 10" width="814" height="911" loading="lazy" decoding="async">
+                  <img src="img/finantips11.png" alt="Finantips 2.0 11" width="792" height="875" loading="lazy" decoding="async">
+                  <img src="img/finantips12.png" alt="Finantips 2.0 12" width="775" height="921" loading="lazy" decoding="async">
+                  <img src="img/finantips13.png" alt="Finantips 2.0 13" width="1803" height="869" loading="lazy" decoding="async">
                 </div>
                 <button class="slider-btn slider-prev" aria-label="Anterior">&#8592;</button>
                 <button class="slider-btn slider-next" aria-label="Siguiente">&#8594;</button>
@@ -426,12 +523,12 @@
             <div class="project-media">
               <div class="slider">
                 <div class="slider-track">
-                  <img src="img/popmart1.png" alt="PopMart Marketplace 1">
-                  <img src="img/popmart2.png" alt="PopMart Marketplace 2">
-                  <img src="img/popmart3.png" alt="PopMart Marketplace 3">
-                  <img src="img/popmart4.png" alt="PopMart Marketplace 4">
-                  <img src="img/popmart5.png" alt="PopMart Marketplace 5">
-                  <img src="img/popmart6.png" alt="PopMart Marketplace 6">
+                  <img src="img/popmart1.png" alt="PopMart Marketplace 1" width="534" height="608" loading="lazy" decoding="async">
+                  <img src="img/popmart2.png" alt="PopMart Marketplace 2" width="1046" height="636" loading="lazy" decoding="async">
+                  <img src="img/popmart3.png" alt="PopMart Marketplace 3" width="1027" height="631" loading="lazy" decoding="async">
+                  <img src="img/popmart4.png" alt="PopMart Marketplace 4" width="1047" height="558" loading="lazy" decoding="async">
+                  <img src="img/popmart5.png" alt="PopMart Marketplace 5" width="1063" height="580" loading="lazy" decoding="async">
+                  <img src="img/popmart6.png" alt="PopMart Marketplace 6" width="1038" height="518" loading="lazy" decoding="async">
                 </div>
                 <button class="slider-btn slider-prev" aria-label="Anterior">&#8592;</button>
                 <button class="slider-btn slider-next" aria-label="Siguiente">&#8594;</button>
@@ -542,7 +639,7 @@
               <span class="timeline-badge timeline-badge--tech">Tech</span>
             </div>
             <div class="timeline-company">
-              <img src="img/logoestudiotuculet.png" alt="Estudio Contable Tuculet" class="company-logo">
+              <img src="img/logoestudiotuculet.png" alt="Estudio Contable Tuculet" class="company-logo" width="641" height="643" loading="lazy" decoding="async">
               <div>
                 <h3 class="company-name">Estudio Contable Tuculet</h3>
                 <p class="company-role">Desarrollador / IT</p>
@@ -566,7 +663,7 @@
               <span class="timeline-badge timeline-badge--tech">Tech</span>
             </div>
             <div class="timeline-company">
-              <img src="img/alephoo_logo.jfif" alt="Alephoo" class="company-logo">
+              <img src="img/alephoo_logo.jfif" alt="Alephoo" class="company-logo" width="200" height="200" loading="lazy" decoding="async">
               <div>
                 <h3 class="company-name">Alephoo</h3>
                 <p class="company-role">Ecosystem Software Developer</p>
@@ -593,7 +690,7 @@
               <span class="timeline-badge timeline-badge--tech">Tech</span>
             </div>
             <div class="timeline-company">
-              <img src="img/noCountry.jpeg" alt="No Country" class="company-logo">
+              <img src="img/noCountry.jpeg" alt="No Country" class="company-logo" width="200" height="200" loading="lazy" decoding="async">
               <div>
                 <h3 class="company-name">No Country Simulation</h3>
                 <p class="company-role">Backend Developer</p>
@@ -616,7 +713,7 @@
               <span class="timeline-badge timeline-badge--industry">Industria</span>
             </div>
             <div class="timeline-company">
-              <img src="img/toyota.jpg" alt="Toyota Argentina" class="company-logo">
+              <img src="img/toyota.jpg" alt="Toyota Argentina" class="company-logo" width="1574" height="1376" loading="lazy" decoding="async">
               <div>
                 <h3 class="company-name">Toyota Argentina S.A.</h3>
                 <p class="company-role">Operador de Producción</p>
@@ -648,7 +745,7 @@
 
         <div class="edu-card reveal">
           <div class="edu-card-header">
-            <img src="img/utn.jpg" alt="UTN" class="edu-logo">
+            <img src="img/utn.jpg" alt="UTN" class="edu-logo" width="750" height="480" loading="lazy" decoding="async">
             <div>
               <h3 class="edu-title"><a href="https://www.frd.utn.edu.ar/programacion/" target="_blank" rel="noopener" class="edu-title-link">Tecnicatura Universitaria en Programación</a></h3>
               <p class="edu-institution">Universidad Tecnológica Nacional (UTN)</p>
@@ -667,7 +764,7 @@
 
         <div class="edu-card reveal reveal--delay-1">
           <div class="edu-card-header">
-            <img src="img/coderhouse.jfif" alt="Coderhouse" class="edu-logo">
+            <img src="img/coderhouse.jfif" alt="Coderhouse" class="edu-logo" width="200" height="200" loading="lazy" decoding="async">
             <div>
               <h3 class="edu-title"><a href="https://www.coderhouse.com/ar/carreras/carrera-desarrollo-fullstack" target="_blank" rel="noopener" class="edu-title-link">Carrera de Desarrollo Full Stack</a></h3>
               <p class="edu-institution">Coderhouse</p>
@@ -693,7 +790,7 @@
 
         <div class="edu-card reveal">
           <div class="edu-card-header">
-            <img src="img/Untref-logo.png" alt="UNTREF" class="edu-logo edu-logo--contain">
+            <img src="img/Untref-logo.png" alt="UNTREF" class="edu-logo edu-logo--contain" width="327" height="154" loading="lazy" decoding="async">
             <div>
               <h3 class="edu-title">Diplomatura en Desarrollo de Backend</h3>
               <p class="edu-institution">Universidad Nacional de Tres de Febrero (UNTREF)</p>
@@ -712,7 +809,7 @@
 
         <div class="edu-card reveal reveal--delay-1">
           <div class="edu-card-header">
-            <img src="img/Untref-logo.png" alt="UNTREF" class="edu-logo edu-logo--contain">
+            <img src="img/Untref-logo.png" alt="UNTREF" class="edu-logo edu-logo--contain" width="327" height="154" loading="lazy" decoding="async">
             <div>
               <h3 class="edu-title">Diplomatura en IA Aplicada al Trabajo</h3>
               <p class="edu-institution">Universidad Nacional de Tres de Febrero (UNTREF)</p>
@@ -727,7 +824,7 @@
 
         <div class="edu-card reveal">
           <div class="edu-card-header">
-            <img src="img/coderhouse.jfif" alt="Coderhouse" class="edu-logo">
+            <img src="img/coderhouse.jfif" alt="Coderhouse" class="edu-logo" width="200" height="200" loading="lazy" decoding="async">
             <div>
               <h3 class="edu-title"><a href="https://www.coderhouse.com/ar/carreras/carrera-data-analytics-live" target="_blank" rel="noopener" class="edu-title-link">Carrera de Data Analytics</a></h3>
               <p class="edu-institution">Coderhouse</p>
@@ -742,7 +839,7 @@
 
         <div class="edu-card reveal reveal--delay-1">
           <div class="edu-card-header">
-            <img src="img/logoUTNAvellaneda.png" alt="UTN Facultad Regional Avellaneda" class="edu-logo edu-logo--contain">
+            <img src="img/logoUTNAvellaneda.png" alt="UTN Facultad Regional Avellaneda" class="edu-logo edu-logo--contain" width="225" height="225" loading="lazy" decoding="async">
             <div>
               <h3 class="edu-title">Tramo de Formación Pedagógica</h3>
               <p class="edu-institution">UTN — Facultad Regional Avellaneda</p>
@@ -808,6 +905,8 @@
       </div>
     </div>
   </section>
+
+  </main>
 
   <!-- FOOTER -->
   <footer class="footer">

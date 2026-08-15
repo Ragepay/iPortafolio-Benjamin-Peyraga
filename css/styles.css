@@ -1189,3 +1189,32 @@ body.light-mode .venture-side { background: rgba(0, 0, 0, 0.02); }
   .venture-actions .btn-primary,
   .venture-actions .btn-secondary { width: 100%; justify-content: center; }
 }
+
+/* === SKIP LINK (accesibilidad: primer tab de la página) === */
+.skip-link {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -120%);
+  z-index: 2000;
+  background: var(--blue);
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 22px;
+  border-radius: 0 0 10px 10px;
+  transition: transform 0.2s ease;
+}
+.skip-link:focus { transform: translate(-50%, 0); outline: 2px solid var(--blue-light); outline-offset: 2px; }
+
+/* Foco visible y consistente para navegación por teclado */
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--blue-light);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+}
