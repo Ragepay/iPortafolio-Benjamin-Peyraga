@@ -933,7 +933,8 @@ body.light-mode .download-btn--outline:hover {
 /* Tech stack — items e íconos blancos (CDN) */
 body.light-mode .tech-item { background: rgba(0, 0, 0, 0.04); }
 body.light-mode .tech-item img[alt="Claude AI"],
-body.light-mode .tech-item img[alt="Gemini"] { filter: invert(1); }
+body.light-mode .tech-item img[alt="Gemini"],
+body.light-mode .tech-item img[alt="Next.js"] { filter: invert(1); }
 body.light-mode .tech-item img[alt="ChatGPT"] { filter: none !important; }
 
 /* Tags de timeline */
