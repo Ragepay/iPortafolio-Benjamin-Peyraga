@@ -481,6 +481,13 @@ body.light-mode .icon-moon { display: none; }
   transition: all var(--transition);
   cursor: default;
 }
+.tech-item--main { position: relative; border-color: rgba(217, 119, 87, 0.55); background: rgba(217, 119, 87, 0.08); }
+.tech-item--main:hover { border-color: #d97757; background: rgba(217, 119, 87, 0.14); box-shadow: 0 5px 15px rgba(217, 119, 87, 0.2); }
+.tech-item--main:hover span { color: #e8916f; }
+.tech-item .tech-main-badge { position: absolute; top: -9px; left: 50%; transform: translateX(-50%); padding: 2px 8px; border-radius: 10px; background: #d97757; color: #fff; font-size: 0.62em; font-weight: 700; letter-spacing: 0.4px; white-space: nowrap; }
+.tech-item--main:hover .tech-main-badge { color: #fff; }
+.tech-svg { width: 36px; height: 36px; color: var(--blue-light); transition: transform var(--transition); }
+.tech-item:hover .tech-svg { transform: scale(1.1); }
 .tech-item img { width: 36px; height: 36px; object-fit: contain; transition: transform var(--transition); }
 .tech-item span { font-size: 0.8em; color: var(--text-muted); font-weight: 500; text-align: center; transition: color var(--transition); }
 .tech-item:hover { transform: translateY(-4px); border-color: var(--blue-light); background: rgba(56, 189, 248, 0.08); box-shadow: 0 5px 15px rgba(56, 189, 248, 0.12); }
@@ -783,6 +790,12 @@ body.light-mode .icon-moon { display: none; }
   border-radius: 50%;
   transition: all var(--transition);
 }
+.edu-course-state { margin-left: auto; font-style: normal; font-family: 'Space Mono', monospace; font-size: 0.72em; letter-spacing: 0.5px; color: var(--text-muted); opacity: 0.8; }
+.edu-course-state--done { color: #60a5fa; opacity: 1; }
+.edu-course-state--active { color: var(--green); opacity: 1; }
+.course-dot--done { background: #60a5fa; }
+.course-dot--active { background: var(--green); box-shadow: 0 0 8px rgba(52, 211, 153, 0.6); }
+.course-dot--next { background: transparent; border: 1px solid var(--text-muted); }
 .edu-course svg { width: 13px; height: 13px; margin-left: auto; opacity: 0; transform: translateX(-6px); transition: all var(--transition); flex-shrink: 0; }
 .edu-course--link:hover { background: rgba(56,189,248,0.06); color: var(--blue-light); }
 .edu-course--link:hover .course-dot { transform: scale(1.5); background: var(--blue-light); box-shadow: 0 0 8px rgba(56,189,248,0.5); }
@@ -932,6 +945,7 @@ body.light-mode .download-btn--outline:hover {
 
 /* Tech stack — items e íconos blancos (CDN) */
 body.light-mode .tech-item { background: rgba(0, 0, 0, 0.04); }
+body.light-mode .tech-item img[alt="Resend"],
 body.light-mode .tech-item img[alt="Claude AI"],
 body.light-mode .tech-item img[alt="Gemini"],
 body.light-mode .tech-item img[alt="Next.js"] { filter: invert(1); }
