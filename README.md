@@ -27,3 +27,11 @@ Los proyectos de clientes están en el [portafolio de peycode](https://peycode.d
 - Los CV salen de `docs/cv/cv.html` (español) y `docs/cv/cv-en.html` (inglés): abrir en Chrome, Imprimir,
   Guardar como PDF, A4, márgenes "Ninguno" y "Gráficos de fondo". Se guardan como
   `docs/CV-BenjaminPeyraga-2026.pdf` y `docs/CV-BenjaminPeyraga-2026-EN.pdf`.
+- Versión ATS (una columna, texto simple, para portales de empleo): `docs/cv/cv-ats.html` y
+  `docs/cv/cv-ats-en.html` → `docs/CV-BenjaminPeyraga-2026-ATS.pdf` y `-ATS-EN.pdf`. Se imprimen igual,
+  pero con márgenes "Predeterminados".
+
+## Métricas de visitas
+
+Vercel Web Analytics (sin cookies). El script está al final de `index.html`; los datos se ven en
+vercel.com → proyecto `benjaminpeyraga` → Analytics.

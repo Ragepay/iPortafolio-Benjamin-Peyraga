@@ -14,14 +14,14 @@ a { color: inherit; text-decoration: none; }
 .page { width: 210mm; height: 297mm; display: grid; grid-template-columns: 1fr 64mm; }
 
 /* Columna principal */
-.main { padding: 13mm 9mm 10mm 13mm; }
+.main { padding: 11mm 9mm 7mm 13mm; }
 .name { font-family: Syne, sans-serif; font-weight: 800; font-size: 29pt; line-height: .95; letter-spacing: -.5px; color: #0f172a; }
 .name span { color: #0369a1; }
 .role { margin-top: 3mm; font-weight: 600; font-size: 11pt; color: #0369a1; letter-spacing: .2px; }
 .summary { margin-top: 3.2mm; color: #374151; font-size: 9.5pt; }
 h2 { font-family: Syne, sans-serif; font-weight: 800; font-size: 11.5pt; letter-spacing: 1.2px; text-transform: uppercase; color: #0f172a; margin: 4.6mm 0 2mm; display: flex; align-items: center; gap: 3mm; }
 h2::after { content: ""; flex: 1; height: 1.4px; background: linear-gradient(90deg, #0369a1, #e5e7eb); }
-.job { margin-bottom: 2.8mm; break-inside: avoid; }
+.job { margin-bottom: 2.3mm; break-inside: avoid; }
 .job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 3mm; }
 .job-co { font-weight: 700; font-size: 10.2pt; color: #0f172a; }
 .job-date { font-size: 8.6pt; color: #6b7280; white-space: nowrap; font-weight: 500; }
@@ -31,7 +31,7 @@ li { margin-bottom: .5mm; }
 li::marker { color: #0369a1; }
 
 /* Columna lateral */
-.side { background: #0f172a; color: #e5e7eb; padding: 13mm 8mm 10mm 8mm; }
+.side { background: #0f172a; color: #e5e7eb; padding: 11mm 8mm 7mm 8mm; }
 .side h3 { font-family: Syne, sans-serif; font-weight: 800; font-size: 9.6pt; letter-spacing: 1.2px; text-transform: uppercase; color: #38bdf8; margin: 4.2mm 0 1.8mm; }
 .side h3:first-child { margin-top: 0; }
 .contact div { margin-bottom: 1.1mm; font-size: 8.6pt; word-break: break-word; }
@@ -75,18 +75,18 @@ li::marker { color: #0369a1; }
       <div class="job-role">Fundador &amp; Full Stack Developer</div>
       <ul>
         <li>8 proyectos de clientes: relevamiento, propuesta, desarrollo por etapas, lanzamiento y soporte.</li>
-        <li>Sistema contable a medida: trámites en ARCA, controles impositivos, cobranzas y atención por WhatsApp.</li>
-        <li>App de gestión de obras: gastos, IVA y rentabilidad, carga desde el celular sin señal y lectura de facturas con IA.</li>
-        <li>Sitios web y landings institucionales y de e-commerce; demos de CRM, ERP, punto de venta y tienda online.</li>
+        <li>App de gestión de obras (PWA que funciona sin señal): gastos, IVA y rentabilidad, asistente con IA de 18 herramientas y lectura de facturas.</li>
+        <li>Sitio de podcast que se actualiza solo: detecta episodios en YouTube y los resume con Claude (13 episodios, ~28 h, 104 capítulos).</li>
+        <li>Sitios web y landings institucionales y de e-commerce; CRM propio con 2FA; demos de ERP, punto de venta y tienda online.</li>
       </ul>
     </div>
 
     <div class="job">
-      <div class="job-head"><span class="job-co">Estudio Contable Tuculet</span><span class="job-date">06/2026 – Actualidad</span></div>
+      <div class="job-head"><span class="job-co">Estudio Contable Tuculet</span><span class="job-date">06/2026 – 09/2026</span></div>
       <div class="job-role">Desarrollador / IT</div>
       <ul>
-        <li>Desarrollo desde cero del sistema de gestión del estudio y automatizaciones del trabajo diario.</li>
-        <li>Relevamiento de procesos contables para traducirlos en funcionalidades.</li>
+        <li>Desarrollé desde cero el sistema de gestión del estudio: API de +450 endpoints sobre 100 tablas, 138 permisos por usuario y +1.000 verificaciones automáticas.</li>
+        <li>9 integraciones (web services de ARCA, ARBA, WhatsApp Cloud API, Gmail, Claude) y 4 procesos automáticos. Hoy el estudio es cliente de peycode y sigo sumando mejoras.</li>
       </ul>
     </div>
 
@@ -112,7 +112,7 @@ li::marker { color: #0369a1; }
     </div>
 
     <h2>Idiomas</h2>
-    <p><b>Inglés:</b> intermedio (B1), comprensión y expresión oral y escrita. <b>Español:</b> nativo.</p>
+    <p><b>Español:</b> nativo. <b>Inglés:</b> intermedio (B1), oral y escrito.</p>
   </main>
 
   <aside class="side">
@@ -123,6 +123,7 @@ li::marker { color: #0369a1; }
       <div><b>Ubicación</b>Zárate, Buenos Aires, Argentina</div>
       <div><b>Portafolio</b><a href="https://benjaminpeyraga.vercel.app">benjaminpeyraga.vercel.app</a></div>
       <div><b>Emprendimiento</b><a href="https://peycode.dev">peycode.dev</a></div>
+      <div><b>GitHub</b><a href="https://github.com/Ragepay">github.com/Ragepay</a></div>
       <div><b>LinkedIn</b><a href="https://www.linkedin.com/in/benjamin-peyraga-53812a163/">in/benjamin-peyraga</a></div>
     </div>
 
