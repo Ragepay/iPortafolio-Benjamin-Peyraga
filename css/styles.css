@@ -1058,6 +1058,7 @@ body.light-mode .slider-btn:hover {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.venture-icon { width: 48px; height: 48px; flex-shrink: 0; filter: drop-shadow(0 6px 16px rgba(124, 92, 255, 0.35)); }
 .venture-status {
   display: inline-flex;
   align-items: center;
