@@ -957,7 +957,8 @@ body.light-mode .tech-item { background: rgba(0, 0, 0, 0.04); }
 body.light-mode .tech-item img[alt="Resend"],
 body.light-mode .tech-item img[alt="Claude AI"],
 body.light-mode .tech-item img[alt="Gemini"],
-body.light-mode .tech-item img[alt="Next.js"] { filter: invert(1); }
+body.light-mode .tech-item img[src*="-ffffff."] { filter: invert(1); }
+body.light-mode .tech-item img[alt="Drizzle ORM"] { filter: brightness(.55); }
 body.light-mode .tech-item img[alt="ChatGPT"] { filter: none !important; }
 
 /* Tags de timeline */
