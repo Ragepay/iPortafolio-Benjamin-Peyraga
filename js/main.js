@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Terminal typewriter
+  const EN = document.documentElement.lang.startsWith("en");
   const terminalBody = document.getElementById("terminalBody");
   if (terminalBody) {
     const lines = [
@@ -7,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
       { type: "out",  html: "Benjamín Peyraga &mdash; Full Stack Developer" },
       { type: "cmd",  text: "cat skills.json" },
       { type: "out",  html: '{ <span class="t-key">"stack"</span>: [<span class="t-str">"React"</span>, <span class="t-str">"Vue"</span>, <span class="t-str">"Node"</span>, <span class="t-str">"GCP"</span>],' },
-      { type: "out",  html: '&nbsp;&nbsp;<span class="t-key">"work"</span>: <span class="t-str">"Analista Programador @ Euroamerica"</span>,' },
+      { type: "out",  html: '&nbsp;&nbsp;<span class="t-key">"work"</span>: <span class="t-str">"' + (EN ? "Programmer Analyst" : "Analista Programador") + ' @ Euroamerica"</span>,' },
       { type: "out",  html: '&nbsp;&nbsp;<span class="t-key">"ai"</span>: <span class="t-str">"Claude"</span>,' },
       { type: "out",  html: '&nbsp;&nbsp;<span class="t-key">"venture"</span>: <span class="t-str">"peycode.dev"</span>,' },
       { type: "out",  html: '&nbsp;&nbsp;<span class="t-key">"passion"</span>: <span class="t-str">"clean code &amp; automation"</span> }' },
@@ -92,13 +93,13 @@ document.addEventListener("DOMContentLoaded", function () {
     let text;
     if (months < 1) {
       const days = Math.max(1, Math.floor((now - start) / 86400000));
-      text = days === 1 ? "1 día" : `${days} días`;
+      text = EN ? (days === 1 ? "1 day" : `${days} days`) : (days === 1 ? "1 día" : `${days} días`);
     } else {
       const years = Math.floor(months / 12);
       const rem = months % 12;
       const parts = [];
-      if (years) parts.push(years === 1 ? "1 año" : `${years} años`);
-      if (rem)   parts.push(rem === 1 ? "1 mes" : `${rem} meses`);
+      if (years) parts.push(EN ? (years === 1 ? "1 year" : `${years} years`) : (years === 1 ? "1 año" : `${years} años`));
+      if (rem)   parts.push(EN ? (rem === 1 ? "1 month" : `${rem} months`) : (rem === 1 ? "1 mes" : `${rem} meses`));
       text = parts.join(" ");
     }
     el.innerHTML = `&nbsp;·&nbsp; ${text}`;

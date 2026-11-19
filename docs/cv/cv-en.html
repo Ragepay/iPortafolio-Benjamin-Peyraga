@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Resume — Benjamín Peyraga</title>
+<!-- Versión en inglés de cv.html. Mismo proceso para regenerar el PDF. -->
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Outfit:wght@400;500;600;700&display=block" rel="stylesheet">
+<style>
+@page { size: A4; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 210mm; }
+body { font-family: Outfit, Arial, sans-serif; color: #1f2937; font-size: 9.3pt; line-height: 1.36; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+a { color: inherit; text-decoration: none; }
+.page { width: 210mm; height: 297mm; display: grid; grid-template-columns: 1fr 64mm; }
+
+/* Columna principal */
+.main { padding: 13mm 9mm 10mm 13mm; }
+.name { font-family: Syne, sans-serif; font-weight: 800; font-size: 29pt; line-height: .95; letter-spacing: -.5px; color: #0f172a; }
+.name span { color: #0369a1; }
+.role { margin-top: 3mm; font-weight: 600; font-size: 11pt; color: #0369a1; letter-spacing: .2px; }
+.summary { margin-top: 3.2mm; color: #374151; font-size: 9.5pt; }
+h2 { font-family: Syne, sans-serif; font-weight: 800; font-size: 11.5pt; letter-spacing: 1.2px; text-transform: uppercase; color: #0f172a; margin: 4.6mm 0 2mm; display: flex; align-items: center; gap: 3mm; }
+h2::after { content: ""; flex: 1; height: 1.4px; background: linear-gradient(90deg, #0369a1, #e5e7eb); }
+.job { margin-bottom: 2.8mm; break-inside: avoid; }
+.job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 3mm; }
+.job-co { font-weight: 700; font-size: 10.2pt; color: #0f172a; }
+.job-date { font-size: 8.6pt; color: #6b7280; white-space: nowrap; font-weight: 500; }
+.job-role { font-weight: 600; color: #0369a1; font-size: 9.3pt; margin-top: .3mm; }
+ul { margin: 1.1mm 0 0 4mm; }
+li { margin-bottom: .5mm; }
+li::marker { color: #0369a1; }
+
+/* Columna lateral */
+.side { background: #0f172a; color: #e5e7eb; padding: 13mm 8mm 10mm 8mm; }
+.side h3 { font-family: Syne, sans-serif; font-weight: 800; font-size: 9.6pt; letter-spacing: 1.2px; text-transform: uppercase; color: #38bdf8; margin: 4.2mm 0 1.8mm; }
+.side h3:first-child { margin-top: 0; }
+.contact div { margin-bottom: 1.1mm; font-size: 8.6pt; word-break: break-word; }
+.contact b { display: block; font-size: 7.6pt; letter-spacing: .8px; text-transform: uppercase; color: #94a3b8; font-weight: 600; }
+.skill { margin-bottom: 1.3mm; font-size: 8.5pt; line-height: 1.3; }
+.skill b { display: block; color: #fff; font-weight: 600; font-size: 8.5pt; }
+.skill span { color: #cbd5e1; }
+.edu { margin-bottom: 1.6mm; font-size: 8.5pt; line-height: 1.3; break-inside: avoid; }
+.edu b { display: block; color: #fff; font-weight: 600; }
+.edu span { color: #cbd5e1; display: block; }
+.edu i { font-style: normal; color: #94a3b8; font-size: 8.2pt; }
+.tag { display: inline-block; padding: .2mm 1.6mm; border-radius: 2mm; background: rgba(56,189,248,.15); color: #7dd3fc; font-size: 7.6pt; font-weight: 600; margin-left: 1mm; }
+</style>
+</head>
+<body>
+<div class="page">
+  <main class="main">
+    <h1 class="name">Benjamín<br><span>Peyraga</span></h1>
+    <p class="role">Programmer Analyst · Full Stack Developer</p>
+    <p class="summary">
+      Programmer analyst and Full Stack developer. I improve and build systems for companies and, through my
+      venture <b>peycode</b>, I take client projects end to end: websites, management systems, mobile apps and
+      integrations with WhatsApp, AI and third-party services. I work with AI every day (mainly Claude), focused on
+      maintainable code and business results.
+    </p>
+
+    <h2>Experience</h2>
+
+    <div class="job">
+      <div class="job-head"><span class="job-co">Grupo Euroamerica</span><span class="job-date">09/2026 – Present</span></div>
+      <div class="job-role">Programmer Analyst</div>
+      <ul>
+        <li>Analysis, improvement and evolution of the group's internal systems.</li>
+        <li>New features and custom solutions for business needs.</li>
+        <li>From requirements gathering with users to production; process optimization and automation.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head"><span class="job-co">peycode · own venture</span><span class="job-date">2026 – Present</span></div>
+      <div class="job-role">Founder &amp; Full Stack Developer</div>
+      <ul>
+        <li>8 client projects: discovery, proposal, staged development, launch and support.</li>
+        <li>Custom accounting system: ARCA (tax agency) filings, tax checks, collections and WhatsApp customer service.</li>
+        <li>Construction management app: expenses, VAT and profitability, offline entry from a phone and AI invoice reading.</li>
+        <li>Corporate and e-commerce websites and landing pages; live demos of a CRM, ERP, point of sale and online store.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head"><span class="job-co">Estudio Contable Tuculet</span><span class="job-date">06/2026 – Present</span></div>
+      <div class="job-role">Developer / IT</div>
+      <ul>
+        <li>Building the firm's management system from scratch and automating daily work.</li>
+        <li>Mapping accounting processes and turning them into features.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head"><span class="job-co">Alephoo</span><span class="job-date">10/2025 – 04/2026</span></div>
+      <div class="job-role">Ecosystem Software Developer</div>
+      <ul>
+        <li>New features and module integration for the Salutte2 ecosystem (PHP, Doctrine, Vue.js, SQL).</li>
+        <li>Analysis of recurring incidents, bug fixing and optimization of applications and databases.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head"><span class="job-co">No Country</span><span class="job-date">08/2024 – 12/2024</span></div>
+      <div class="job-role">Backend Developer</div>
+      <ul><li>3 job simulations in cross-functional Scrum teams, covering the full development cycle.</li></ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head"><span class="job-co">Toyota Argentina S.A.</span><span class="job-date">08/2021 – 05/2024</span></div>
+      <div class="job-role">Production Team Member · Paint Shop</div>
+      <ul><li>Continuous improvement with Kaizen, process optimization and quality control.</li></ul>
+    </div>
+
+    <h2>Languages</h2>
+    <p><b>Spanish:</b> native. <b>English:</b> intermediate (B1), spoken and written.</p>
+  </main>
+
+  <aside class="side">
+    <h3>Contact</h3>
+    <div class="contact">
+      <div><b>Phone</b>+54 9 3487 512474</div>
+      <div><b>Email</b>benjapey99@gmail.com</div>
+      <div><b>Location</b>Zárate, Buenos Aires, Argentina</div>
+      <div><b>Portfolio</b><a href="https://benjaminpeyraga.vercel.app/en/">benjaminpeyraga.vercel.app/en</a></div>
+      <div><b>Venture</b><a href="https://peycode.dev">peycode.dev</a></div>
+      <div><b>LinkedIn</b><a href="https://www.linkedin.com/in/benjamin-peyraga-53812a163/">in/benjamin-peyraga</a></div>
+    </div>
+
+    <h3>Skills</h3>
+    <div class="skill"><b>Frontend</b><span>React, Next.js, TypeScript, JavaScript, HTML, CSS</span></div>
+    <div class="skill"><b>Backend</b><span>Node.js, Express, PHP, APIs REST</span></div>
+    <div class="skill"><b>Databases</b><span>PostgreSQL, MySQL, MongoDB, SQL</span></div>
+    <div class="skill"><b>Integrations</b><span>WhatsApp, AI in systems, ARCA, Google Sheets, Cloudinary, email</span></div>
+    <div class="skill"><b>AI</b><span>Claude (main), Gemini, ChatGPT</span></div>
+    <div class="skill"><b>Tools</b><span>Git, GitHub, Docker, Vercel, Railway, GCP, n8n, Make</span></div>
+    <div class="skill"><b>Data &amp; other</b><span>Excel, Tableau, Scrum, IT support (L1–L3)</span></div>
+
+    <h3>Education</h3>
+    <div class="edu"><b>University Diploma in AI Applied to Work</b><span>UNTREF</span><i>2026 · completed, diploma being issued</i></div>
+    <div class="edu"><b>Data Analytics Program</b><span>Coderhouse</span><i>2026 · in progress (Excel passed)</i></div>
+    <div class="edu"><b>Teacher Training Program</b><span>UTN — Avellaneda Regional School</span><i>2026 · in progress</i></div>
+    <div class="edu"><b>University Diploma in Backend Development</b><span>UNTREF</span><i>2025 – 2026 · completed</i></div>
+    <div class="edu"><b>Full Stack Development Program</b><span>Coderhouse</span><i>2024 – 2025 · 6 certifications</i></div>
+    <div class="edu"><b>Associate Degree in Programming</b><span>National Technological University (UTN)</span><i>2021 – 2023</i></div>
+
+  </aside>
+</div>
+</body>
+</html>

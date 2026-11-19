@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Benjamín Peyraga, Programmer Analyst at Grupo Euroamerica, Full Stack Developer and founder of peycode.dev. React, Node.js, SQL, and AI and WhatsApp integrations. See my experience, education and venture.">
+  <meta name="author" content="Benjamín Peyraga">
+  <meta name="theme-color" content="#0f172a">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="https://benjaminpeyraga.vercel.app/en/">
+
+  <link rel="alternate" hreflang="es" href="https://benjaminpeyraga.vercel.app">
+  <link rel="alternate" hreflang="en" href="https://benjaminpeyraga.vercel.app/en/">
+  <link rel="alternate" hreflang="x-default" href="https://benjaminpeyraga.vercel.app">
+  <title>Benjamín Peyraga — Analista Programador y Full Stack Developer</title>
+
+  <!-- Open Graph / LinkedIn / Facebook / WhatsApp -->
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Benjamín Peyraga">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://benjaminpeyraga.vercel.app/en/">
+  <meta property="og:title" content="Benjamín Peyraga — Programmer Analyst & Full Stack Developer">
+  <meta property="og:description" content="Programmer Analyst at Grupo Euroamerica and founder of peycode.dev. React, Node.js, SQL, and AI and WhatsApp integrations.">
+  <meta property="og:image" content="https://benjaminpeyraga.vercel.app/img/og-cover.png?v=2">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="Benjamín Peyraga — Programmer Analyst at Grupo Euroamerica and founder of peycode.dev">
+  <meta property="profile:first_name" content="Benjamín">
+  <meta property="profile:last_name" content="Peyraga">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://benjaminpeyraga.vercel.app/en/">
+  <meta name="twitter:title" content="Benjamín Peyraga — Programmer Analyst & Full Stack Developer">
+  <meta name="twitter:description" content="Programmer Analyst at Grupo Euroamerica and founder of peycode.dev. React, Node.js, SQL, and AI and WhatsApp integrations.">
+  <meta name="twitter:image" content="https://benjaminpeyraga.vercel.app/img/og-cover.png?v=2">
+  <meta name="twitter:image:alt" content="Benjamín Peyraga — Programmer Analyst at Grupo Euroamerica and founder of peycode.dev">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Outfit:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <!-- El fondo del hero es el LCP: lo pedimos temprano -->
+  <link rel="preload" as="image" href="../img/fondo.webp" fetchpriority="high">
+
+  <!-- Favicon inline (evita el 404 del icono por defecto sin sumar un archivo) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f172a'/%3E%3Ctext x='50%25' y='50%25' dy='.35em' text-anchor='middle' font-family='Verdana,sans-serif' font-size='30' font-weight='bold' fill='%2338bdf8'%3EBP%3C/text%3E%3C/svg%3E">
+
+</head>
+<body>
+
+  <a href="#contenido" class="skip-link">Skip to content</a>
+
+  <!-- NAV -->
+  <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#inicio" class="nav-logo">BP<span class="accent">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#sobre-mi" class="nav-link"><span class="nav-num">01</span>About</a></li>
+        <li><a href="#emprendimiento" class="nav-link"><span class="nav-num">02</span>Venture</a></li>
+        <li><a href="#experiencia" class="nav-link"><span class="nav-num">03</span>Experience</a></li>
+        <li><a href="#formacion" class="nav-link"><span class="nav-num">04</span>Education</a></li>
+        <li><a href="#contacto" class="nav-link nav-link--cta">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="../" class="lang-switch" hreflang="es" lang="es" aria-label="View the Spanish version">ES</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="contenido">
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg" style="background-image: url('../img/fondo.webp')"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-grain"></div>
+
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-label reveal">
+          <span class="label-dot"></span>
+          Programmer Analyst at Grupo Euroamerica &middot; Founder of peycode.dev
+        </div>
+        <h1 class="hero-name reveal reveal--delay-1">
+          Benjamín<br><span class="hero-name--accent">Peyraga</span>
+        </h1>
+        <p class="hero-tagline reveal reveal--delay-2">
+          I build digital products that deliver results.<br>
+          <span class="tagline-accent">Full Stack Developer. Clean code, real results.</span>
+        </p>
+        <div class="hero-actions reveal reveal--delay-3">
+          <a href="../docs/CV-BenjaminPeyraga-2026-EN.pdf" download class="btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download CV
+          </a>
+          <a href="https://peycode.dev" target="_blank" rel="noopener" class="btn-secondary">
+            Visit peycode.dev
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+          <a href="#contacto" class="btn-secondary">Contact me</a>
+        </div>
+        <div class="hero-socials reveal reveal--delay-4">
+          <a href="https://github.com/Ragepay" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/benjamin-peyraga-53812a163/" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal reveal--delay-2">
+        <div class="hero-photo-wrap">
+          <div class="hero-photo-frame">
+            <img src="../img/fotocarnet.jpg" alt="Benjamín Peyraga" class="hero-photo" width="900" height="1998" loading="eager" fetchpriority="high" decoding="async">
+          </div>
+          <div class="hero-badge hero-badge--1">
+            <span class="badge-num">10+</span>
+            <span class="badge-label">Projects</span>
+          </div>
+          <div class="hero-badge hero-badge--2">
+            <span class="badge-num">2+</span>
+            <span class="badge-label">Years coding</span>
+          </div>
+          <div class="hero-badge hero-badge--3">
+            <span class="badge-num">FS</span>
+            <span class="badge-label">Full Stack</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- SOBRE MÍ -->
+  <section class="section about-section" id="sobre-mi">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num">01</span>
+        <h2 class="section-title">About</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-bio reveal reveal--delay-1">
+          <div class="terminal-card">
+            <div class="terminal-header">
+              <span class="terminal-dot terminal-dot--red"></span>
+              <span class="terminal-dot terminal-dot--yellow"></span>
+              <span class="terminal-dot terminal-dot--green"></span>
+              <span class="terminal-title">benjamin@portfolio:~</span>
+            </div>
+            <div class="terminal-body" id="terminalBody"></div>
+          </div>
+          <p class="about-text">
+            I'm <strong>Benjamín Peyraga</strong>, a Full Stack developer based in Argentina. I build complete digital products: React interfaces, robust APIs, SQL and NoSQL databases, and cloud deployment on <strong>GCP</strong>.
+          </p>
+          <p class="about-text">
+            I care about clean code, good practices and process automation. I enjoy solving real problems with well-thought-out solutions, from business logic to infrastructure.
+          </p>
+          <p class="about-text">
+            I currently work as a <strong>Programmer Analyst at Grupo Euroamerica</strong> and, in parallel, I run <a href="https://peycode.dev" target="_blank" rel="noopener" class="about-link">peycode</a>, my software development venture, where I build websites, online stores, custom systems and mobile apps for real clients.
+          </p>
+          <p class="about-text">
+            I work with AI every day; the one I use the most is <strong>Claude</strong>, for coding, reviewing code and automating tasks, always applying my own judgment to what gets delivered. I also connect systems with what the business already uses: <strong>WhatsApp, AI inside apps, ARCA (Argentine tax agency), Google Sheets, automated emails</strong> and third-party services.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item"><span class="highlight-icon">⚡</span><span>Automations with n8n and Make</span></div>
+            <div class="highlight-item"><span class="highlight-icon">🔌</span><span>Integrations: WhatsApp, AI and ARCA</span></div>
+            <div class="highlight-item"><span class="highlight-icon">🎯</span><span>Results-oriented</span></div>
+            <div class="highlight-item"><span class="highlight-icon">🤝</span><span>Teamwork</span></div>
+          </div>
+        </div>
+
+        <div class="about-tech reveal reveal--delay-2">
+          <div class="tech-column">
+            <h3 class="tech-label">Frontend</h3>
+            <div class="tech-grid">
+              <div class="tech-item"><img src="../img/icons/react-original.svg" alt="React" width="36" height="36" loading="lazy" decoding="async"><span>React</span></div>
+<div class="tech-item"><img src="../img/icons/typescript-original.svg" alt="TypeScript" width="36" height="36" loading="lazy" decoding="async"><span>TypeScript</span></div>
+              <div class="tech-item"><img src="../img/icons/si-nextdotjs-ffffff.svg" alt="Next.js" width="36" height="36" loading="lazy" decoding="async"><span>Next.js</span></div>
+              <div class="tech-item"><img src="../img/icons/javascript-original.svg" alt="JavaScript" width="36" height="36" loading="lazy" decoding="async"><span>JavaScript</span></div>
+              <div class="tech-item"><img src="../img/icons/html5-original.svg" alt="HTML5" width="36" height="36" loading="lazy" decoding="async"><span>HTML5</span></div>
+              <div class="tech-item"><img src="../img/icons/css3-original.svg" alt="CSS3" width="36" height="36" loading="lazy" decoding="async"><span>CSS3</span></div>
+            </div>
+          </div>
+          <div class="tech-divider"></div>
+          <div class="tech-column">
+            <h3 class="tech-label">Backend</h3>
+            <div class="tech-grid">
+              <div class="tech-item"><img src="../img/icons/nodejs-original.svg" alt="Node.js" width="36" height="36" loading="lazy" decoding="async"><span>Node.js</span></div>
+              <div class="tech-item"><img src="../img/icons/express-original.svg" alt="Express" width="36" height="36" loading="lazy" decoding="async"><span>Express</span></div>
+              <div class="tech-item"><img src="../img/icons/mongodb-original.svg" alt="MongoDB" width="36" height="36" loading="lazy" decoding="async"><span>MongoDB</span></div>
+              <div class="tech-item"><img src="../img/icons/mysql-original.svg" alt="MySQL" width="36" height="36" loading="lazy" decoding="async"><span>MySQL</span></div>
+              <div class="tech-item"><img src="../img/icons/postgresql-original.svg" alt="PostgreSQL" width="36" height="36" loading="lazy" decoding="async"><span>PostgreSQL</span></div>
+            </div>
+          </div>
+          <div class="tech-divider"></div>
+          <div class="tech-column">
+            <h3 class="tech-label">Tools</h3>
+            <div class="tech-grid">
+              <div class="tech-item"><img src="../img/icons/git-original.svg" alt="Git" width="36" height="36" loading="lazy" decoding="async"><span>Git</span></div>
+              <div class="tech-item"><img src="../img/icons/github-original.svg" alt="GitHub" width="36" height="36" loading="lazy" decoding="async"><span>GitHub</span></div>
+              <div class="tech-item"><img src="../img/icons/docker-original.svg" alt="Docker" width="36" height="36" loading="lazy" decoding="async"><span>Docker</span></div>
+              <div class="tech-item"><img src="../img/icons/trello-original.svg" alt="Trello" width="36" height="36" loading="lazy" decoding="async"><span>Trello</span></div>
+              <div class="tech-item"><img src="../img/icons/npm-original-wordmark.svg" alt="NPM" width="36" height="36" loading="lazy" decoding="async"><span>NPM</span></div>
+              <div class="tech-item"><img src="../img/icons/googlecloud-original.svg" alt="GCP" width="36" height="36" loading="lazy" decoding="async"><span>GCP</span></div>
+            </div>
+          </div>
+          <div class="tech-divider"></div>
+          <div class="tech-column">
+            <h3 class="tech-label">Integrations</h3>
+            <div class="tech-grid">
+              <div class="tech-item"><img src="../img/icons/si-whatsapp-25d366.svg" alt="WhatsApp" width="36" height="36" loading="lazy" decoding="async"><span>WhatsApp</span></div>
+              <div class="tech-item" title="For example, automatic invoice reading with AI"><svg class="tech-svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="7" width="14" height="12" rx="3"/><path d="M12 7V4M9 4h6"/><circle cx="9.5" cy="12.5" r="1.2" fill="currentColor"/><circle cx="14.5" cy="12.5" r="1.2" fill="currentColor"/><path d="M9.5 16h5M3 12v3M21 12v3"/></svg><span>AI in systems</span></div>
+              <div class="tech-item" title="Automated filings and queries with ARCA (tax agency)"><svg class="tech-svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14l-2.5-1.5L14 21l-2-1.5L10 21l-2.5-1.5L5 21V4a1 1 0 0 1 1-1z"/><path d="M15 3v4h4M8.5 10h7M8.5 13.5h7M8.5 17h4"/></svg><span>ARCA</span></div>
+              <div class="tech-item"><img src="../img/icons/si-googlesheets-34a853.svg" alt="Google Sheets" width="36" height="36" loading="lazy" decoding="async"><span>Google Sheets</span></div>
+              <div class="tech-item"><img src="../img/icons/si-cloudinary-3448c5.svg" alt="Cloudinary" width="36" height="36" loading="lazy" decoding="async"><span>Cloudinary</span></div>
+              <div class="tech-item"><img src="../img/icons/si-resend-ffffff.svg" alt="Resend" width="36" height="36" loading="lazy" decoding="async"><span>Emails (Resend)</span></div>
+            </div>
+          </div>
+          <div class="tech-divider"></div>
+          <div class="tech-column">
+            <h3 class="tech-label">AI / Vibecoding</h3>
+            <div class="tech-grid">
+              <div class="tech-item tech-item--main" title="The AI I use the most"><span class="tech-main-badge">Main</span><img src="../img/icons/si-claude-d97757.svg" alt="Claude" width="36" height="36" loading="lazy" decoding="async"><span>Claude</span></div>
+              <div class="tech-item"><img src="../img/icons/si-googlegemini-ffffff.svg" alt="Gemini" width="36" height="36" loading="lazy" decoding="async"><span>Gemini</span></div>
+              <div class="tech-item"><img src="../img/icons/si-openai.svg" alt="ChatGPT" style="filter:invert(1)" width="36" height="36" loading="lazy" decoding="async"><span>ChatGPT</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EMPRENDIMIENTO -->
+  <section class="section venture-section" id="emprendimiento">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num">02</span>
+        <h2 class="section-title">Venture</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="venture-card reveal reveal--delay-1">
+        <div class="venture-main">
+          <div class="venture-brand">
+            <img src="../img/logo-peycode.svg" alt="" class="venture-icon" width="512" height="512" aria-hidden="true"><span class="venture-logo">pey<span class="accent">code</span></span>
+            <span class="venture-status"><span class="label-dot"></span>Active</span>
+          </div>
+          <p class="venture-tagline">We turn your idea into software that brings in customers.</p>
+          <p class="venture-text">
+            My software development venture. I work directly with each client, from the first conversation to launch: <strong>websites, online stores, custom management systems, mobile apps, integrations and automations</strong>. I use AI to deliver faster and at a better price, without giving up maintainable code.
+          </p>
+          <ul class="venture-chips" aria-label="Services">
+            <li>🧩 Portfolios</li>
+            <li>🚀 Landing pages</li>
+            <li>🌐 Websites</li>
+            <li>🛒 Online stores</li>
+            <li>⚙️ Web apps & PWA</li>
+            <li>📱 Mobile apps</li>
+            <li>🤖 Applied AI</li>
+            <li>⚡ Automations</li>
+            <li>🔌 Integrations</li>
+            <li>📊 Data analytics</li>
+          </ul>
+          <div class="venture-actions">
+            <a href="https://peycode.dev" target="_blank" rel="noopener" class="btn-primary">
+              Visit peycode.dev
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+            <a href="https://wa.me/5493487512474" target="_blank" rel="noopener" class="btn-secondary">Ask about a project</a>
+          </div>
+        </div>
+
+        <div class="venture-side">
+          <h3 class="venture-side-title">How I work</h3>
+          <ol class="venture-steps">
+            <li><span class="venture-step-num">01</span><div><strong>Discovery</strong><span>I understand the business and what it needs to solve.</span></div></li>
+            <li><span class="venture-step-num">02</span><div><strong>Proposal</strong><span>Clear scope, price and timeline from day one.</span></div></li>
+            <li><span class="venture-step-num">03</span><div><strong>Development in stages</strong><span>Partial deliveries to show real progress.</span></div></li>
+            <li><span class="venture-step-num">04</span><div><strong>Launch and support</strong><span>Go-live, training and continuous improvements.</span></div></li>
+          </ol>
+          <div class="venture-stats">
+            <div class="venture-stat"><span class="venture-stat-num">8</span><span class="venture-stat-label">Client projects</span></div>
+            <div class="venture-stat"><span class="venture-stat-num">4</span><span class="venture-stat-label">Live demos</span></div>
+            <div class="venture-stat"><span class="venture-stat-num">10</span><span class="venture-stat-label">Services</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="venture-work reveal reveal--delay-2">
+        <div class="venture-work-head">
+          <h3 class="venture-work-title">Recent work</h3>
+          <a href="https://peycode.dev/portafolio" target="_blank" rel="noopener" class="venture-work-link">
+            See everything on peycode.dev
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+        <div class="venture-projects">
+          <a class="venture-project" href="https://estudiotuculet.com" target="_blank" rel="noopener">
+            <div class="venture-project-media">
+              <img src="../img/peycode/tuculet-site.jpg" alt="Estudio Tuculet y Asociados" width="1000" height="625" loading="lazy" decoding="async">
+              <span class="venture-project-status venture-project-status--live">● Online</span>
+            </div>
+            <div class="venture-project-body">
+              <span class="venture-project-tag">Website · Accounting</span>
+              <h4 class="venture-project-name">Estudio Tuculet y Asociados <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></h4>
+              <p class="venture-project-desc">Corporate website for an accounting firm with over 50 years in Zárate.</p>
+            </div>
+          </a>
+          <a class="venture-project" href="https://peycode.dev/proyectos/tuculet" target="_blank" rel="noopener">
+            <div class="venture-project-media">
+              <img src="../img/peycode/tuculet.jpg" alt="Accounting management — Estudio Tuculet" width="1000" height="625" loading="lazy" decoding="async">
+              <span class="venture-project-status venture-project-status--use">● In use</span>
+            </div>
+            <div class="venture-project-body">
+              <span class="venture-project-tag">Custom system</span>
+              <h4 class="venture-project-name">Accounting management — Estudio Tuculet <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></h4>
+              <p class="venture-project-desc">ARCA (tax agency) filings, tax checks, collections and WhatsApp in a single system.</p>
+            </div>
+          </a>
+          <a class="venture-project" href="https://peycode.dev/proyectos/zukowski" target="_blank" rel="noopener">
+            <div class="venture-project-media">
+              <img src="../img/peycode/zukowski-dashboard.jpg" alt="Construction management — Zukowski" width="1000" height="625" loading="lazy" decoding="async">
+              <span class="venture-project-status venture-project-status--use">● In use</span>
+            </div>
+            <div class="venture-project-body">
+              <span class="venture-project-tag">Web app · Construction</span>
+              <h4 class="venture-project-name">Construction management — Zukowski <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></h4>
+              <p class="venture-project-desc">Expenses, VAT, payments and profitability per project, entered from a phone.</p>
+            </div>
+          </a>
+          <a class="venture-project" href="https://siz.com.ar" target="_blank" rel="noopener">
+            <div class="venture-project-media">
+              <img src="../img/peycode/siz.jpg" alt="Servicios Industriales Zukowski" width="1000" height="625" loading="lazy" decoding="async">
+              <span class="venture-project-status venture-project-status--live">● Online</span>
+            </div>
+            <div class="venture-project-body">
+              <span class="venture-project-tag">Website · Industrial</span>
+              <h4 class="venture-project-name">Servicios Industriales Zukowski <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></h4>
+              <p class="venture-project-desc">Corporate website with its services and completed projects.</p>
+            </div>
+          </a>
+          <a class="venture-project" href="https://www.pachuliparfum.com" target="_blank" rel="noopener">
+            <div class="venture-project-media">
+              <img src="../img/peycode/pachuli.jpg" alt="Pachulí Parfum" width="1000" height="625" loading="lazy" decoding="async">
+              <span class="venture-project-status venture-project-status--live">● Online</span>
+            </div>
+            <div class="venture-project-body">
+              <span class="venture-project-tag">Landing page · Perfumes</span>
+              <h4 class="venture-project-name">Pachulí Parfum <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></h4>
+              <p class="venture-project-desc">Catalog of over 250 fragrances with orders placed directly via WhatsApp.</p>
+            </div>
+          </a>
+          <a class="venture-project" href="https://somosesto.com.ar" target="_blank" rel="noopener">
+            <div class="venture-project-media">
+              <img src="../img/peycode/somosesto.jpg" alt="Somos Esto" width="1000" height="625" loading="lazy" decoding="async">
+              <span class="venture-project-status venture-project-status--live">● Online</span>
+            </div>
+            <div class="venture-project-body">
+              <span class="venture-project-tag">Website · Streaming</span>
+              <h4 class="venture-project-name">Somos Esto <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></h4>
+              <p class="venture-project-desc">Every episode with its video, chapters, summary and biblical reflection.</p>
+            </div>
+          </a>
+        </div>
+        <p class="venture-more">Also: <span>Axel Peyraga — portfolio</span><span>ICE San Martín 19</span><span>ErpGranos</span><span>CapitalSync</span></p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCIA -->
+  <section class="section experience-section" id="experiencia">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num">03</span>
+        <h2 class="section-title">Experience</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-date">Sep 2026 — Present<span class="timeline-duration" data-since="2026-09-14"></span></span>
+              <span class="timeline-badge timeline-badge--tech">Tech</span>
+            </div>
+            <div class="timeline-company">
+              <img src="../img/logo-euroamerica.png" alt="Grupo Euroamerica" class="company-logo" width="200" height="200" loading="lazy" decoding="async">
+              <div>
+                <h3 class="company-name"><a href="https://www.euroamerica.com.ar" target="_blank" rel="noopener" class="company-name-link">Grupo Euroamerica</a></h3>
+                <p class="company-role">Programmer Analyst</p>
+              </div>
+            </div>
+            <p class="timeline-desc">I'm part of the group's systems team: I analyze, improve and evolve internal systems, build new features and design custom solutions for business needs. I follow each improvement from requirements gathering with users to production, optimizing processes and automating day-to-day tasks.</p>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Functional analysis</span>
+              <span class="timeline-tag">Systems development</span>
+              <span class="timeline-tag">Continuous improvement</span>
+              <span class="timeline-tag">Custom solutions</span>
+              <span class="timeline-tag">Automation</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-date">2026 — Present</span>
+              <span class="timeline-badge timeline-badge--venture">Venture</span>
+            </div>
+            <div class="timeline-company">
+              <img src="../img/logo-peycode.svg" alt="peycode" class="company-logo" width="512" height="512" loading="lazy" decoding="async">
+              <div>
+                <h3 class="company-name"><a href="https://peycode.dev" target="_blank" rel="noopener" class="company-name-link">peycode</a></h3>
+                <p class="company-role">Founder &amp; Full Stack Developer</p>
+              </div>
+            </div>
+            <p class="timeline-desc">My own software development venture. I take projects end to end: requirements with the client, proposal, design, staged development, deployment and support. I build websites, online stores, custom management web apps, automations and my own SaaS products.</p>
+            <div class="timeline-tags">
+              <span class="timeline-tag">React</span>
+              <span class="timeline-tag">Node.js</span>
+              <span class="timeline-tag">MongoDB</span>
+              <span class="timeline-tag">MySQL</span>
+              <span class="timeline-tag">n8n / Make</span>
+              <span class="timeline-tag">Applied AI</span>
+              <span class="timeline-tag">Client relations</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-date">Jun 2026 — Present<span class="timeline-duration" data-since="2026-06-08"></span></span>
+              <span class="timeline-badge timeline-badge--tech">Tech</span>
+            </div>
+            <div class="timeline-company">
+              <img src="../img/logoestudiotuculet.png" alt="Estudio Contable Tuculet" class="company-logo" width="200" height="201" loading="lazy" decoding="async">
+              <div>
+                <h3 class="company-name">Estudio Contable Tuculet</h3>
+                <p class="company-role">Developer / IT</p>
+              </div>
+            </div>
+            <p class="timeline-desc">I'm building a custom system for the firm from scratch. Along the way I'm learning accounting and the firm's processes, which lets me deeply understand real needs and turn them into new features and automations that streamline the team's daily work.</p>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Systems development</span>
+              <span class="timeline-tag">Automation</span>
+              <span class="timeline-tag">Accounting</span>
+              <span class="timeline-tag">Business processes</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal reveal--delay-1">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-date">Oct 2025 — Apr 2026 &nbsp;·&nbsp; 6 months</span>
+              <span class="timeline-badge timeline-badge--tech">Tech</span>
+            </div>
+            <div class="timeline-company">
+              <img src="../img/alephoo_logo.jfif" alt="Alephoo" class="company-logo" width="200" height="200" loading="lazy" decoding="async">
+              <div>
+                <h3 class="company-name">Alephoo</h3>
+                <p class="company-role">Ecosystem Software Developer</p>
+              </div>
+            </div>
+            <p class="timeline-desc">Development and maintenance of the Salutte2 digital ecosystem: shipping new features across the full development cycle, integrating modules and services, and evolving existing code to fit business needs.</p>
+            <div class="timeline-tags">
+              <span class="timeline-tag">PHP</span>
+              <span class="timeline-tag">Doctrine ORM</span>
+              <span class="timeline-tag">SQL</span>
+              <span class="timeline-tag">Vue.js</span>
+              <span class="timeline-tag">Docker</span>
+              <span class="timeline-tag">AWS</span>
+              <span class="timeline-tag">Postman</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal reveal--delay-1">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-date">Aug 2024 — Dec 2024 &nbsp;·&nbsp; 5 months</span>
+              <span class="timeline-badge timeline-badge--tech">Tech</span>
+            </div>
+            <div class="timeline-company">
+              <img src="../img/noCountry.jpeg" alt="No Country" class="company-logo" width="200" height="200" loading="lazy" decoding="async">
+              <div>
+                <h3 class="company-name">No Country Simulation</h3>
+                <p class="company-role">Backend Developer</p>
+              </div>
+            </div>
+            <p class="timeline-desc">Took part in 3 job simulations building the backend of real applications in cross-functional teams using Agile (Scrum).</p>
+            <div class="timeline-projects">
+              <span class="timeline-project">🎮 Checkpoint Zone</span>
+              <span class="timeline-project">🧘‍♂️ Break &amp; Focus</span>
+              <span class="timeline-project">🏬 PopMart Marketplace</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal reveal--delay-1">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-date">Aug 2021 — May 2024 &nbsp;·&nbsp; 2 years 9 months</span>
+              <span class="timeline-badge timeline-badge--industry">Industry</span>
+            </div>
+            <div class="timeline-company">
+              <img src="../img/toyota.jpg" alt="Toyota Argentina" class="company-logo" width="200" height="175" loading="lazy" decoding="async">
+              <div>
+                <h3 class="company-name">Toyota Argentina S.A.</h3>
+                <p class="company-role">Production Operator</p>
+              </div>
+            </div>
+            <p class="timeline-desc">Nearly 3 years on a production line applying Kaizen, quality control and continuous improvement. This experience shaped the discipline and results focus I bring to every line of code.</p>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Kaizen</span>
+              <span class="timeline-tag">Quality control</span>
+              <span class="timeline-tag">Continuous improvement</span>
+              <span class="timeline-tag">Teamwork</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMACIÓN -->
+  <section class="section education-section" id="formacion">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num">04</span>
+        <h2 class="section-title">Education</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="education-grid">
+
+        <div class="edu-card reveal">
+          <div class="edu-card-header">
+            <img src="../img/utn.jpg" alt="UTN" class="edu-logo" width="300" height="192" loading="lazy" decoding="async">
+            <div>
+              <h3 class="edu-title"><a href="https://www.frd.utn.edu.ar/programacion/" target="_blank" rel="noopener" class="edu-title-link">Associate Degree in Programming</a></h3>
+              <p class="edu-institution">National Technological University (UTN)</p>
+            </div>
+          </div>
+          <div class="edu-body">
+            <span class="edu-tag">University degree</span>
+            <p class="edu-date">Aug 2021 – 2024 &nbsp;·&nbsp; 5 terms</p>
+            <p class="edu-desc">2-year program (1,980 hours). Courses: Programming I, II and III, Data Processing Systems, Architecture and Operating Systems, Database Design and Administration, Systems Methodology, Computer Labs I–IV, Statistics, English I and II, and a Supervised Professional Internship.</p>
+            <a href="../docs/Analitico-Programación-Benjamin-Peyraga.pdf" download class="edu-download">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download transcript (Spanish)
+            </a>
+          </div>
+        </div>
+
+        <div class="edu-card reveal reveal--delay-1">
+          <div class="edu-card-header">
+            <img src="../img/coderhouse.jfif" alt="Coderhouse" class="edu-logo" width="200" height="200" loading="lazy" decoding="async">
+            <div>
+              <h3 class="edu-title"><a href="https://www.coderhouse.com/ar/carreras/carrera-desarrollo-fullstack" target="_blank" rel="noopener" class="edu-title-link">Full Stack Development Program</a></h3>
+              <p class="edu-institution">Coderhouse</p>
+            </div>
+          </div>
+          <div class="edu-body">
+            <span class="edu-tag">6 certifications</span>
+            <p class="edu-date">2024 – 2025 &nbsp;·&nbsp; 2 semesters (53 weeks)</p>
+            <div class="edu-courses">
+              <a href="https://pub.coderhouse.com/legacy-certificates/664d335341eefc411974862a?lang=en" target="_blank" rel="noopener" class="edu-course edu-course--link"><span class="course-dot"></span>Web Development<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+              <a href="https://pub.coderhouse.com/legacy-certificates/667bd66c526bea14c5dbf1b9?lang=en" target="_blank" rel="noopener" class="edu-course edu-course--link"><span class="course-dot"></span>JavaScript<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+              <a href="https://pub.coderhouse.com/legacy-certificates/673d0dec9f7020f017195442?lang=en" target="_blank" rel="noopener" class="edu-course edu-course--link"><span class="course-dot"></span>React JS<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+              <a href="https://pub.coderhouse.com/legacy-certificates/66c5f9489afd386a8863f4d6?lang=en" target="_blank" rel="noopener" class="edu-course edu-course--link"><span class="course-dot"></span>Backend I: Advanced Development<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+              <a href="https://pub.coderhouse.com/legacy-certificates/67877e429f7020f017195d37?lang=en" target="_blank" rel="noopener" class="edu-course edu-course--link"><span class="course-dot"></span>Backend II: Design and Architecture<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+              <a href="https://pub.coderhouse.com/legacy-certificates/67d97a39b0f4b7580cc3788b?lang=en" target="_blank" rel="noopener" class="edu-course edu-course--link"><span class="course-dot"></span>Backend III: Backend Testing and Scalability<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            </div>
+            <a href="https://pub.coderhouse.com/legacy-certificates/6831f301080369d064b4b92a?lang=en" target="_blank" rel="noopener" class="edu-download">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              View program certificate
+            </a>
+          </div>
+        </div>
+
+        <div class="edu-card reveal">
+          <div class="edu-card-header">
+            <img src="../img/Untref-logo.png" alt="UNTREF" class="edu-logo edu-logo--contain" width="327" height="154" loading="lazy" decoding="async">
+            <div>
+              <h3 class="edu-title">University Diploma in Backend Development</h3>
+              <p class="edu-institution">National University of Tres de Febrero (UNTREF)</p>
+            </div>
+          </div>
+          <div class="edu-body">
+            <span class="edu-tag edu-tag--done">Completed</span>
+            <p class="edu-date">2025 – 2026 &nbsp;·&nbsp; 2 terms</p>
+            <p class="edu-desc">University diploma focused on API architecture, relational and non-relational databases, security and backend deployment.</p>
+            <a href="../img/DiplomaBackend.jpeg" target="_blank" rel="noopener" class="edu-download">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              View diploma
+            </a>
+          </div>
+        </div>
+
+        <div class="edu-card reveal reveal--delay-1">
+          <div class="edu-card-header">
+            <img src="../img/Untref-logo.png" alt="UNTREF" class="edu-logo edu-logo--contain" width="327" height="154" loading="lazy" decoding="async">
+            <div>
+              <h3 class="edu-title">University Diploma in AI Applied to Work</h3>
+              <p class="edu-institution">National University of Tres de Febrero (UNTREF)</p>
+            </div>
+          </div>
+          <div class="edu-body">
+            <span class="edu-tag edu-tag--done">Completed · diploma being issued</span>
+            <p class="edu-date">2026 &nbsp;·&nbsp; 1 term</p>
+            <p class="edu-desc">Hands-on training in AI applied to real workflows: automation, generative AI tools, advanced prompting and integration into development projects.</p>
+          </div>
+        </div>
+
+        <div class="edu-card reveal">
+          <div class="edu-card-header">
+            <img src="../img/coderhouse.jfif" alt="Coderhouse" class="edu-logo" width="200" height="200" loading="lazy" decoding="async">
+            <div>
+              <h3 class="edu-title"><a href="https://www.coderhouse.com/ar/carreras/carrera-data-analytics-live" target="_blank" rel="noopener" class="edu-title-link">Data Analytics Program</a></h3>
+              <p class="edu-institution">Coderhouse</p>
+            </div>
+          </div>
+          <div class="edu-body">
+            <span class="edu-tag edu-tag--active">In progress · 1 of 3 courses passed</span>
+            <p class="edu-date">2026 &nbsp;·&nbsp; 26 weeks</p>
+            <p class="edu-desc">A program about turning data into decisions: modeling and analysis in Excel, visualization and dashboards in Tableau, and SQL queries against real databases.</p>
+            <div class="edu-courses">
+              <a href="../docs/Certificado-Excel-Coderhouse-Benjamin-Peyraga.pdf" target="_blank" rel="noopener" class="edu-course edu-course--link" title="View certificate (Oct 14, 2026)"><span class="course-dot course-dot--done"></span>Excel · view certificate<em class="edu-course-state edu-course-state--done">Passed</em></a>
+              <span class="edu-course"><span class="course-dot course-dot--active"></span>Tableau<em class="edu-course-state edu-course-state--active">In progress</em></span>
+              <span class="edu-course"><span class="course-dot course-dot--next"></span>Data Analytics with SQL<em class="edu-course-state">Next</em></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-card reveal reveal--delay-1">
+          <div class="edu-card-header">
+            <img src="../img/logoUTNAvellaneda.png" alt="UTN Facultad Regional Avellaneda" class="edu-logo edu-logo--contain" width="225" height="225" loading="lazy" decoding="async">
+            <div>
+              <h3 class="edu-title">Teacher Training Program</h3>
+              <p class="edu-institution">UTN — Avellaneda Regional School</p>
+            </div>
+          </div>
+          <div class="edu-body">
+            <span class="edu-tag edu-tag--active">In progress</span>
+            <p class="edu-date">2026</p>
+            <p class="edu-desc">Teacher training that qualifies me to teach technical subjects in schools in the Province of Buenos Aires, adding teaching skills to my technical profile.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="section contact-section" id="contacto">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num">06</span>
+        <h2 class="section-title">Contact</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-content">
+        <div class="contact-headline reveal">
+          <p class="contact-sub">Have a project or need a Full Stack Developer?</p>
+          <p class="contact-description">I love solving real problems with clean code. From startups to established companies, I help take ideas to production. If you want to hire a project, you can also do it through <a href="https://peycode.dev" target="_blank" rel="noopener">peycode.dev</a>.</p>
+          <a href="mailto:benjapey99@gmail.com" class="contact-email">benjapey99@gmail.com</a>
+        </div>
+        <div class="contact-grid reveal reveal--delay-1">
+          <a href="tel:+5493487512474" class="contact-card">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.39 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6.72 6.72l1.45-1.45a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span class="contact-card-label">Phone</span>
+            <span class="contact-card-value">+54 9 3487 512474</span>
+          </a>
+          <a href="https://wa.me/5493487512474" target="_blank" rel="noopener" class="contact-card">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+            <span class="contact-card-label">WhatsApp</span>
+            <span class="contact-card-value">Email me</span>
+          </a>
+          <a href="https://www.linkedin.com/in/benjamin-peyraga-53812a163/" target="_blank" rel="noopener" class="contact-card">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            <span class="contact-card-label">LinkedIn</span>
+            <span class="contact-card-value">Let's connect</span>
+          </a>
+          <a href="https://github.com/Ragepay" target="_blank" rel="noopener" class="contact-card">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            <span class="contact-card-label">GitHub</span>
+            <span class="contact-card-value">See code</span>
+          </a>
+        </div>
+        <div class="contact-downloads reveal reveal--delay-2">
+          <a href="../docs/CV-BenjaminPeyraga-2026-EN.pdf" download class="download-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download CV
+          </a>
+          <a href="../docs/Analitico-Programación-Benjamin-Peyraga.pdf" download class="download-btn download-btn--outline">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            UTN transcript
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <span class="footer-logo">BP<span class="accent">.</span></span>
+        <p class="footer-copy">Designed and built by Benjamín Peyraga &middot; 2026</p>
+        <div class="footer-links">
+          <a href="https://peycode.dev" target="_blank" rel="noopener">peycode.dev</a>
+          <a href="https://github.com/Ragepay" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/benjamin-peyraga-53812a163/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <button class="lightbox-btn lightbox-prev" aria-label="Previous">&#8592;</button>
+    <img class="lightbox-img" id="lightboxImg" alt="">
+    <button class="lightbox-btn lightbox-next" aria-label="Next">&#8594;</button>
+    <span class="lightbox-counter" id="lightboxCounter"></span>
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
