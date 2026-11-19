@@ -33,5 +33,4 @@ Los proyectos de clientes están en el [portafolio de peycode](https://peycode.d
 
 ## Métricas de visitas
 
-Vercel Web Analytics (sin cookies). El script está al final de `index.html`; los datos se ven en
-vercel.com → proyecto `benjaminpeyraga` → Analytics.
+Google Analytics (misma propiedad que peycode.dev, se separa por dominio). Se ven en peycode.dev/admin/visitas.
